@@ -1,0 +1,37 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES_script",
+    "Entity": "script_mover",
+    /* overrides */
+    "Description": "Used to spawn mover scripts",
+	"Keys": [
+             {
+                "keyname": "teamnum",
+                "type": "teamNumber",
+                "name": "Team Number",
+                "description": "Team(s) allowed to spawn here"
+             },
+             {
+                "keyname": "SpawnAsPhysicsMover",
+                "type": "boolean",
+                "name": "Spawn as physcis mover",
+                "description": "set 1 for it to become a bad physics object"
+             },
+             {
+                "keyname": "path_speed",
+                "type": "float",
+                "name": "Path Speed",
+                "description": "the speed at which the mover travels on its path"
+             },
+             {
+                "keyname": "leveledplaced",
+                "type": "boolean",
+                "name": "Placed in LevelEd",
+                "description": "I think it activates its path idk"
+             }
+            ],
+    "Notes": [
+                "LevelEd is respawn's internal level editor"
+             ]
+}
