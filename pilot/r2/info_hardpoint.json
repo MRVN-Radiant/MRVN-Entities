@@ -3,7 +3,6 @@
     /* index */
     "Block": "ENTITIES_script",
     "Entity": "info_hardpoint",
-    /* !!! script_ref editorclass !!! */
     /* overriders */
     "Color": ".9 .2, .0",  /* trigger orange */
     "Box": "-64 -64 0 64 64 72",
@@ -18,7 +17,7 @@
              },
              {
                 "keyname": "hardpointGroup",
-                "type": "hardpointGroup",  /* TODO: choiceList*/
+                "type": "hardpointGroup",
                 "name": "Hardpoint Group",
                 "description": "Which Hardpoint is this on the HUD?"
              },
@@ -28,10 +27,6 @@
                 "name": "Scale",
                 "description": "Team(s) that own this flag"
              },
-             /*   
-<string key="hardpointGroup" name="Hardpoint Group" value="A">used to indicate the hardpoint name (A,B,C)</string>
-<real key="scale" name="Scale" value="1">Value used to scale the ents model, hitboxes DO NOT scale.</real>
-             */
             ],
     "Notes": [
                 "Model can be anything, including the old Titanfall 1 terminals, but you have to pick one!"
