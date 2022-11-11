@@ -20,5 +20,8 @@ ent_filename = {"ENTITIES.xml": "entities.ent",
                 "ENTITIES_snd.xml": "sound_entities.ent"}
 
 types = {"float": "real"}  # fuzzy matching
-defaults - {"float": "1.0"}  # allow undefined
+defaults = {"float": "1.0"}  # allow undefined
 # TODO: choiceTypes default to first Option
+
+thesaurus = {"0": ["no", "0", "false"],
+             "1": ["yes", "1", "true"]}
