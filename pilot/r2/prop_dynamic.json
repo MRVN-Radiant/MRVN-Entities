@@ -1,0 +1,19 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES",
+    "Entity": "prop_dynamic",
+    /* overrides */
+    "Description": "Adds a model to the world that be animated & controled by scripts",
+	"Keys": [
+             {
+                "keyname": "teamnum",
+                "type": "teamNumber",
+                "name": "Team Number",
+                "description": "Team(s) allowed to spawn here"
+             }
+            ],
+    "Notes": [
+                "Hasn't changed much since Source"
+             ]
+}
