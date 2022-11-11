@@ -7,15 +7,23 @@
     /* Overrides, in Order of Appearance */
     "Type": "point",  /* point for point entitiy, group for brush entitiy */
     "Description": "An example point entity",
-	"Keys": {"keyname": "name",  /* name of key to override / add */
-             /* overrides */
-             "type": "targetname",
-             "name": "Display Name",
-             "description": "Changed."},
-    "SpawnFlags": {"bit": 0,  /* Index of bit to override / add*/
-                   /* overrides */
-                   "name": "NO_RENDER",
-                   "default": "True",
-                   "description": "Don't render"},
+	"Keys": [
+             {
+                "keyname": "name",  /* name of key to override / add */
+                /* overrides, in Order of Appearance */
+                "type": "targetname",
+                "name": "Display Name",
+                "description": "Changed."
+             }
+            ],
+    "SpawnFlags": [
+                   {
+                       "bit": 0,  /* Index of bit to override / add*/
+                       /* overrides, in Order of Appearance */
+                       "name": "NO_RENDER",
+                       "default": "True",
+                       "description": "Don't render"
+                   },
+                  ],
 	"Notes": "This goes under the NOTES header & the first line is not overridden"
 }
