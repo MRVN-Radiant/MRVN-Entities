@@ -1,0 +1,20 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES_script",
+    "Entity": "info_target_clientside",
+    /* overrides */
+    "Description": "Can be used to spawn the menu lobby in mp matches with the appropriate script names",
+	"Keys": [
+             {
+                "keyname": "script_name",
+                "type": "menuType",
+                "name": "Script Name",
+                "description": "name of script to use for this clientside ent"
+             }
+            ],
+    "Notes": [
+                "Can also be used as a reference for clients",
+                "Basically a clientside target ent."
+             ]
+}
