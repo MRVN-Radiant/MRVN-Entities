@@ -1,0 +1,20 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES_script",
+    "Entity": "info_speedball_flag",
+    /* !!! script_ref editorclass !!! */
+    /* overriders */
+    "Color": ".9 .2, .0",  /* trigger orange */
+    "Box": "-70 -48 0 70 48 224",
+    "Model": "models/signs/flag_base_pole_ctf.obj",
+    "Description": "Used to spawn the flags in Live Fire.",
+	"Keys": [
+             {
+                "keyname": "teamnum",
+                "type": "teamNumber",
+                "name": "Team Number",
+                "description": "Team(s) that own this flag"
+             },
+            ]
+}
