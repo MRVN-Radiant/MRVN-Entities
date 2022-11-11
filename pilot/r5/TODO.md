@@ -1,3 +1,3 @@
 # TODO
 
- * Add @catornot's spawn entities from [MRVN-radiant](https://github.com/MRVN-radiant/MRVN-radiant)
+ * Copy over @catornot's spawn entities from `pilot/r2`

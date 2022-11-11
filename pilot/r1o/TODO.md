@@ -1,5 +1,4 @@
 # TODO
 
-Rewrite as `.json`:
- * @catornot's spawn entities from [MRVN-radiant](https://github.com/MRVN-radiant/MRVN-radiant)
- * @snake-biscuits hand-crafted entities
+ * Copy over @catornot's spawn entities from `pilot/r2`
+ * Rewrite @snake-biscuits hand-crafted entities as `.json`
