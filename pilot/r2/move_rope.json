@@ -1,0 +1,39 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES_script",
+    "Entity": "move_rope",
+    /* overrides */
+    "Todo": "model=\"models/editor/axis_helper.obj\" from Source Hammer",
+    "Color": ".3 .3 1",  /* zipline yellow */
+    "Box": "-8 -8 -8 8 8 8",
+    "Description": "One end of a Zipline",
+	"Keys": [
+             {
+                "keyname": "targetname",
+                "type": "targetname",
+                "name": "Target name",
+                "description": "The targetname of this end of the zipline"
+             },
+             {
+                "keyname": "NextKey",
+                "type": "targetname",
+                "name": "Target",
+                "description": "The targetname of the other end of the zipline"
+             },
+             {
+                "keyname": "Zipline",
+                "type": "boolean",
+                "name": "Is a zipline",
+                "default": "True",
+                "description": "Set to true for zipline"
+             }
+             /* TODO: Subdiv, slack, MoveSpeed */
+            ],
+    "Notes": [
+                "You can also use move_rope and keyframe_rope to make decorative cables",
+                "Titanfall ziplines use a generic texture, unlike the Yellow texture used in Apex",
+                "Source Engine guides recommend using one move_rope then a series of keyframe_rope for each key",
+                "IIRC move_rope ends can be used to create loose cable ends"
+             ]
+}
