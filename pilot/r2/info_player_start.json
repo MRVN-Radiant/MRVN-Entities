@@ -145,5 +145,7 @@
                 "description": "Start here in Sticks and Stones",
              },
             ],
-    "Notes": "Place slightly above the floor so players won't spawn stuck in the floor"
+    "Notes": [
+                "Place slightly above the floor so players won't spawn stuck in the floor"
+             ]
 }

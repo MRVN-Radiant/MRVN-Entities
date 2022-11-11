@@ -25,5 +25,7 @@
                        "description": "Don't render"
                    },
                   ],
-	"Notes": "This goes under the NOTES header & the first line is not overridden"
+	"Notes": [
+                "This goes under the NOTES header & the first line is not overridden"
+             ]
 }
