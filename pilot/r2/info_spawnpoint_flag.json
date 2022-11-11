@@ -1,0 +1,19 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES",
+    "Entity": "info_spawnpoint_flag",
+    /* overriders */
+    "Color": ".9 .2, .0",  /* trigger orange */
+    "Box": "-70 -48 0 70 48 224",
+    "Model": "models/signs/flag_base_pole_ctf.obj",
+    "Description": "Used to spawn the flags in Capture the Flag.",
+	"Keys": [
+             {
+                "keyname": "teamnum",
+                "type": "teamNumber",
+                "name": "Team Number",
+                "description": "Team(s) that own this flag"
+             },
+            ]
+}
