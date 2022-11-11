@@ -4,6 +4,8 @@ fusehound fanfiction goes in `pilot/` subfolders
 
 > TODO: `.json` linter & format checker
 
+*** !!! EXTREMEMLY COMMON CHANGES TO KEYS SHOULD BE AUTOMATED WITH `fgd2ent` !!! ***
+
 See:
  * `STYLE.md` breakdown on entity color palette
    - feel free to define your own category and add it to the list
