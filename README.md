@@ -1,5 +1,5 @@
 # MRVN-entities
-Turns Pilots into Simulacra
+Turns Pilots into Simulacra with the power of fanfiction  
 [MRVN-radiant](github.com/MRVN-radiant/MRVN-radiant) entity definition generator
 
 ## Dependants:
@@ -94,5 +94,3 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
    - turn `simulacrum/` into an artifact
  * Documentation
    - using `fgd2ent.py` to compare `omega_entity` to `fgd.entities` to find the "Ur" entity
-   - add `.json` to `STYLE.md`
-   - `.json` guide in `CONTRTIBUTING.md`
