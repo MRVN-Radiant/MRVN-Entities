@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!--
+ Titanfall 2 entity definition file for MRVN-radiant
+ by Bikkie / snake-biscuits [b!scuit#3659]
+ entities.ent for MRVN-radiant
+ Version: 0.0.1 (WIP)
+ Updated: 2022-10-29
+-->
+<!-- TODO: generate some entities with a script (e.g. weapons) -->
+<classes>
+
+<!-- NOTE: this list only contains weapons placed in r2 maps (except BONUS) -->
+<!-- Reverse engineered from each scripts/weapon/<weapon script>.txt -->
+<!-- weapon printnames are defined in resources/r1_english.txt -->
+<list name="weapon">
+    <item name="Alternator" value="mp_weapon_alternator_smg"/>
+    <item name="LG-97 Thunderbolt" value="mp_weapon_arc_launcher"/>
+    <item name="RE-45 Auto" value="mp_weapon_autopistol"/>
+    <item name="CAR" value="mp_weapon_car"/>
+    <item name="Charge Rifle" value="mp_weapon_defender"/>
+    <item name="Longbow DMR" value="mp_weapon_dmr"/>
+    <item name="Double Take" value="mp_weapon_doubletake"/>
+    <item name="EPG-1" value="mp_weapon_epg"/>
+    <item name="X-55 Devotion" value="mp_weapon_esaw"/>
+    <item name="Ticks" value="mp_weapon_frag_drone"/>
+    <item name="Frag Grenade" value="mp_weapon_frag_grenade"/>
+    <item name="G2A5" value="mp_weapon_g2"/>
+    <item name="Electric Smoke Grenade" value="mp_weapon_grenade_electric_smoke"/>
+    <item name="Arc Grenade" value="mp_weapon_grenade_emp"/>
+    <item name="Gravity Star" value="mp_weapon_grenade_gravity"/>
+    <item name="Pulse Blade" value="mp_weapon_grenade_sonar"/><!-- BONUS -->
+    <item name="Hemlok BF-R" value="mp_weapon_hemlok"/>
+    <item name="Volt" value="mp_weapon_hemlok_smg"/>
+    <item name="Spitfire" value="mp_weapon_lmg"/>
+    <item name="L-STAR" value="mp_weapon_lstar"/>
+    <item name="Mastiff" value="mp_weapon_mastiff"/>
+    <item name="MGL Mag Launcher" value="mp_weapon_mgl"/>
+    <item name="EM-4 Cold War" value="mp_weapon_pulse_lmg"/>
+    <item name="R-97" value="mp_weapon_r97"/>
+    <item name="Archer" value="mp_weapon_rocket_launcher"/>
+    <item name="R-101 Carbine" value="mp_weapon_rspn101_og"/><!-- BONUS -->
+    <item name="R-201 Carbine" value="mp_weapon_rspn101"/>
+    <item name="Satchel" value="mp_weapon_satchel"/>
+    <item name="Hammond P2016" value="mp_weapon_semipistol"/>
+    <item name="EVA-8 Auto" value="mp_weapon_shotgun"/>
+    <item name="SA-3 Mozambique" value="mp_weapon_shotgun_pistol"/>
+    <!-- mp_weapon_shotgun_doublebarrel exits, but uses the mastiff model, not the r1o model -->
+    <item name="Sidewinder SMR" value="mp_weapon_smr"/>
+    <item name="Kraber" value="mp_weapon_sniper"/>
+    <item name="R-6P Softball" value="mp_weapon_softball"/>
+    <item name="Firestar" value="mp_weapon_thermite_grenade"/>
+    <item name="V-47 Flatline" value="mp_weapon_vinson"/>
+    <item name="B3 Wingman" value="mp_weapon_wingman"/>
+    <item name="Wingman Elite" value="mp_weapon_wingman_n"/><!-- BONUS -->
+</list>
+
+<!-- NOTE: this list only contains weapons placed in r2 maps (except BONUS) -->
+<!-- Reverse engineered from each scripts/weapon/<weapon script>.txt -->
+<!-- weapon printnames are defined in resources/r1_english.txt -->
+<list name="weaponModel">
+    <item name="Alternator" value="models/weapons/alternator_smg/w_alternator_smg.mdl"/>
+    <item name="LG-97 Thunderbolt" value="models/weapons/arc_launcher/w_arc_launcher.mdl"/>
+    <item name="RE-45 Auto" value="models/weapons/p2011_auto/w_p2011_auto.mdl"/>
+    <item name="CAR" value="models/weapons/car101/w_car101.mdl"/>
+    <item name="Charge Rifle" value="models/weapons/defender/w_defender.mdl"/>
+    <item name="Longbow DMR" value="models/weapons/rspn101_dmr/w_rspn101dmr.mdl"/>
+    <item name="Double Take" value="models/weapons/doubletake/w_doubletake.mdl"/>
+    <item name="EPG-1" value="models/weapons/epg/w_epg.mdl"/>
+    <item name="X-55 Devotion" value="models/weapons/hemlock_br/w_hemlock_br"/>
+    <item name="Ticks" value="models/weapons/sentry_frag/sentry_frag_proj.mdl"/>
+    <item name="Frag Grenade" value="models/weapons/grenafes/m20_f_grenade.mdl"/>
+    <item name="G2A5" value="models/weapons/g2/w_g2a4.mdl"/>
+    <item name="Electric Smoke Grenade" value="models/weapons/grenades/smoke_grenade.mdl"/>
+    <item name="Arc Grenade" value="models/weapons/grenades/arc_grenade.mdl"/>
+    <item name="Gravity Star" value="models/weapons/shuriken/w_shuriken.mdl"/>
+    <item name="Pulse Blade" value="models/weapons/kunai/w_kunai.mdl"/><!-- BONUS -->
+    <item name="Hemlok BF-R" value="models/weapons/m1a1_hemlok/w_hemlock.mdl"/>
+    <item name="Volt" value="models/weapons/hemlok_smg/w_hemlock_smg.mdl"/>
+    <item name="Spitfire" value="models/weapons/lmg_hemlock/w_lmg_hemlock.mdl"/>
+    <item name="L-STAR" value="models/weapons/lstar/w_lstar.mdl"/>
+    <item name="Mastiff" value="models/weapons/mastiff_stgn/w_mastiff.mdl"/>
+    <item name="MGL Mag Launcher" value="models/weapons/mgl_at/w_mgl_at.mdl"/>
+    <item name="EM-4 Cold War" value="models/weapons/pulse_lmg/w_pulse_lmg.mdl"/>
+    <item name="R-97" value="models/weapons/r97/w_r97.mdl"/>
+    <item name="Archer" value="models/weapons/shoulder_rocket_SRAM/w_shoulder_rocket_SRAM_v2.mdl"/>
+    <item name="R-101 Carbine" value="models/weapons/r101_sfp/w_r101_sfp.mdl"/><!-- BONUS -->
+    <item name="R-201 Carbine" value="models/weapons/rspn101/w_rspn101.mdl"/>
+    <item name="Satchel" value="models/weapons/clacker_detonator/w_detonator_satchel.mdl"/>
+    <item name="Hammond P2016" value="models/weapons/p2011/w_p2011.mdl"/>
+    <item name="EVA-8 Auto" value="models/weapons/w1128/w_w1128.mdl"/>
+    <item name="SA-3 Mozambique" value="models/weapons/pstl_sa3/w_pstl_sa3.mdl"/>
+    <!-- mp_weapon_shotgun_doublebarrel exits, but uses the mastiff model, not the r1o model -->
+    <item name="Sidewinder SMR" value="models/weapons/auto_rocket_launcher_ARL/w_ARL.mdl"/>
+    <item name="Kraber" value="models/weapons/at_rifle/w_at_rifle.mdl"/>
+    <item name="R-6P Softball" value="models/weapons/softball_at/w_softball_at.mdl"/>
+    <item name="Firestar" value="models/weapons/shuriken/w_shuriken.mdl"/>
+    <item name="V-47 Flatline" value="models/weapons/vinson/w_vinson.mdl"/>
+    <item name="B3 Wingman" value="models/weapons/b3wing/w_b3wing.mdl"/>
+    <item name="Wingman Elite" value="models/weapons/wingman_elite/w_wingman_elite.mdl"/><!-- BONUS -->
+</list>
+
+<!-- scripts/vscripts/sh_damage_types.nut enum eModSourceId -->
+<!-- scripts/vscripts/sh_damage_types.nut modNameStrings & resources/r1_english.txt -->
+<!-- pulls from server's persistent_player_data.pdef & scripts/datatable/pilot_weapon_mods.rpak -->
+<!-- https://github.com/R2Northstar/NorthstarMods/blob/2377d719e6999f460f0f685d6e7d694f7d0b67be/Northstar.CustomServers/mod/scripts/datatable/pilot_weapon_mods_common.csv -->
+<!-- TODO: list of allowed weapons for each mod -->
+<!-- NOTE: many mods exist but idk how to implement here (Burn Card R97 etc.) -->
+<list name="weaponMod">
+    <!-- attachment -->
+    <item name="Factory Issue" value="iron_sights"/>
+    <item name="AOG" value="aog"/>
+    <item name="HCOG" value="hcog"/>
+    <item name="Holosight" value="holosight"/>
+    <item name="Variable Zoom" value="scope_4x"/>
+    <item name="4x Zoom Scope" value="scope_6x"/>
+    <item name="HCOG Ranger" value="redline_sight"/>
+    <item name="Threat Scope" value="threat_scope"/>
+    <!-- mod -->
+    <item name="Extended Magazine" value="extended_ammo"/>
+    <item name="Silencer" value="silencer"/>
+    <item name="Stabilizer" value="Stabilizer"/>
+    <item name="Slammer" value="slammer"/>
+    <item name="Enhanced Targetting" value="enhanced_targeting"/>
+    <item name="Single Lock" value="single_lock"/>
+    <item name="Ricochet" value="ricochet"/>
+    <item name="Alt Spread" value="alt_spread"/>
+    <item name="Charge Hack" value="quick_charge"/>
+    <item name="Gunrunner" value="pas_run_and_gun"/>
+    <item name="Tactikill" value="tactical_cdr_on_kill"/>
+    <item name="Gun Ready" value="pas_fast_ads"/>
+    <item name="Quick Swap" value="pas_fast_swap"/>
+    <item name="Speedloader" value="pas_fast_reload"/>
+    <!-- mod3 -->
+    <item name="Pro Screen" value="pro_screen"/>
+</list>
+
+<!-- NOTE: pilot weapon pickups only! -->
+<!-- weapons are spawned as pickups by scrips/vscripts/mp/_pickups.gnut CreateWeaponPickup -->
+<!-- looks like you need to precache the weapons in a script -->
+<point name="info_target" color="1 .75 .25" box="-16 -16 -16 16 16 16">
+Generic placeholder for inserting weapon pickups and other script items. Goes in _script.ent.
+-------- KEYS --------
+<weapon key="editorclass" name="Editor Class">TODO: spawn an editorclass like any entity classname.</weapon>
+<weapon key="script_weapon" name="Weapon">Sets weapon behaviour (scripts/weapons/WEAPON.txt)</weapon>
+<weaponModel key="model" name="Weapon Model">Path/name of model to use for this pickup (e.g. models/weapons/p2011/w_p2011.mdl).</weaponModel>
+<real key="scale" name="Uniform Scale" value="1">Floating-point value used to scale a model up or down (default 1.0).</real>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of PITCH, YAW, and ROLL (default 0 0 0).</angles>
+<string key="link_guid" name="Script Link GUID">Used by scripts, I think. might be compiler generated.</string>
+<weaponMod key="script_mods" name="Attachments" value="Factory Issue">Weapon sight / mod; unsure how to do multiple; OPTIONAL</weaponMod>
+<string key="script_name" name="Script Name">Set to "training_weapon_pickup" to force the player to reload before using; unsure of how to use otherwise</string>
+<real key="fadedist" name="Fade Distance" value="-1">Floating-point distance at which to fade out the pickup model (default -1 for never fade out).</real>
+<boolean key="start_constrained" name="Start Constrained">Flag for sp_training and sp_s2s weapon pickups </boolean>
+-------- NOTES --------
+Script Weapon, Editor Class and Weapon Model should all match!
+IDK how to do multiple attachments
+Script Name is a mystery, couldn't find references in vscripts
+</point>
+
+<!-- TODO: more info_target editorclasses -->
+
+</classes>

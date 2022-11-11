@@ -78,6 +78,7 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
  * Write `fuse.py`
    - parse `.xml`
    - parse `.json`
+     * allow changes to choicesList types (choice names) e.g. `TEAM_IMC`
    - apply changes
    - write to `simulacrum/<game>/<block_entities>.ent`
  * Write `quality_assurance.py`
