@@ -5,10 +5,11 @@ raise NotImplementedError("fusey's on smoko mate")
 # --  * write `info_example.json`
 # -- for each `ENTITIES.xml`
 # --  * parse `.xml`
-# --  * collect changes from `.json` (1 per entity, w/ same name)
-# --  * credit `.json` contributor(s)
+# --  * collect changes from `.json` (1 per entity or choiceType)
+# --  * credit `.json` contributor(s) in a comment above definition
 # --  * FUSE `.xml` base with `.json` changes into renamed `.ent`
 # --  * write to f"simulacrum/<game>/{ent_filename[xml_filename]}"
+#
 # -- mimic pilot regen screen
 
 ent_filename = {"ENTITIES.xml": "entities.ent",
@@ -17,3 +18,7 @@ ent_filename = {"ENTITIES.xml": "entities.ent",
                 "ENTITIES_script.xml": "script_entities.ent",
                 "ENTITIES_spawn.xml": "spawn_entities.ent",
                 "ENTITIES_snd.xml": "sound_entities.ent"}
+
+types = {"float": "real"}  # fuzzy matching
+defaults - {"float": "1.0"}  # allow undefined
+# TODO: choiceTypes default to first Option
