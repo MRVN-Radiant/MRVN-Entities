@@ -1,0 +1,8 @@
+{
+    "Name": "hardpointGroup"
+    "Options": {
+                "Point A": "A",
+                "Point B": "B",
+                "Point C": "C",
+               }
+}
