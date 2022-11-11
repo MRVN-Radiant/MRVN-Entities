@@ -1,7 +1,7 @@
 {
     "Contributors": ["catornot", "snake-biscuits"],
     /* index */
-    "Block": "ENTITIES",
+    "Block": "ENTITIES_script",
     "Entity": "info_player_start",
     /* overrides */
     "Color": ".3 .3 1",  /* spawn color */
