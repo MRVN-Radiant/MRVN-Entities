@@ -76,9 +76,9 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
 
 ## TODOs
  * Write `fuse.py`
-   - decide on `.json` layout
-     - write `info_example.json`
-   - parse `.xml` & apply changes
+   - parse `.xml`
+   - parse `.json`
+   - apply changes
    - write to `simulacrum/<game>/<block_entities>.ent`
  * Write `quality_assurance.py`
    - verify `.json` has good data, no typos

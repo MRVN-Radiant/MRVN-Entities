@@ -8,8 +8,10 @@ See:
  * `STYLE.md` breakdown on entity color palette
    - feel free to define your own category and add it to the list
    - Use the rest as a guide, but don't follow it too closely, it's not a rulebook
- * `info_example.json` example input in `pilot/`
- * `info_example.xml` example output to `simulacrum/`
+ * Examples:
+   - input: `mrvn/info_example.xml` (**TODO**)
+   - input: [`pilot/info_example.json`](https://github.com/MRVN-radiant/MRVN-entities/blob/maste/pilot/info_example.json)
+   - output: [`simulacrum/info_example.xml`](https://github.com/MRVN-radiant/MRVN-entities/blob/maste/simulacrum/info_example.ent)
 
 Order:
  - Try to maintain order of `index` 1st, `override` 2nd

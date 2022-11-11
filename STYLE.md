@@ -1,9 +1,9 @@
 # StyleGuide
- 
+
 > NOTE: this is a guide to aim for consistency, but it's not gonna be strongly enforced
 > -- mostly here as a reference
 
- - Order
+ - Entity Order
    * Alphabetical
    * Group headings (don't break alphabetical order to make groups)
  - Colour
@@ -23,6 +23,13 @@
    * Check for any empty fields `name=""`
    * Check for unguarded values `value=1`
 
+
+### Examples
+ * Input
+   - `mrvn/info_example.xml` (**TODO**)
+   - [`pilot/info_example.json`](https://github.com/MRVN-radiant/MRVN-entities/blob/maste/pilot/info_example.json)
+ * Output
+   - [`simulacrum/info_example.xml`](https://github.com/MRVN-radiant/MRVN-entities/blob/maste/simulacrum/info_example.ent)
 
 ## Trigger Colours
 
@@ -92,10 +99,6 @@ Don't upset `flake8` & try to follow [The Zen of Python](https://peps.python.org
 ## JSON
 
 > TODO: `.json` linter
-
-See:
- * `info_example.json` example input in `pilot/`
- * `info_example.xml` example output to `simulacrum/`
 
 Order:
  - Try to maintain order of `index` 1st, `override` 2nd
