@@ -1,0 +1,12 @@
+<!-- will be fused with ENTITIES.xml to create entities.ent -->
+
+<!-- Contributed by snake-biscuits -->
+<point name="info_example">
+----- KEYS -----
+<targetname key="name" name="Display Name" value="info_example_">Changed.</targetname><!-- .json didn't define "default" targetname -->
+----- SPAWNFLAGS -----
+<flag bit="0" name="NO_RENDER" value="1">Don't render</flag>
+----- NOTES -----
+Added by Titanfall
+This goes under the NOTES header &amp; the first line is not overridden
+</point>

@@ -1,0 +1,9 @@
+* text=auto
+# code
+*.py text eol=lf
+# mrvn
+*.xml text eol=lf
+# pilot
+*.json text eol=lf
+# simulacrum (artifact)
+*.ent text eol=lf
