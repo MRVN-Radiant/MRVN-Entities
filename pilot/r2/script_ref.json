@@ -1,0 +1,24 @@
+{
+    "Contributors": ["catornot", "snake-biscuits"],
+    /* index */
+    "Block": "ENTITIES_script",
+    "Entity": "script_ref",
+    /* overrides */
+    "Description": "ref script (baseclass for a bunch of entities)",
+	"Keys": [
+             {
+                "keyname": "teamnum",
+                "type": "teamNumber",
+                "name": "Team Number",
+                "description": "Team(s) allowed to spawn here"
+             },
+             /* TODO: build each editorclass as it's own entity */
+             /* TODO: add editorclass support to MRVN-radiant */
+             {
+                "keyname": "editorclass",
+                "type": "string",
+                "name": "Editor Class",
+                "description": "entity subtype"
+             }
+            ]
+}
