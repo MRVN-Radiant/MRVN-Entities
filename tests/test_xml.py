@@ -5,7 +5,7 @@ import pytest
 import xmlschema
 
 
-ent_schema = xmlschema.XMLSchema("schema/entity_definitions.xsd")
+ent_schema = xmlschema.XMLSchema("tests/schema/entity_definitions.xsd")
 
 games = tuple(filter(os.path.isdir, os.listdir("mrvn")))
 
@@ -18,4 +18,4 @@ simulacrum_ent = [os.path.join("simulacrum", g, e) for g in games
 
 @pytest.mark.parametrize("xml_filename", (*mrvn_xml, *simulacrum_ent))
 def validate(xml_filename: str):
-    raise NotImplementedError()
+    ent_schema.validate(xml_filename)
