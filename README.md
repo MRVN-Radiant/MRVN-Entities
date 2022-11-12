@@ -75,23 +75,18 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
 
 
 ## TODOs
- * Write `fuse.py`
-   - parse `.xml`
-   - parse `.json`
-     * allow changes to choicesList types (choice names) e.g. `TEAM_IMC`
-   - apply changes
-   - write to `simulacrum/<game>/<block_entities>.ent`
- * Write `quality_assurance.py`
-   - verify `.json` has good data, no typos
-   - don't enforce styleguide, essentials only
-   - break if:
-     * `contributors` missing
-     * invalid index for `block`, `entity`, `key` or `spawnflag`
-   - suggest fixes
+ - [ ] Write `fuse.py`
+   - see #5
+ - [ ] Write `tests/`
+   - [ ] `test_bloodhound.py`
+   - [ ] `test_fuse.py`
+   - [x] `mrvn/` & `simulacrum/` `test_xml.py` (see #5)
+   - [x] `pilot/` `test_json.py` (see #5)
  * GitHub Workflows
-   - lint `.xml`
-   - run `quality_assurance.py`
-   - run `fuse.py`
-   - turn `simulacrum/` into an artifact
- * Documentation
-   - using `fgd2ent.py` to compare `omega_entity` to `fgd.entities` to find the "Ur" entity
+   - [ ] lint python
+   - [ ] run `fuse.py`
+   - [ ] run `tests/`  (2nd to include latests `simulacrum/`)
+   - [ ] create `simulacrum/` artifact
+ - [ ] Documentation
+   - [ ] extending `fgd2ent` to auto-fill common keys & updating the repo w/ `bloodhound.py`
+   - [ ] using `snake-biscuits/bsp_tool_examples/fgd2ent.py` in a REPL for research

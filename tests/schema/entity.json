@@ -1,0 +1,103 @@
+{
+  "title": "MRVN-radiant Entity Definition",
+  "description": "an entity defintion to be amended in a .ent file",
+  "type": "object",
+  "properties": {
+    "Contributors": {
+      "description": "List of people that contributed to this definition",
+      "type": "array",
+      "items": {
+          "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "Block": {
+      "description": "Entity block (mrvn/game/<Block>.xml) this definition overrides",
+      "type": "string",
+      "pattern": "ENTITIES(_(env|fx|script|spawn|snd))?"
+    },
+    "Entity": {
+      "description": "Entity classname & json filename (TODO: editorclass)",
+      "type": "string",
+      "pattern": "[a-z]*(_[a-z])*"
+    },
+    "Type": {
+      "description": "Entity type (group for brush entities)",
+      "type": "string",
+      "pattern": "point|group"
+    },
+    "Description": {
+      "description": "One-line descrition",
+      "type": "string"
+    },
+    "Keys": {
+      "description": "List of entity keys",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "keyname": {
+            "description": "INDEX: Name of key (as it appears in bsp entity data) to override",
+            "type": "string"
+          },
+          "type": {
+            "description": "MRVN-radiant type to use (affects editor preview & interface widget)",
+            "type": "string"
+          },
+          "name": {
+            "description": "Key name displayed in MRVN-radiant",
+            "type": "string"
+          },
+          "default": {
+            "description": "Default value",
+            "type": "string"
+          },
+          "description": {
+            "description": "Description of key use & default behaviour",
+            "type": "string"
+          }
+        },
+        "required": [ "keyname" ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "SpawnFlags": {
+      "description": "List of entity keys",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bit": {
+            "description": "INDEX: bit to override",
+            "value": "integer"
+          },
+          "name": {
+            "description": "Spawnflag name displayed in MRVN-radiant",
+            "type": "string"
+          },
+          "default": {
+            "description": "Default value",
+            "type": "string"
+          },
+          "description": {
+            "description": "Description of spawnflag use & default behaviour",
+            "type": "string"
+          }
+        },
+      "required": [ "bit" ]
+      }
+    },
+    "Notes": {
+      "description": "Detailed general description & notes",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "required": [ "Contributors", "Block", "Entity" ]
+  }
+}
