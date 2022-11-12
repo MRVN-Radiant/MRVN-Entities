@@ -25,8 +25,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi  # bloodhound.py only
-        if [ -f tests/requirements.txt ]; then pip install -r tests/requirements.txt; fi  # tests/
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        if [ -f tests/requirements.txt ]; then pip install -r tests/requirements.txt; fi
     - name: Check if Bloodhound and Fuse are OK
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -37,6 +37,7 @@ jobs:
     - name: Fuse
       run: |
         python fuse.py
+        # TODO: switch to --fast (MUST validate mrvn/ first to avoid malicious XML)
     # TODO: pytest option to isolate simulacrum/
     - name: Test scripts with Pytest + Validate mrvn, pilot & simulacrum
       run: |
