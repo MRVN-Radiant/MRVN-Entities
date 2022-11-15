@@ -1,14 +1,12 @@
 {
     "Contributors": ["catornot", "snake-biscuits"],
-    /* index */
     "Block": "ENTITIES_script",
     "Entity": "move_rope",
-    /* overrides */
     "Todo": "model=\"models/editor/axis_helper.obj\" from Source Hammer",
-    "Color": ".3 .3 1",  /* zipline yellow */
+    "Color": ".3 .3 1",
     "Box": "-8 -8 -8 8 8 8",
     "Description": "One end of a Zipline",
-	"Keys": [
+    "Keys": [
              {
                 "keyname": "targetname",
                 "type": "targetname",
@@ -28,7 +26,6 @@
                 "default": "True",
                 "description": "Set to true for zipline"
              }
-             /* TODO: Subdiv, slack, MoveSpeed */
             ],
     "Notes": [
                 "You can also use move_rope and keyframe_rope to make decorative cables",

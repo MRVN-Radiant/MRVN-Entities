@@ -1,11 +1,9 @@
 {
     "Contributors": ["catornot", "snake-biscuits"],
-    /* index */
-    "Block": "ENTITIES",
+    "Block": "ENTITIES_script",
     "Entity": "prop_dynamic",
-    /* overrides */
     "Description": "Adds a model to the world that be animated & controled by scripts",
-	"Keys": [
+    "Keys": [
              {
                 "keyname": "teamnum",
                 "type": "teamNumber",

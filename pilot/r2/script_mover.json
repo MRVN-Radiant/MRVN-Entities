@@ -1,11 +1,9 @@
 {
     "Contributors": ["catornot", "snake-biscuits"],
-    /* index */
     "Block": "ENTITIES_script",
     "Entity": "script_mover",
-    /* overrides */
     "Description": "Used to spawn mover scripts",
-	"Keys": [
+    "Keys": [
              {
                 "keyname": "teamnum",
                 "type": "teamNumber",

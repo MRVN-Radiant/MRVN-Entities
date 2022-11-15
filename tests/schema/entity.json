@@ -97,7 +97,6 @@
       },
       "minItems": 1,
       "uniqueItems": true
-    },
-    "required": [ "Contributors", "Block", "Entity" ]
+    }
   }
 }

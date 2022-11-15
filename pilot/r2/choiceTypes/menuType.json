@@ -1,7 +1,7 @@
 {
-    "Name": "menuType"
+    "Name": "menuType",
     "Options": {
                 "Camera": "menu_camera_target",
                 "Menu": "menu_scene_ref"
-               }
+    }
 }

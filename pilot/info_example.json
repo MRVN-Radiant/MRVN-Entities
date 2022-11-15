@@ -1,16 +1,12 @@
-/* name this file info_example.json to match "Entity" */
 {
     "Contributors": ["snake-biscuits"],
-    /* Index */
-    "Block": "ENTITIES",  /* override mrvn/ENTITES.xml */
-    "Entity": "info_example",  /* entity name this file affects */
-    /* Overrides, in Order of Appearance */
-    "Type": "point",  /* point for point entitiy, group for brush entitiy */
+    "Block": "ENTITIES",
+    "Entity": "info_example",
+    "Type": "point",
     "Description": "An example point entity",
     "Keys": [
         {
-            "keyname": "name",  /* name of key to override / add */
-            /* overrides, in Order of Appearance */
+            "keyname": "name",
             "type": "targetname",
             "name": "Display Name",
             "description": "Changed."
@@ -18,8 +14,7 @@
     ],
     "SpawnFlags": [
        {
-           "bit": 0,  /* Index of bit to override / add*/
-           /* overrides, in Order of Appearance */
+           "bit": 0,
            "name": "NO_RENDER",
            "default": "True",
            "description": "Don't render"

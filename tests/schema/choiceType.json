@@ -1,0 +1,16 @@
+{
+    "title": "MRVN-radiant Entity choiceType",
+    "description": "a list of options for a key / selection box in MRVN-radiant",
+    "type": "object",
+    "properties": {
+        "Name": {
+            "description": "snakeCase name of this choiceType",
+            "type": "string",
+            "pattern": "[a-z][a-zA-Z]*"
+        },
+        "Options": {
+            "description": "list of pairs; name & value for each",
+            "type": "object"
+        }
+    }
+}

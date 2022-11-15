@@ -1,11 +1,9 @@
 {
     "Contributors": ["catornot", "snake-biscuits"],
-    /* index */
     "Block": "ENTITIES_script",
     "Entity": "info_target_clientside",
-    /* overrides */
     "Description": "Can be used to spawn the menu lobby in mp matches with the appropriate script names",
-	"Keys": [
+        "Keys": [
              {
                 "keyname": "script_name",
                 "type": "menuType",
