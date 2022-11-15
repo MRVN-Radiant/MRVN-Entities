@@ -28,7 +28,6 @@ defaults = {"float": "1.0"}  # allow undefined
 
 
 if __name__ == "__main__":
-    print("...")
     for game in filter(lambda p: os.path.isdir(os.path.join("mrvn", p)), os.listdir("mrvn")):
         print(f"processing mrvn/{game}/")
         in_dir = os.path.join("mrvn", game)
@@ -46,14 +45,19 @@ if __name__ == "__main__":
 
         ent_overrides = collections.defaultdict(set)
         # ^ {"ENTITIES.xml": {"entity.json"}}
-        for json_filename in fnmatch.filter(json_dir, "*.json"):
-            entity = json.load(json_filename)
+        for json_filename in fnmatch.filter(os.listdir(json_dir), "*.json"):
+            try:
+                with open(os.path.join(json_dir, json_filename)) as json_file:
+                    entity = json.load(json_file)
+            except Exception as exc:
+                print(f"{json_filename} broke ({exc.__name__})")
+                # raise exc
             # TODO:
             # if safe:  # copy of tests.test_json.validate()
             #     assert jsonschema.is_valid(entity)
             #     assert entity["Entity"] in blocks[entity["Block"]]
             #     # TODO: validate type defaults
-            ent_overrides[f"{entity['Block']}.xml"].add()
+            ent_overrides[f"{entity['Block']}.xml"].add(json_filename)
         print(f"collected {sum(map(len, ent_overrides.values()))} entities across {len(ent_overrides)} blocks")
 
         for xml_filename in fnmatch.filter(os.listdir(in_dir), "*.xml"):
