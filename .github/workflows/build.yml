@@ -43,13 +43,13 @@ jobs:
       - name: Test scripts with Pytest + Validate mrvn, pilot & simulacrum
         run: |
           pytest -vv
-      - name: Test Simulacrum name
+      - name: Generate Simulacrum name
         run: |
-          echo MRVN-entities_`date -u -Idate`_${GITHUB_SHA::7}
+          echo "SIMULACRUM_NAME=$(echo MRVN-entities_`date -u -Idate`_${GITHUB_SHA::7})" >> $GITHUB_ENV
       - name: Export Simulacrum Artifact
         uses: actions/upload-artifact@v3
         with:
           # I sure hope I can execute code in the name here...
-          name: MRVN-entities_`date -u -Idate`_${GITHUB_SHA::7}
+          name: ${{ env.SIMULACRUM_NAME }}
           path: simulacrum/
           if-no-files-found: error
