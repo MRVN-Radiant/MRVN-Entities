@@ -1,5 +1,4 @@
 git+https://github.com/snake-biscuits/bsp_tool@master#egg=bsp_tool
-git+https://github.com/snake-biscuits/bsp_tool_examples@master#egg=bsp_tool_examples
 jsonschema
 xmlschema
 valvefgd==1.0.3
