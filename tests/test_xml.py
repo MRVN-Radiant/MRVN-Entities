@@ -1,8 +1,8 @@
 import fnmatch
 import os
 
-import pytest
-import xmlschema
+# import pytest
+# import xmlschema
 
 
 # ent_schema = xmlschema.XMLSchema("tests/schema/entity_definitions.xsd")
@@ -16,6 +16,6 @@ simulacrum_ent = [os.path.join("simulacrum", g, e) for g in games
                   for e in fnmatch.filter(os.listdir(f"simulacrum/{g}"), "*.ent")]
 
 
-@pytest.mark.parametrize("xml_filename", (*mrvn_xml, *simulacrum_ent))
-def test_entity_definitions(xml_filename: str):
-    ent_schema.validate(xml_filename)
+# @pytest.mark.parametrize("xml_filename", (*mrvn_xml, *simulacrum_ent))
+# def test_entity_definitions(xml_filename: str):
+#     ent_schema.validate(xml_filename)

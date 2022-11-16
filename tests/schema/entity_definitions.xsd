@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="classes" type="root"/>
+
+    <!-- TODO: choiceType lists -->
+    <!-- TODO: generate choiceType checks at test time -->
+
+    <!-- key types -->
+    <xs:complexType name="angles">
+        <xs:attribute name="key" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string" use="optional">  <!-- default -->
+            <xs:simpleType>
+                <!--
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="360|3[0-5][0-9]|[0-2][0-9]{2}|[0-9]{1,2} 360|3[0-5][0-9]|[0-2][0-9]{2}|[0-9]{1,2} 360|3[0-5][0-9]|[0-2][0-9]{2}|[0-9]{1,2}"/>
+                </xs:restriction>
+                -->
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="boolean">
+        <xs:attribute name="key" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string" use="optional">  <!-- default -->
+            <xs:simpleType>
+                <xs:restriction base="xs:string">  <!-- "1" -->
+                    <xs:pattern value="0|1"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="integer">
+        <xs:attribute name="key" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:integer" use="optional"/>
+    </xs:complexType>
+
+    <!-- entitiy types -->
+    <xs:element name="point">
+        <xs:complexType>
+            <!-- keys -->
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element type="angles"/>
+                <xs:element type="boolean"/>
+                <xs:element type="integer"/>
+                <!-- TODO: model, targetname, string etc.-->
+            </xs:sequence>
+            <!-- TODO: spawnflags -->
+            <!-- NOTE: attributes must be defined last-->
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="color" type="xs:string" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">  <!-- "1 0 .234" -->
+                        <xs:pattern value="1|0|(0?\.[0-9]+) 1|0|(0?\.[0-9]+) 1|0|(0?\.[0-9]+)"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="box" type="xs:string" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">  <!-- "-8 -8 -8 8 8 8" -->
+                        <xs:pattern value="-?[0-9]+ -?[0-9]+ -?[0-9]+ -?[0-9]+ -?[0-9]+ -?[0-9]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="model" type="cs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- TODO: "group" brush entities -->
+
+</xs:schema>
