@@ -46,6 +46,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           # I sure hope I can execute code in the name here...
-          name: MRVN-entities_`date -u -Idate`_${{ GITHUB_SHA }}
+          name: MRVN-entities_`date -u -Idate`_${github.sha::7}
           path: simulacrum/
           if-no-files-found: error
