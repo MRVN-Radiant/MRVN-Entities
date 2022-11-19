@@ -14,7 +14,7 @@ Turns Pilots into Simulacra with the power of fanfiction
 Clone this repo:  
 
 ```
-$ git clone https://github.com/snake-biscuits/MRVN-entities.git
+$ git clone https://github.com/MRVN-radiant/MRVN-entities.git
 ```  
 
 ### Windows
