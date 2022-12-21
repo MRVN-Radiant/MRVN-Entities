@@ -50,6 +50,7 @@ def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
         if any([v.startswith("*") for v in omega_entity.get("model", list())]):  # brush entity
             out["new"].remove("model")
             out["type"] = "group"
+        # TODO: catch trigger plane definitions
         if "origin" in out["new"]:  # automatically added by Radiant
             out["new"].remove("origin")
         return out

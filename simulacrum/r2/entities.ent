@@ -105,11 +105,12 @@ Added: scale
 TODO: identify changes
 </point>
 
-<point name="info_spawnpoint_flag" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits-->
+<point name="info_spawnpoint_flag" color=".9 .2, .0" box="-70 -48 0 70 48 224" model="models/signs/flag_base_pole_ctf.obj">
 ----- KEYS -----
 <string key="TeamNum" name="TeamNum">New in Titanfall; TODO: identify</string>
 <string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
-<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) that own this flag</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
 </point>

@@ -272,6 +272,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
+<!--catornot, snake-biscuits-->
 <point name="script_ref" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="NPC_Titan" name="NPC_Titan">New in Titanfall; TODO: identify</string>
@@ -302,7 +303,7 @@ Introduced by Titanfall
 <string key="path_speed" name="path_speed">New in Titanfall; TODO: identify</string>
 <string key="spawner" name="spawner">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="editorclass" name="editorclass">New in Titanfall; TODO: identify</string>
+<string key="editorclass" name="Editor Class" value="">entity subtype</string>
 <string key="scr_flagSet" name="scr_flagSet">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_9" name="link_to_guid_9">New in Titanfall; TODO: identify</string>
@@ -314,7 +315,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="script_noteworthy" name="script_noteworthy">New in Titanfall; TODO: identify</string>
 <model key="leveled_model" name="leveled_model">New in Titanfall; TODO: identify</model>
 <string key="radius" name="radius">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -967,6 +968,7 @@ Removed: globalname, parentname, filtername
 TODO: identify changes
 </group>
 
+<!--catornot, snake-biscuits-->
 <point name="prop_dynamic" color="1 0 1" box="-8 -8 -8 8 8 8">
 A prop that can be placed in hierarchy and can play animations.
 It can also be configured to break when it takes enough damage.
@@ -1091,7 +1093,7 @@ Inbetween the random animations, it will revert to playing the 'Default Animatio
 <string key="enable_updown" name="enable_updown">New in Titanfall; TODO: identify</string>
 <string key="leveled_animation" name="leveled_animation">New in Titanfall; TODO: identify</string>
 <string key="drp_followstyle" name="drp_followstyle">New in Titanfall; TODO: identify</string>
-<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
+<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Source
 Added: rotation_degrees_left, link_to_guid_5, mobility_2_normal, link_to_guid_3, teamnumber, gamemode_lts, scr_flagRequired, multiUseDelay, gamemode_ctf, hintString_press, scale, editorclass, script_name, gamemode_cp, leveled_model, drp_spawnstyle, usable, effect_name, collide_human, hintString_hold, singleUse, link_to_guid_7, link_to_guid_8, link_to_guid_6, luxelsize, mobility_3_hard, target, lightingMethod, path_speed, DisableStatusLights, SuppressAnimSounds, drp_despawnstyle, enable_rotation, instance_name, enable_inout, use_linked_panel, rotation_speed_scale, mobility_1_easy, mingpulevel, gamemode_fd, link_to_guid_1, link_to_guid_0, motionActivated, collide_sight, link_to_guid_2, spawnflags, ClientSide, maxcpulevel, link_guid, SpawnAsPhysicsMover, static_model, spawner, maxgpulevel, drp_pannelmodel, physicsmode, hibernation_enable, collide_titan, drp_respawn_time, collide_bullet, script_noteworthy, gamemode_tdm, scr_flagToggle, script_delay, gamemode_lh, drawinfastreflection, startOpen, gamemode_sur, link_to_guid_4, script_flag, disableselfshadowing, disableX360, drp_carrystyle, isModel, mincpulevel, collide_ai, HoldAnimation, nodamageforces, rotation_degrees_right, enable_updown, leveled_animation, drp_followstyle, fadedist
@@ -1099,12 +1101,13 @@ Removed: fademaxdist, mindxlevel, BreakModelMessage, globalname, damagefilter, f
 TODO: identify changes
 </point>
 
-<point name="move_rope" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits-->
+<point name="move_rope" color=".3 .3 1" box="-8 -8 -8 8 8 8">
 The first node in set of nodes that are used to place ropes in the world.
 It should connect to 1 or more keyframe_rope entities.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<string key="NextKey" name="Next KeyFrame" value="None">Name of the next keyframe along this keyframe path.</string>
+<targetname key="targetname" name="Target name" value="None">The targetname of this end of the zipline</targetname>
+<targetname key="NextKey" name="Target" value="None">The targetname of the other end of the zipline</targetname>
 <integer key="MoveSpeed" name="Speed (units per second)" value="64"/>
 <integer key="Slack" name="Slack" value="25">How much extra length the rope has (by default it has the length between its two endpoints in the editor).</integer>
 <type key="Type" name="Type" value="0"/>
@@ -1134,7 +1137,7 @@ Currently only type 2 (Rope) is fully supported.</positionInterpolator>
 <string key="UseWind" name="UseWind">New in Titanfall; TODO: identify</string>
 <string key="maxgpulevel" name="maxgpulevel">New in Titanfall; TODO: identify</string>
 <string key="mingpulevel" name="mingpulevel">New in Titanfall; TODO: identify</string>
-<string key="Zipline" name="Zipline">New in Titanfall; TODO: identify</string>
+<boolean key="Zipline" name="Is a zipline" value="">Set to true for zipline</boolean>
 ----- SPAWNFLAGS -----
 <flag name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: get description from VDC</flag>
 ----- NOTES -----
@@ -1165,6 +1168,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
+<!--catornot, snake-biscuits-->
 <point name="info_target_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
@@ -1173,7 +1177,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="editorclass" name="editorclass">New in Titanfall; TODO: identify</string>
-<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
+<menuType key="script_name" name="Script Name" value="">name of script to use for this clientside ent</menuType>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- SPAWNFLAGS -----
 <flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
@@ -2056,7 +2060,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="info_player_start" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits-->
+<point name="info_player_start" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
 This entity indicates the position and facing direction at which the player will spawn.
 Any number of info_player_start entities may be placed in a map for when working in cordoned-off portions of the map.
 When multiple info_player_start entities are present in a map, set the 'Master' spawnflag on one of them to indicate which one should be used when running the entire map.
@@ -2064,8 +2069,8 @@ When multiple info_player_start entities are present in a map, set the 'Master' 
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
 Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real><boolean keyname="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean keyname="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean keyname="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean><boolean keyname="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean><boolean keyname="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean keyname="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean keyname="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean keyname="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean><boolean keyname="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean><boolean keyname="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean keyname="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean keyname="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean><boolean keyname="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean keyname="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean keyname="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean keyname="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean keyname="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean><boolean keyname="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean keyname="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean><boolean keyname="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean keyname="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
 ----- NOTES -----
 Introduced by Source
 Added: spawnflags, targetname, teamnum, scale
@@ -2526,6 +2531,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
+<!--catornot, snake-biscuits-->
 <point name="script_mover" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <model key="model" name="World Model"/>
@@ -2553,7 +2559,7 @@ Introduced by Titanfall
 <string key="parent_linked_ents" name="parent_linked_ents">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_39" name="link_to_guid_39">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_18" name="link_to_guid_18">New in Titanfall; TODO: identify</string>
-<string key="path_speed" name="path_speed">New in Titanfall; TODO: identify</string>
+<float key="path_speed" name="Path Speed" value="">the speed at which the mover travels on its path</float>
 <string key="link_to_guid_46" name="link_to_guid_46">New in Titanfall; TODO: identify</string>
 <string key="follow_path" name="follow_path">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_15" name="link_to_guid_15">New in Titanfall; TODO: identify</string>
@@ -2574,7 +2580,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="stop_sound_move_on_stop" name="stop_sound_move_on_stop">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_20" name="link_to_guid_20">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_1" name="link_to_guid_1">New in Titanfall; TODO: identify</string>
-<string key="leveledplaced" name="leveledplaced">New in Titanfall; TODO: identify</string>
+<boolean key="leveledplaced" name="Placed in LevelEd" value="">I think it activates its path idk</boolean>
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_49" name="link_to_guid_49">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_23" name="link_to_guid_23">New in Titanfall; TODO: identify</string>
@@ -2582,7 +2588,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="link_to_guid_2" name="link_to_guid_2">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_54" name="link_to_guid_54">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<string key="SpawnAsPhysicsMover" name="SpawnAsPhysicsMover">New in Titanfall; TODO: identify</string>
+<boolean key="SpawnAsPhysicsMover" name="Spawn as physcis mover" value="">set 1 for it to become a bad physics object</boolean>
 <string key="link_to_guid_45" name="link_to_guid_45">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_37" name="link_to_guid_37">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_28" name="link_to_guid_28">New in Titanfall; TODO: identify</string>
@@ -2609,12 +2615,13 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="link_to_guid_21" name="link_to_guid_21">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_55" name="link_to_guid_55">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_56" name="link_to_guid_56">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_34" name="link_to_guid_34">New in Titanfall; TODO: identify</string>
+<string key="link_to_guid_34" name="link_to_guid_34">New in Titanfall; TODO: identify</string><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
 
-<point name="info_hardpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits-->
+<point name="info_hardpoint" color=".9 .2, .0" box="-64 -64 0 64 64 72" model="models/robots/mobile_hardpoint/mobile_hardpoint.obj">
 ----- KEYS -----
 <string key="gamemode_lh" name="gamemode_lh">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"/>
@@ -2628,14 +2635,14 @@ Introduced by Titanfall
 <string key="hardpointFrontlineOverride" name="hardpointFrontlineOverride">New in Titanfall; TODO: identify</string>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<string key="hardpointGroup" name="hardpointGroup">New in Titanfall; TODO: identify</string>
+<hardpointGroup key="hardpointGroup" name="Hardpoint Group" value="">Which Hardpoint is this on the HUD?</hardpointGroup>
 <targetname key="nearTarget" name="nearTarget">New in Titanfall; TODO: identify</targetname>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<float key="scale" name="Scale" value="">Team(s) that own this flag</float>
 <string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
 <string key="gamemode_ffa" name="gamemode_ffa">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_at" name="gamemode_at">New in Titanfall; TODO: identify</string>
+<string key="gamemode_at" name="gamemode_at">New in Titanfall; TODO: identify</string><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) that own this flag</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
 </point>

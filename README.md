@@ -5,8 +5,6 @@ Turns Pilots into Simulacra with the power of fanfiction
 ## Dependants:
  * [pySourceSDK/ValveFGD](https://github.com/pySourceSDK/ValveFGD)
  * [snake-biscuits/bsp_tool](https://github.com/snake-biscuits/bsp_tool)
-   - [snake-biscuits/bsp_tool_examples](https://github.com/snake-biscuits/bsp_tool_examples)
-     - `fgd2ent.py` does the `mrvn/` work, should provide some interactive tools
 
 
 ## Repo Installation
@@ -83,10 +81,15 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
    - [x] `mrvn/` & `simulacrum/` `test_xml.py` (see #5)
    - [x] `pilot/` `test_json.py` (see #5)
  * GitHub Workflows
-   - [ ] lint python
-   - [ ] run `fuse.py`
-   - [ ] run `tests/`  (2nd to include latests `simulacrum/`)
-   - [ ] create `simulacrum/` artifact
+   - [x] lint python
+   - [x] verify `pilot/*.json` jsonschema
+   - [ ] verify `mrvn/*.xml` xmlschema
+   - [x] run `fuse.py`
+   - [x] run `tests/` w/ pytest
+   - [ ] verify `simulacrum/*.ent` xmlschema
+   - [x] create `simulacrum/` artifact
  - [ ] Documentation
-   - [ ] extending `fgd2ent` to auto-fill common keys & updating the repo w/ `bloodhound.py`
-   - [ ] using `snake-biscuits/bsp_tool_examples/fgd2ent.py` in a REPL for research
+   - [ ] extending `bloodhound.py` to auto-fill common keys
+   - [ ] using `bloodhound.py` in a REPL for research
+   - [ ] editorclasses
+   - [ ] [MRVN-Radiant/MRVN-resource-pack sample maps](https://github.com/MRVN-Radiant/MRVN-resource-pack/issues/1)
