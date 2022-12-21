@@ -43,7 +43,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="info_spawnpoint_droppod_start" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits-->
+<point name="info_spawnpoint_droppod_start" color=".3 .3 1" box="TODO" model="TODO: models/dev/mp_droppod_spawn_start.mdl">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"/>
@@ -51,14 +52,14 @@ Introduced by Titanfall
 <string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean>
 <string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
+<boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean>
+<boolean key="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean>
 <string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real><boolean keyname="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean><boolean keyname="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean keyname="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean keyname="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean keyname="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean><boolean keyname="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean keyname="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean keyname="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean keyname="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean keyname="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean keyname="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean keyname="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean keyname="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean keyname="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean><boolean keyname="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean keyname="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean><boolean keyname="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean keyname="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -99,7 +100,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="info_spawnpoint_droppod" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits-->
+<point name="info_spawnpoint_droppod" color=".3 .3 1" box="TODO" model="TODO: models/dev/mp_droppod_spawn.mdl">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"/>
@@ -107,16 +109,16 @@ Introduced by Titanfall
 <string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean>
 <string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
+<boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean>
 <string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real><boolean keyname="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean><boolean keyname="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean keyname="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean keyname="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean keyname="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean><boolean keyname="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean keyname="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean keyname="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean keyname="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean keyname="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean keyname="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean keyname="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean keyname="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean keyname="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean><boolean keyname="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean keyname="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean><boolean keyname="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean keyname="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
