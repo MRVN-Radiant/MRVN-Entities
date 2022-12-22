@@ -3,7 +3,7 @@ import collections
 import fnmatch
 import functools
 import os
-# import re
+import re
 from typing import Any, Dict, List, Set, Union
 
 import bsp_tool
@@ -35,7 +35,7 @@ def ur_ent(maps: MapDict, classname: str = None, **filters: Entity) -> OmegaEnti
 Dossier = Dict[str, Union[str, OmegaEntity]]
 
 class_types = dict(PointClass="point", KeyFrameClass="point", MoveClass="point",
-                   SolidClass="group")
+                   NPCClass="point", SolidClass="group")
 
 
 def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
@@ -50,7 +50,9 @@ def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
         if any([v.startswith("*") for v in omega_entity.get("model", list())]):  # brush entity
             out["new"].remove("model")
             out["type"] = "group"
-        # TODO: catch trigger plane definitions
+        if any([k.startswith("*coll") or k.startswith("*trigger_brush") for k in omega_entity.keys()]):
+            out["type"] = "group"
+            # NOTE: xml_ent will remove these keys for us
         if "origin" in out["new"]:  # automatically added by Radiant
             out["new"].remove("origin")
         return out
@@ -180,7 +182,7 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
         fgd_keys = list()
         spawnflags = list()
     out.append("----- KEYS -----")
-    for key in fgd_keys:
+    for key in fgd_keys:  # preserve fgd order
         if key.value_type == "choices":
             # choices_dict = {c.display_name.lower(): c.value for c in key.choices}
             if {c.display_name.lower(): c.value for c in key.choices} == {"no": 0, "yes": 1}:
@@ -194,10 +196,12 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
         key_description = sanitise_desc(key_description)
         out.append(" ".join([f'<{key_type} key="{key.name}" name="{key.display_name}"',
                              f'value="{key.default_value}">{key_description}</{key_type}>']))
-    omega_keys = {k for k in dossier["new"] if k not in ("classname",)}
-    for key_name in omega_keys:
+    omega_keys = {k for k in dossier["new"] if k not in ("classname",)}  # TODO: editorclass, spawnclass
+    for key_name in sorted(omega_keys):  # alphabetical order
         # NOTE: will get a handful of false positives from renamed ents w/ forgotten key values
-        if key_name != "spawnflags":
+        if key_name.startswith("*coll") or key_name.startswith("*trigger_brush"):
+            continue  # skip omega entity compiled brushes
+        elif key_name != "spawnflags":
             key_type = guess_key_type(key_name, dossier["ur"][key_name])
             key_display_name, key_desc = common_keys.get(key_name, (key_name, "New in Titanfall; TODO: identify"))
             out.append(f'<{key_type} key="{key_name}" name="{key_display_name}">{key_desc}</{key_type}>')
@@ -213,10 +217,10 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
     out.append(f"Introduced by {dossier['origin']}")
     if dossier["origin"] == "Source":
         if len(omega_keys) > 0:
-            out.append(f"Added: {', '.join(omega_keys)}")
+            out.append(f"Added: {', '.join(sorted(omega_keys))}")
         old_keys = {*dossier["old"]}
         if len(old_keys) > 0:
-            out.append(f"Removed: {', '.join(old_keys)}")
+            out.append(f"Removed: {', '.join(sorted(old_keys))}")
         if len(omega_keys) != 0 or len(old_keys) != 0:
             out.append("TODO: identify changes")
     # TODO: find a ratio at which you can safely say: "total refactor"
@@ -224,7 +228,7 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
     return "\n".join(out), choice_types
 
 
-def batch(maps: MapDict, fgd: valvefgd.Fgd, classnames: List[Union[str, Dict]]):
+def batch(maps: MapDict, fgd: valvefgd.Fgd, classnames: List[Union[str, Dict]]) -> (Dict[str, Set[str]], List[str]):
     """Re-use choice types"""
     choice_types = collections.defaultdict(set)
     # ^ {'<list name="choice_type">...': {"classname", ...}}
@@ -243,6 +247,7 @@ def batch(maps: MapDict, fgd: valvefgd.Fgd, classnames: List[Union[str, Dict]]):
         # TODO: ensure list name of each ent_choice_list is unique
         # -- camelCase w/ entity_name
         # -- probably need to regex first line
+    ents = sorted(ents, key=lambda x: re.match(r'<.* name="([^"]+)".*', x).groups()[0])
     return choice_types, ents
 
 
@@ -270,7 +275,7 @@ if __name__ == "__main__":
     maps = dict()
     # TODO: allow recursion to load every Apex Legends Season at once
     outdir = input("INPUT: sub-folder of generated for output (e.g. r1): ")
-    os.makedirs(f"generated/{outdir}", exist_ok=True)
+    os.makedirs(f"mrvn/{outdir}", exist_ok=True)
     md_count = int(input("INPUT: number of map directories: "))
     for i in range(md_count):
         md = input(f"INPUT: map directory #{i}: ")
@@ -279,14 +284,14 @@ if __name__ == "__main__":
         print(f"Found {len(im)} maps")
         maps.update(im)
     del im  # reduce memory costs?
-    print(f"Loading all {len(maps)} maps...")
-    maps = {m: bsp_tool.load_bsp(m) for m in maps}
-    print(len(maps), "Loaded!")
-
     fgd_path = input("INPUT: .fgd file to search for definitions: ")
     print("Loading fgd...")
     fgd = valvefgd.FgdParse(fgd_path)
     print("Loaded!")
+
+    print(f"Loading all {len(maps)} maps...")
+    maps = {m: bsp_tool.load_bsp(m) for m in maps}
+    print(len(maps), "Loaded!")
 
     # all Titanfall Entity Lumps
     ent_blocks = ("ENTITIES", *(f"ENTITIES_{x}" for x in ("env", "fx", "script", "spawn", "snd")))
@@ -306,9 +311,10 @@ if __name__ == "__main__":
         print(f"Batching {block}...")
         choice_types, ents = batch(maps, fgd, all_classnames[block])
         print(f"Writing {outdir}/{block}.xml...")
-        with open(f"generated/{outdir}/{block}.xml", "w") as ent_file:
+        with open(f"mrvn/{outdir}/{block}.xml", "w") as ent_file:
             ent_file.write(header + "\n")
-            ent_file.write("\n\n".join([f"<!-- used by {', '.join(v)} -->\n{k}" for k, v in choice_types.items()]))
+            ent_file.write("\n\n".join([f"<!-- used by {', '.join(v)} -->\n{k}"
+                                        for k, v in sorted(choice_types.items(), key=lambda a: a[0])]))
             ent_file.write("""\n<!--
 =============================================================================
  ENTITIES IN ALPHABETICAL ORDER
