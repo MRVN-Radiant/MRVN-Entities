@@ -36,16 +36,17 @@ $ python -m pip install -r requirements.txt
 ```
 
 
-## MRVN Extension
+## Installing `.ent` files in MRVN-Radiant
 
-> TODO: this doesn't work yet
-> TODO: look at connecting directly to MRVN-radiant w/ GitHub Actions
+> TODO: look at automating commits / pull requests to MRVN-radiant w/ GitHub Actions
 
  * Copy `simulacrum/` artifact from GitHub Actions
  * Copy `.ent` files into `MRVN-radiant` install
    - `r1o/*.ent` goes in `MRVN-radiant/gamepacks/TitanfallOnline.game/TitanfallOnline/*.ent`
    - `r2/*.ent` goes in `MRVN-radiant/gamepacks/Titanfall2.game/Titanfall2/*.ent`
    - `r5/*.ent` goes in `MRVN-radiant/gamepacks/ApexLegends.game/ApexLegends/*.ent`
+
+MRVN-radiant will now use the latest entity definitions
 
 
 ## Offline Workflow
@@ -57,9 +58,6 @@ $ python -m pip install -r requirements.txt
    - outputs `.ent` to `simulacrum/` game subfolder (`r1o`, `r2` or `r5`)
 
 TL;DR: Bloodhound hunts and Fuse does the dishes
-
-> **NOTE: `simulacrum` will only appear in your working folder**
-> -- GitHub Workflows should generate a copy as an artifact
 
 
 ## GitHub Workflow
@@ -78,7 +76,8 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
  - [ ] Write `tests/`
    - [ ] `test_bloodhound.py`
    - [ ] `test_fuse.py`
-   - [x] `mrvn/` & `simulacrum/` `test_xml.py` (see #5)
+   - [ ] `mrvn/` & `simulacrum/` `test_xml.py` (see #5)
+     mostly written, but has not been run yet; waiting on xml schema
    - [x] `pilot/` `test_json.py` (see #5)
  * GitHub Workflows
    - [x] lint python
@@ -91,5 +90,5 @@ TL;DR: Bloodhound hunts and Fuse does the dishes
  - [ ] Documentation
    - [ ] extending `bloodhound.py` to auto-fill common keys
    - [ ] using `bloodhound.py` in a REPL for research
-   - [ ] editorclasses
+   - [ ] [editorclasses](https://github.com/MRVN-Radiant/MRVN-Radiant/issues/26)
    - [ ] [MRVN-Radiant/MRVN-resource-pack sample maps](https://github.com/MRVN-Radiant/MRVN-resource-pack/issues/1)

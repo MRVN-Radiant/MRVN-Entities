@@ -224,14 +224,6 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
     return "\n".join(out), choice_types
 
 
-def print_xml(maps: MapDict, fgd: valvefgd.Fgd, classname: str, **filters: Dict[str, str]):
-    """One at a time"""
-    ent_omega = ur_ent(maps, classname, **filters)
-    ent_dossier = id_ent(ent_omega, fgd)
-    ent_txt, choice_types_txt = xml_ent(ent_dossier)
-    print
-
-
 def batch(maps: MapDict, fgd: valvefgd.Fgd, classnames: List[Union[str, Dict]]):
     """Re-use choice types"""
     choice_types = collections.defaultdict(set)
