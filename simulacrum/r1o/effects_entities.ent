@@ -13,81 +13,6 @@
 =============================================================================
 -->
 
-<!-- used by env_sprite_clientside, beam_spotlight -->
-<list name="maxcpulevel">
-  <item name="default (high)" value="0"/>
-  <item name="low" value="1"/>
-  <item name="medium" value="2"/>
-  <item name="high" value="3"/>
-</list>
-
-
-<!-- used by env_sprite_clientside, beam_spotlight -->
-<list name="maxgpulevel">
-  <item name="default (high)" value="0"/>
-  <item name="very low" value="1"/>
-  <item name="low" value="2"/>
-  <item name="medium" value="3"/>
-  <item name="high" value="4"/>
-</list>
-
-
-<!-- used by env_sprite_clientside, beam_spotlight -->
-<list name="mincpulevel">
-  <item name="default (low)" value="0"/>
-  <item name="low" value="1"/>
-  <item name="medium" value="2"/>
-  <item name="high" value="3"/>
-</list>
-
-
-<!-- used by env_sprite_clientside, beam_spotlight -->
-<list name="mingpulevel">
-  <item name="default (very low)" value="0"/>
-  <item name="very low" value="1"/>
-  <item name="low" value="2"/>
-  <item name="medium" value="3"/>
-  <item name="high" value="4"/>
-</list>
-
-
-<!-- used by env_sprite_clientside, beam_spotlight -->
-<list name="renderfx">
-  <item name="Normal" value="0"/>
-  <item name="Slow Pulse" value="1"/>
-  <item name="Fast Pulse" value="2"/>
-  <item name="Slow Wide Pulse" value="3"/>
-  <item name="Fast Wide Pulse" value="4"/>
-  <item name="Slow Strobe" value="9"/>
-  <item name="Fast Strobe" value="10"/>
-  <item name="Faster Strobe" value="11"/>
-  <item name="Slow Flicker" value="12"/>
-  <item name="Fast Flicker" value="13"/>
-  <item name="Slow Fade Away" value="5"/>
-  <item name="Fast Fade Away" value="6"/>
-  <item name="Slow Become Solid" value="7"/>
-  <item name="Fast Become Solid" value="8"/>
-  <item name="Constant Glow" value="14"/>
-  <item name="Distort" value="15"/>
-  <item name="Hologram (Distort + fade)" value="16"/>
-  <item name="Cull By Distance (TEST)" value="23"/>
-  <item name="Spotlight FX" value="24"/>
-  <item name="Fade Near" value="26"/>
-</list>
-
-
-<!-- used by env_sprite_clientside, beam_spotlight -->
-<list name="rendermode">
-  <item name="Normal" value="0"/>
-  <item name="Color" value="1"/>
-  <item name="Texture" value="2"/>
-  <item name="Glow" value="3"/>
-  <item name="Solid" value="4"/>
-  <item name="Additive" value="5"/>
-  <item name="Additive Fractional Frame" value="7"/>
-  <item name="World Space Glow" value="9"/>
-  <item name="Dont Render" value="10"/>
-</list>
 
 <!--
 =============================================================================
@@ -95,125 +20,62 @@
 =============================================================================
 -->
 <point name="beam_spotlight" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity to draw a spotlight.
-Will draw a beam when the player views it side on, and a halo when it's facing towards the player.
-Unless the 'No Dynamic Light' spawnflag is checked, it will also create a dynamic light wherever the end of the spotlight rests.This spotlight is entirely client side, it is not sync'd across clients.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<renderfx key="renderfx" name="Render FX" value="0"/>
-<rendermode key="rendermode" name="Render Mode" value="0">Used to set a non-standard rendering mode on this entity.
-See also 'FX Amount' and 'FX Color'.</rendermode>
-<integer key="renderamt" name="FX Amount (0 - 255)" value="255">The FX amount is used by the selected Render Mode.</integer>
-<string key="rendercolor" name="Color (R G B)" value="255 255 255"/>
-<boolean key="disablereceiveshadows" name="Disable Receiving Shadows" value="0"/>
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
-Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
-<mincpulevel key="mincpulevel" name="Minimum CPU Level" value="0"/>
-<maxcpulevel key="maxcpulevel" name="Maximum CPU Level" value="0"/>
-<mingpulevel key="mingpulevel" name="Minimum GPU Level" value="0"/>
-<maxgpulevel key="maxgpulevel" name="Maximum GPU Level" value="0"/>
-<boolean key="disableX360" name="Disable X360" value="0"/>
-<integer key="maxspeed" name="Max Rotation Speed" value="100">The maximum rotation speed of the spotlight, in degrees per second.</integer>
-<integer key="spotlightlength" name="Spotlight Length" value="500">Length of the spotlight beam.</integer>
-<integer key="spotlightwidth" name="Spotlight Width" value="50">Width of the spotlight beam.</integer>
-<real key="HDRColorScale" name="HDR color scale." value="0.7">float value to multiply sprite color by when running in HDR mode.</real>
+<string key="HDRColorScale" name="HDRColorScale">New in Titanfall; TODO: identify</string>
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="color" name="color">New in Titanfall; TODO: identify</string>
+<string key="disableX360" name="disableX360">New in Titanfall; TODO: identify</string>
+<string key="disablereceiveshadows" name="disablereceiveshadows">New in Titanfall; TODO: identify</string>
+<string key="maxcpulevel" name="maxcpulevel">New in Titanfall; TODO: identify</string>
+<string key="maxgpulevel" name="maxgpulevel">New in Titanfall; TODO: identify</string>
+<string key="maxspeed" name="maxspeed">New in Titanfall; TODO: identify</string>
+<string key="mincpulevel" name="mincpulevel">New in Titanfall; TODO: identify</string>
+<string key="mingpulevel" name="mingpulevel">New in Titanfall; TODO: identify</string>
+<string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
+<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
+<string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="spotlightlength" name="spotlightlength">New in Titanfall; TODO: identify</string>
+<string key="spotlightwidth" name="spotlightwidth">New in Titanfall; TODO: identify</string>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- SPAWNFLAGS -----
-<flag name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: get description from VDC</flag>
-<flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
+<flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
+<flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
 ----- NOTES -----
-Introduced by Source
-Added: color, scale, spawnflags
-Removed: parentname, thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <point name="env_sprite_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
-An env_sprite that only exists on the client (much lower overhead!)
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<renderfx key="renderfx" name="Render FX" value="0"/>
-<rendermode key="rendermode" name="Render Mode" value="0">Used to set a non-standard rendering mode on this entity.
-See also 'FX Amount' and 'FX Color'.</rendermode>
-<integer key="renderamt" name="FX Amount (0 - 255)" value="255">The FX amount is used by the selected Render Mode.</integer>
-<string key="rendercolor" name="FX Color (R G B)" value="255 255 255">The FX color is used by the selected Render Mode.</string>
-<boolean key="disablereceiveshadows" name="Disable Receiving Shadows" value="0"/>
-<mincpulevel key="mincpulevel" name="Minimum CPU Level" value="0"/>
-<maxcpulevel key="maxcpulevel" name="Maximum CPU Level" value="0"/>
-<mingpulevel key="mingpulevel" name="Minimum GPU Level" value="0"/>
-<maxgpulevel key="maxgpulevel" name="Maximum GPU Level" value="0"/>
-<boolean key="disableX360" name="Disable X360" value="0"/>
-<string key="framerate" name="Framerate" value="10.0">Rate at which the sprite should animate, if at all.</string>
-<string key="model" name="Sprite Name" value="sprites/glow01.spr">Material of the sprite to be drawn.</string>
-<string key="scale" name="Scale" value="">Scale multiplier of the sprite.</string>
-<real key="GlowProxySize" name="Size of Glow Proxy Geometry." value="2.0">Size of the glow to be rendered for visibility testing.
-Must be larger than the distance from the sprite center to empty space.
- So if this glow is inside geometry (like a light bulb), set this value to be bigger than the bulb's radius.
-Any time a sphere of this radius would be visible (poking through any nearby geometry), the glow will be rendered.</real>
-<real key="HDRColorScale" name="HDR color scale." value="1.0">float value to multiply sprite color by when running in HDR mode.</real>
+<string key="GlowProxySize" name="GlowProxySize">New in Titanfall; TODO: identify</string>
+<string key="HDRColorScale" name="HDRColorScale">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="disableX360" name="disableX360">New in Titanfall; TODO: identify</string>
+<string key="disablereceiveshadows" name="disablereceiveshadows">New in Titanfall; TODO: identify</string>
+<string key="framerate" name="framerate">New in Titanfall; TODO: identify</string>
+<string key="maxcpulevel" name="maxcpulevel">New in Titanfall; TODO: identify</string>
+<string key="maxgpulevel" name="maxgpulevel">New in Titanfall; TODO: identify</string>
+<string key="mincpulevel" name="mincpulevel">New in Titanfall; TODO: identify</string>
+<string key="mingpulevel" name="mingpulevel">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
+<string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
+<string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
-Introduced by Source
-Added: angles, spawnflags
-Removed: parentname, thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <point name="info_particle_system" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity that spawns a particle system built using the particle editor.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
-Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
-<string key="effect_name" name="Particle System Name" value="None"/>
-<boolean key="start_active" name="Start Active?" value="0"/>
-<string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
 <string key="VisibilityFlags" name="VisibilityFlags">New in Titanfall; TODO: identify</string>
-<string key="editorclass" name="editorclass">New in Titanfall; TODO: identify</string>
-<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
-<string key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="solid" name="solid">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Source
-Added: ClientSide, VisibilityFlags, editorclass, in_skybox, kill_for_replay, model, scale, solid
-Removed: cpoint1, cpoint10, cpoint11, cpoint12, cpoint13, cpoint14, cpoint15, cpoint16, cpoint17, cpoint18, cpoint19, cpoint1_parent, cpoint2, cpoint20, cpoint21, cpoint22, cpoint23, cpoint24, cpoint25, cpoint26, cpoint27, cpoint28, cpoint29, cpoint2_parent, cpoint3, cpoint30, cpoint31, cpoint32, cpoint33, cpoint34, cpoint35, cpoint36, cpoint37, cpoint38, cpoint39, cpoint3_parent, cpoint4, cpoint40, cpoint41, cpoint42, cpoint43, cpoint44, cpoint45, cpoint46, cpoint47, cpoint48, cpoint49, cpoint4_parent, cpoint5, cpoint50, cpoint51, cpoint52, cpoint53, cpoint54, cpoint55, cpoint56, cpoint57, cpoint58, cpoint59, cpoint5_parent, cpoint6, cpoint60, cpoint61, cpoint62, cpoint63, cpoint6_parent, cpoint7, cpoint7_parent, cpoint8, cpoint9, drawinfastreflection, parentname, thinkfunction, vscripts
-TODO: identify changes
-</point>
-
-<point name="info_target" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity that does nothing.
-Very useful as a positioning entity for other entities to refer to (i.e.
-the endpoint of an env_beam)
------ KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
-Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
-<string key="anim" name="anim">New in Titanfall; TODO: identify</string>
-<string key="editorclass" name="editorclass">New in Titanfall; TODO: identify</string>
-<string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
-<string key="fxgroup" name="fxgroup">New in Titanfall; TODO: identify</string>
-<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="spectreSpawn" name="spectreSpawn">New in Titanfall; TODO: identify</string>
-<targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
------ SPAWNFLAGS -----
-<flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
------ NOTES -----
-Introduced by Source
-Added: anim, editorclass, effect_name, fxgroup, in_skybox, scale, spawnflags, spectreSpawn, target
-Removed: parentname, thinkfunction, vscripts
-TODO: identify changes
-</point>
-
-<point name="info_target_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="editorclass" name="editorclass">New in Titanfall; TODO: identify</string>
 <string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
 <string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
 <string key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</string>
@@ -222,8 +84,56 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="solid" name="solid">New in Titanfall; TODO: identify</string>
 <string key="start_active" name="start_active">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<point name="info_particle_system_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
+----- KEYS -----
+<string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
+<string key="VisibilityFlags" name="VisibilityFlags">New in Titanfall; TODO: identify</string>
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
+<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
+<string key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="solid" name="solid">New in Titanfall; TODO: identify</string>
+<string key="start_active" name="start_active">New in Titanfall; TODO: identify</string>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<point name="info_target_fx" color="1 0 1" box="-8 -8 -8 8 8 8">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
+<string key="fxgroup" name="fxgroup">New in Titanfall; TODO: identify</string>
+<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- SPAWNFLAGS -----
-<flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
+<flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<point name="info_target_fx_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
+<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
+<string key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="solid" name="solid">New in Titanfall; TODO: identify</string>
+<string key="start_active" name="start_active">New in Titanfall; TODO: identify</string>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
 </point>

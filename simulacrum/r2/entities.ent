@@ -13,108 +13,6 @@
 =============================================================================
 -->
 
-<!-- used by prop_dynamic -->
-<list name="maxcpulevel">
-  <item name="default (high)" value="0"/>
-  <item name="low" value="1"/>
-  <item name="medium" value="2"/>
-  <item name="high" value="3"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="maxgpulevel">
-  <item name="default (high)" value="0"/>
-  <item name="very low" value="1"/>
-  <item name="low" value="2"/>
-  <item name="medium" value="3"/>
-  <item name="high" value="4"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="mincpulevel">
-  <item name="default (low)" value="0"/>
-  <item name="low" value="1"/>
-  <item name="medium" value="2"/>
-  <item name="high" value="3"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="mingpulevel">
-  <item name="default (very low)" value="0"/>
-  <item name="very low" value="1"/>
-  <item name="low" value="2"/>
-  <item name="medium" value="3"/>
-  <item name="high" value="4"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="performanceMode">
-  <item name="Normal" value="0"/>
-  <item name="No Gibs" value="1"/>
-  <item name="Full Gibs on All Platforms" value="2"/>
-  <item name="Reduced gibs" value="3"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="renderfx">
-  <item name="Normal" value="0"/>
-  <item name="Slow Pulse" value="1"/>
-  <item name="Fast Pulse" value="2"/>
-  <item name="Slow Wide Pulse" value="3"/>
-  <item name="Fast Wide Pulse" value="4"/>
-  <item name="Slow Strobe" value="9"/>
-  <item name="Fast Strobe" value="10"/>
-  <item name="Faster Strobe" value="11"/>
-  <item name="Slow Flicker" value="12"/>
-  <item name="Fast Flicker" value="13"/>
-  <item name="Slow Fade Away" value="5"/>
-  <item name="Fast Fade Away" value="6"/>
-  <item name="Slow Become Solid" value="7"/>
-  <item name="Fast Become Solid" value="8"/>
-  <item name="Constant Glow" value="14"/>
-  <item name="Distort" value="15"/>
-  <item name="Hologram (Distort + fade)" value="16"/>
-  <item name="Cull By Distance (TEST)" value="23"/>
-  <item name="Spotlight FX" value="24"/>
-  <item name="Fade Near" value="26"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="rendermode">
-  <item name="Normal" value="0"/>
-  <item name="Color" value="1"/>
-  <item name="Texture" value="2"/>
-  <item name="Glow" value="3"/>
-  <item name="Solid" value="4"/>
-  <item name="Additive" value="5"/>
-  <item name="Additive Fractional Frame" value="7"/>
-  <item name="World Space Glow" value="9"/>
-  <item name="Dont Render" value="10"/>
-</list>
-
-
-<!-- used by prop_dynamic -->
-<list name="solid">
-  <item name="Not Solid" value="0"/>
-  <item name="Use Bounding Box" value="2"/>
-  <item name="Use VPhysics" value="6"/>
-</list>
-
-
-<!-- used by env_soundscape_triggerable -->
-<list name="soundscape">
-  <item name="Nothing" value="Nothing"/>
-  <item name="Automatic" value="Automatic"/>
-  <item name="Automatic (dialog)" value="Automatic_Dialog"/>
-  <item name="Indoor" value="GenericIndoor"/>
-  <item name="Outdoor" value="GenericOutdoor"/>
-</list>
 
 <!--
 =============================================================================
@@ -122,48 +20,36 @@
 =============================================================================
 -->
 <point name="env_soundscape_triggerable" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity that works like env_soundscape except that it works in conjunction with trigger_soundscape to determine when a player hears it.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<boolean key="StartDisabled" name="Start Disabled" value="0"/>
-<integer key="radius" name="Radius" value="128">If set to -1, then the player can hear the soundscape as long as he can see it (regardless of distance to it).</integer>
-<soundscape key="soundscape" name="Soundscape" value="Nothing">The name of the soundscape to use.
-Corresponds to an entry in the soundscapes*.txt file in the hl2\scripts directory.</soundscape>
+<string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
+<string key="radius" name="radius">New in Titanfall; TODO: identify</string>
 <string key="requireLOS" name="requireLOS">New in Titanfall; TODO: identify</string>
+<string key="soundscape" name="soundscape">New in Titanfall; TODO: identify</string>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
-Introduced by Source
-Added: requireLOS
-Removed: parentname, position0, position1, position2, position3, position4, position5, position6, position7, thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <point name="env_wind" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity to control wind in the map.
-Partially functional.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
-Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
-<integer key="minwind" name="Min normal speed" value="20">Minimum speed of the wind while idling.</integer>
-<integer key="maxwind" name="Max normal speed" value="50">Maximum speed of the wind while idling.</integer>
-<integer key="mingust" name="Min gust speed" value="100">Minimum speed of wind gusts.</integer>
-<integer key="maxgust" name="Max gust speed" value="250">Maximum speed of wind gusts.</integer>
-<integer key="mingustdelay" name="Min gust delay" value="10">Minimum time delay between random gusts.</integer>
-<integer key="maxgustdelay" name="Max gust delay" value="20">Maximum time delay between random gusts.</integer>
-<integer key="gustduration" name="Gust Duration" value="5">How long will the wind gust for.</integer>
-<integer key="gustdirchange" name="Max gust dir change (degrees)" value="20">Maximum amount that the wind's direction changes due to a gust.</integer>
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="gustdirchange" name="gustdirchange">New in Titanfall; TODO: identify</string>
+<string key="gustduration" name="gustduration">New in Titanfall; TODO: identify</string>
+<string key="maxgust" name="maxgust">New in Titanfall; TODO: identify</string>
+<string key="maxgustdelay" name="maxgustdelay">New in Titanfall; TODO: identify</string>
+<string key="maxwind" name="maxwind">New in Titanfall; TODO: identify</string>
+<string key="mingust" name="mingust">New in Titanfall; TODO: identify</string>
+<string key="mingustdelay" name="mingustdelay">New in Titanfall; TODO: identify</string>
+<string key="minwind" name="minwind">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
-Introduced by Source
-Added: scale
-Removed: thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <group name="envmap_volume" color="1 0 1">
 ----- KEYS -----
-<string key="*trigger_bounds_maxs" name="*trigger_bounds_maxs">New in Titanfall; TODO: identify</string>
-<string key="*trigger_bounds_mins" name="*trigger_bounds_mins">New in Titanfall; TODO: identify</string>
 <string key="cubemapID" name="cubemapID">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="priority" name="priority">New in Titanfall; TODO: identify</string>
@@ -174,19 +60,14 @@ Introduced by Titanfall
 </group>
 
 <group name="fog_volume" color="1 0 1">
-An entity to control the fog in the map.
 ----- KEYS -----
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<string key="model" name="World Model"/>
 <string key="priority" name="priority">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 ----- NOTES -----
-Introduced by Source
-Added: brightness, link_guid, model, priority, script_name, target
-Removed: ColorCorrectionName, FogName, PostProcessName, StartDisabled, targetname, thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </group>
 
 <point name="func_wallrun_curve" color="1 0 1" box="-8 -8 -8 8 8 8">
@@ -210,16 +91,13 @@ Introduced by Titanfall
 </point>
 
 <point name="info_intermission" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity that defines an intermission spot where dead players will float until they respawn.
 ----- KEYS -----
-<string key="target" name="Entity to look at" value="None">Name of entity that dead players will face while in intermission at this spot.</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
+<targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
-Introduced by Source
-Added: link_guid, link_to_guid_0, targetname
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
@@ -240,151 +118,38 @@ Introduced by Titanfall
 </point>
 
 <point name="info_teleport_destination" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity that does nothing itself, but can be used to specify the destination for a trigger_teleport entity.
-An info_target can be used instead.
 ----- KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
-Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 ----- NOTES -----
-Introduced by Source
-Added: link_guid, scale
-Removed: parentname, targetname, thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
-<point name="prop_dynamic" color="1 0 1" box="-8 -8 -8 8 8 8">
-A prop that can be placed in hierarchy and can play animations.
-It can also be configured to break when it takes enough damage.
-Note that the health of the object will be overridden by the health inside the model, to ensure consistent health game-wide.
-If the model used by the prop is configured to be used as a prop_physics (i.e.
-it should be physically simulated) then it CANNOT be used as a prop_dynamic.
-Upon level load it will display a warning in the console and remove itself.
-Use a prop_physics instead.
+<point name="prop_dynamic_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
-<string key="parentname" name="Parent" value="None">The name of this entity's parent in the movement hierarchy.
-Entities with parents move with their parent.</string>
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)" value="0 0 0">This entity's orientation in the world.
-Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.</angles>
-<boolean key="drawinfastreflection" name="Render in Fast Reflections" value="0">If enabled, causes this entity/prop to to render in fast water reflections (i.e.
-when a water material specifies $reflectonlymarkedentities) and in the world impostor pass.</boolean>
-<boolean key="disableshadows" name="Disable shadows" value="0"/>
-<model key="model" name="World Model" value="None"/>
-<integer key="skin" name="Skin" value="0">Some models have multiple versions of their textures, called skins.
-Set this to a number other than 0 to use that skin instead of the default.</integer>
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<real key="ExplodeDamage" name="Explosion Damage" value="0">If non-zero, when this entity breaks it will create an explosion that causes the specified amount of damage.
-See also 'Explosion Radius'.</real>
-<real key="ExplodeRadius" name="Explosion Radius" value="0">If non-zero, when this entity breaks it will create an explosion with a radius of the specified amount.
-See also 'Explosion Damage'.</real>
-<performanceMode key="PerformanceMode" name="Performance Mode" value="0">Used to limit the amount of gibs produced when this entity breaks, for performance reasons.</performanceMode>
-<real key="pressuredelay" name="Pressure Delay" value="0">Delay, in seconds, after 'broken' by pressure before breaking apart (allows for sound to play before breaking apart).</real>
-<mincpulevel key="mincpulevel" name="Minimum CPU Level" value="0"/>
-<maxcpulevel key="maxcpulevel" name="Maximum CPU Level" value="0"/>
-<mingpulevel key="mingpulevel" name="Minimum GPU Level" value="0"/>
-<maxgpulevel key="maxgpulevel" name="Maximum GPU Level" value="0"/>
-<boolean key="disableX360" name="Disable X360" value="0"/>
-<real key="fadescale" name="Fade Scale" value="1">If you specify a fade in the worldspawn, or if the engine is running under dx7, then the engine will forcibly fade out props even if fademindist/fademaxdist isn't specified.
-This scale factor gives you some control over the fade.
-Using 0 here turns off the forcible fades.
-Numbers smaller than 1 cause the prop to fade out at further distances, and greater than 1 cause it to fade out at closer distances.</real>
-<renderfx key="renderfx" name="Render FX" value="0"/>
-<rendermode key="rendermode" name="Render Mode" value="0">Used to set a non-standard rendering mode on this entity.
-See also 'FX Amount' and 'FX Color'.</rendermode>
-<integer key="renderamt" name="FX Amount (0 - 255)" value="255">The FX amount is used by the selected Render Mode.</integer>
-<string key="rendercolor" name="Color (R G B)" value="255 255 255"/>
-<boolean key="disablereceiveshadows" name="Disable Receiving Shadows" value="0"/>
-<solid key="solid" name="Collisions" value="6"/>
-<string key="DefaultAnim" name="Default Animation" value="">The name of the idle animation that this prop will revert to whenever it finishes a random or forced animation.</string>
-<boolean key="RandomAnimation" name="Randomly Animate" value="0">If set, this prop will randomly choose and play animations, based upon the times specified in 'Min/Max Random Anim Time'.
-Inbetween the random animations, it will revert to playing the 'Default Animation'.</boolean>
-<boolean key="DisableBoneFollowers" name="Disable Bone Followers" value="0">If set, the prop will not use bone followers, even if it has them defined.</boolean>
-<boolean key="SuppressAnimSounds" name="Suppress Anim Sounds" value="0">If set, the prop will not play any sounds that are embedded in animations it plays.</boolean>
-<boolean key="HoldAnimation" name="Hold Animation" value="0">If set, the prop will not loop its animation, but hold the last frame.</boolean>
-<real key="MinAnimTime" name="Min Random Anim Time" value="5">Minimum time between random animations.</real>
-<real key="MaxAnimTime" name="Max Random Anim Time" value="10">Maximum time between random animations.</real>
-<integer key="SetBodyGroup" name="Body Group" value="0"/>
-<string key="lightingorigin" name="Lighting Origin" value="">Select a path_corner entity to specify a location to sample lighting from, instead of using this entity's origin.</string>
-<boolean key="StartDisabled" name="Start Disabled" value="0"/>
-<string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
-<string key="DisableStatusLights" name="DisableStatusLights">New in Titanfall; TODO: identify</string>
-<string key="SpawnAsPhysicsMover" name="SpawnAsPhysicsMover">New in Titanfall; TODO: identify</string>
+<string key="SetBodyGroup" name="SetBodyGroup">New in Titanfall; TODO: identify</string>
+<string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="collide_ai" name="collide_ai">New in Titanfall; TODO: identify</string>
-<string key="collide_bullet" name="collide_bullet">New in Titanfall; TODO: identify</string>
-<string key="collide_human" name="collide_human">New in Titanfall; TODO: identify</string>
-<string key="collide_sight" name="collide_sight">New in Titanfall; TODO: identify</string>
 <string key="collide_titan" name="collide_titan">New in Titanfall; TODO: identify</string>
-<string key="disableselfshadowing" name="disableselfshadowing">New in Titanfall; TODO: identify</string>
-<string key="drp_carrystyle" name="drp_carrystyle">New in Titanfall; TODO: identify</string>
-<string key="drp_despawnstyle" name="drp_despawnstyle">New in Titanfall; TODO: identify</string>
-<string key="drp_followstyle" name="drp_followstyle">New in Titanfall; TODO: identify</string>
-<string key="drp_pannelmodel" name="drp_pannelmodel">New in Titanfall; TODO: identify</string>
-<string key="drp_respawn_time" name="drp_respawn_time">New in Titanfall; TODO: identify</string>
-<string key="drp_spawnstyle" name="drp_spawnstyle">New in Titanfall; TODO: identify</string>
-<string key="editorclass" name="editorclass">New in Titanfall; TODO: identify</string>
-<string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
-<string key="enable_inout" name="enable_inout">New in Titanfall; TODO: identify</string>
-<string key="enable_rotation" name="enable_rotation">New in Titanfall; TODO: identify</string>
-<string key="enable_updown" name="enable_updown">New in Titanfall; TODO: identify</string>
+<string key="disablereceiveshadows" name="disablereceiveshadows">New in Titanfall; TODO: identify</string>
+<string key="disableshadows" name="disableshadows">New in Titanfall; TODO: identify</string>
+<string key="drawinfastreflection" name="drawinfastreflection">New in Titanfall; TODO: identify</string>
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_fd" name="gamemode_fd">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lh" name="gamemode_lh">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
-<string key="gamemode_sur" name="gamemode_sur">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
-<string key="hibernation_enable" name="hibernation_enable">New in Titanfall; TODO: identify</string>
-<string key="hintString_hold" name="hintString_hold">New in Titanfall; TODO: identify</string>
-<string key="hintString_press" name="hintString_press">New in Titanfall; TODO: identify</string>
-<string key="instance_name" name="instance_name">New in Titanfall; TODO: identify</string>
-<string key="isModel" name="isModel">New in Titanfall; TODO: identify</string>
-<string key="leveled_animation" name="leveled_animation">New in Titanfall; TODO: identify</string>
-<model key="leveled_model" name="leveled_model">New in Titanfall; TODO: identify</model>
-<string key="lightingMethod" name="lightingMethod">New in Titanfall; TODO: identify</string>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_1" name="link_to_guid_1">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_2" name="link_to_guid_2">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_3" name="link_to_guid_3">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_4" name="link_to_guid_4">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_5" name="link_to_guid_5">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_6" name="link_to_guid_6">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_7" name="link_to_guid_7">New in Titanfall; TODO: identify</string>
-<string key="link_to_guid_8" name="link_to_guid_8">New in Titanfall; TODO: identify</string>
-<string key="luxelsize" name="luxelsize">New in Titanfall; TODO: identify</string>
-<string key="mobility_1_easy" name="mobility_1_easy">New in Titanfall; TODO: identify</string>
-<string key="mobility_2_normal" name="mobility_2_normal">New in Titanfall; TODO: identify</string>
-<string key="mobility_3_hard" name="mobility_3_hard">New in Titanfall; TODO: identify</string>
-<string key="motionActivated" name="motionActivated">New in Titanfall; TODO: identify</string>
-<string key="multiUseDelay" name="multiUseDelay">New in Titanfall; TODO: identify</string>
-<string key="nodamageforces" name="nodamageforces">New in Titanfall; TODO: identify</string>
-<string key="path_speed" name="path_speed">New in Titanfall; TODO: identify</string>
-<string key="physicsmode" name="physicsmode">New in Titanfall; TODO: identify</string>
-<string key="rotation_degrees_left" name="rotation_degrees_left">New in Titanfall; TODO: identify</string>
-<string key="rotation_degrees_right" name="rotation_degrees_right">New in Titanfall; TODO: identify</string>
-<string key="rotation_speed_scale" name="rotation_speed_scale">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
+<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
+<string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="scr_flagRequired" name="scr_flagRequired">New in Titanfall; TODO: identify</string>
-<string key="scr_flagToggle" name="scr_flagToggle">New in Titanfall; TODO: identify</string>
-<string key="script_delay" name="script_delay">New in Titanfall; TODO: identify</string>
-<string key="script_flag" name="script_flag">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_noteworthy" name="script_noteworthy">New in Titanfall; TODO: identify</string>
-<string key="singleUse" name="singleUse">New in Titanfall; TODO: identify</string>
-<string key="spawner" name="spawner">New in Titanfall; TODO: identify</string>
-<string key="startOpen" name="startOpen">New in Titanfall; TODO: identify</string>
-<string key="static_model" name="static_model">New in Titanfall; TODO: identify</string>
-<targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
-<string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
-<string key="usable" name="usable">New in Titanfall; TODO: identify</string>
-<string key="use_linked_panel" name="use_linked_panel">New in Titanfall; TODO: identify</string>
+<string key="skin" name="skin">New in Titanfall; TODO: identify</string>
+<string key="solid" name="solid">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
-Introduced by Source
-Added: ClientSide, DisableStatusLights, SpawnAsPhysicsMover, collide_ai, collide_bullet, collide_human, collide_sight, collide_titan, disableselfshadowing, drp_carrystyle, drp_despawnstyle, drp_followstyle, drp_pannelmodel, drp_respawn_time, drp_spawnstyle, editorclass, effect_name, enable_inout, enable_rotation, enable_updown, fadedist, gamemode_cp, gamemode_ctf, gamemode_fd, gamemode_lh, gamemode_lts, gamemode_sur, gamemode_tdm, hibernation_enable, hintString_hold, hintString_press, instance_name, isModel, leveled_animation, leveled_model, lightingMethod, link_guid, link_to_guid_0, link_to_guid_1, link_to_guid_2, link_to_guid_3, link_to_guid_4, link_to_guid_5, link_to_guid_6, link_to_guid_7, link_to_guid_8, luxelsize, mobility_1_easy, mobility_2_normal, mobility_3_hard, motionActivated, multiUseDelay, nodamageforces, path_speed, physicsmode, rotation_degrees_left, rotation_degrees_right, rotation_speed_scale, scale, scr_flagRequired, scr_flagToggle, script_delay, script_flag, script_name, script_noteworthy, singleUse, spawner, spawnflags, startOpen, static_model, target, teamnumber, usable, use_linked_panel
-Removed: damagefilter, disableflashlight, disableshadowdepth, fademaxdist, fademindist, globalname, shadowdepthnocache, thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <point name="prop_exfil_panel" color="1 0 1" box="-8 -8 -8 8 8 8">
@@ -430,8 +195,6 @@ Introduced by Titanfall
 
 <group name="trigger_indoor_area" color="1 0 1">
 ----- KEYS -----
-<string key="*trigger_bounds_maxs" name="*trigger_bounds_maxs">New in Titanfall; TODO: identify</string>
-<string key="*trigger_bounds_mins" name="*trigger_bounds_mins">New in Titanfall; TODO: identify</string>
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
@@ -449,8 +212,8 @@ Introduced by Titanfall
 <string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
 <string key="triggerNearbyRadius" name="triggerNearbyRadius">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
-<flag name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: get description from VDC</flag>
-<flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
+<flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
+<flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
 ----- NOTES -----
 Introduced by Titanfall
 </group>
@@ -463,8 +226,6 @@ Introduced by Titanfall
 
 <group name="trigger_out_of_bounds" color="1 0 1">
 ----- KEYS -----
-<string key="*trigger_bounds_maxs" name="*trigger_bounds_maxs">New in Titanfall; TODO: identify</string>
-<string key="*trigger_bounds_mins" name="*trigger_bounds_mins">New in Titanfall; TODO: identify</string>
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
@@ -484,29 +245,23 @@ Introduced by Titanfall
 <string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
 <string key="triggerNearbyRadius" name="triggerNearbyRadius">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
-<flag name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: get description from VDC</flag>
-<flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
-<flag name="FLAG_UNKNOWN_12" bit="12" value="0">TODO: get description from VDC</flag>
+<flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
+<flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
+<flag key="FLAG_UNKNOWN_12" name="FLAG_UNKNOWN_12" bit="12" value="0">TODO: description</flag>
 ----- NOTES -----
 Introduced by Titanfall
 </group>
 
 <point name="water_lod_control" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity used to control the LOD behavior of any water in the map.
-If your map has water, this entity is required.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
-<real key="cheapwaterstartdistance" name="Start Transition to Cheap Water" value="1000">This is the distance from the camera that water will start transitioning to cheap water, in inches.</real>
-<real key="cheapwaterenddistance" name="End Transition to Cheap Water" value="2000">This is the distance from the camera that water will finish transitioning to cheap water, in inches.</real>
+<string key="cheapwaterenddistance" name="cheapwaterenddistance">New in Titanfall; TODO: identify</string>
+<string key="cheapwaterstartdistance" name="cheapwaterstartdistance">New in Titanfall; TODO: identify</string>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
-Introduced by Source
-Removed: thinkfunction, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
-<group name="worldspawn" color="1 0 1">
-This is the world entity.
-Each map can only contain one, and it's automatically created for you.
+<point name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
@@ -534,13 +289,9 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="musicpostfix" name="musicpostfix">New in Titanfall; TODO: identify</string>
 <string key="name" name="name">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="spawnclass" name="spawnclass">New in Titanfall; TODO: identify</string>
 <string key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</string>
 <string key="world_mins" name="world_mins">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
-Introduced by Source
-Added: ClientSide, _specular_intensity, angles, disableOccluderMesh, disableshadows, editor_drLastCameraAngle, editor_drLastCameraPos, editor_drMapAngle1, editor_drMapAngle2, editor_drMapAngle3, editor_drMapAngle4, editor_drMapAngle5, editor_drMapAngle8, editor_drMapPos1, editor_drMapPos2, editor_drMapPos3, editor_drMapPos4, editor_drMapPos5, editor_drMapPos8, fadedist, lightprobe_voronoi_leafsize, mapversion, musicpostfix, name, scale, spawnclass, world_maxs, world_mins
-Removed: ResponseContext, chaptertitle, coldworld, detailmaterial, detailvbsp, gametitle, maxoccludeearea, maxoccludeearea_x360, maxpropscreenwidth, message, minoccluderarea, minoccluderarea_x360, minpropscreenwidth, newunit, skyname, startdark, targetname, thinkfunction, vscripts
-TODO: identify changes
-</group>
+Introduced by Titanfall
+</point>
 </classes>

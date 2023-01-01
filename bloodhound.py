@@ -20,7 +20,7 @@ OmegaEntity = Dict[str, List[str]]
 def ur_ent(maps: MapDict, classname: str = None, **filters: Entity) -> OmegaEntity:
     """Find 'ur' entity (all keys & values used in official maps)"""
     # NOTE: will get a handful of false positives from renamed ents w/ forgotten key values
-    if classname is not None:
+    if classname is not None:  # add classname to filters
         filters["classname"] = classname
     assert "classname" in filters
     out = collections.defaultdict(set)
@@ -39,25 +39,38 @@ class_types = dict(PointClass="point", KeyFrameClass="point", MoveClass="point",
 
 
 def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
-    # TODO: pass in origin names for omega_entity & fgd
-    # TODO: force fgd_entity classname to compare
-    classname = omega_entity["classname"][0]
+    # TODO: force fgd baseclass (default: omega_entity["classname"])
+
+    # editorclass -> classname override
+    og_classname, og_editorclass = omega_entity["classname"], omega_entity.get("editorclass", "")
+    omega_entity["classname"] = og_editorclass if og_editorclass != "" else og_classname
+    if "editorclass" in omega_entity:
+        omega_entity.pop("editorclass")
+    # NOTE: MRVN-radiant remap will reverse this, grouping by editorclass just make writing easier
+    classname = omega_entity["classname"][0]  # new classname, overridden by editorclass if present
+
     omega_keys = set(omega_entity.keys())
-    out = {"classname": classname, "ur": omega_entity, "type": "point", "spec": None,
-           "old": set(), "shared": set(), "new": omega_keys}
-    if classname not in [e.name for e in fgd.entities]:
+    out = {"classname": classname,
+           "ur": omega_entity,
+           "type": "point",
+           "new": omega_keys,
+           "shared": set(),
+           "old": set(),
+           "spec": None}
+    # NOTE: og_classname is the fgd entity classname we want; editorclasses wouldn't appear in fgds afaik
+    if og_classname not in [e.name for e in fgd.entities]:
         out["origin"] = "Titanfall"
         if any([v.startswith("*") for v in omega_entity.get("model", list())]):  # brush entity
             out["new"].remove("model")
             out["type"] = "group"
-        if any([k.startswith("*coll") or k.startswith("*trigger_brush") for k in omega_entity.keys()]):
+        if any([k.startswith("*coll") or k.startswith("*trigger") for k in omega_entity.keys()]):
             out["type"] = "group"
             # NOTE: xml_ent will remove these keys for us
         if "origin" in out["new"]:  # automatically added by Radiant
             out["new"].remove("origin")
         return out
-    # TODO: catch editorclass / spawnclass subtype
-    fgd_entity = fgd.entity_by_name(classname)
+    # fgd baseclass found
+    fgd_entity = fgd.entity_by_name(og_classname)  # ignore editorclass
     fgd_keys = {p.name for p in fgd_entity.properties}
     out.update({"origin": "Source",
                 "type": class_types[fgd_entity.class_type],
@@ -95,10 +108,10 @@ def xml_spawnflags(spawnflags: List[valvefgd.FgdEntitySpawnflag]) -> str:
     for flag in spawnflags:
         # flag.display_name, value, default_value
         name = "_".join(["FLAG", *map(str.upper, flag.display_name.split())])
+        # TODO: check for separators in name that could be descs (",.-" etc.)
         bit = log2[flag.value]
         default = int(flag.default_value)
-        # TODO: check for split points that could be descs (",.-" etc.)
-        out.append(f'<flag name="{name}" bit="{bit}" value="{default}">TODO: get description from VDC</flag>')
+        out.append(f'<flag key="{name}" name="{name}" bit="{bit}" value="{default}">TODO: description</flag>')
     return out
 
 
@@ -160,7 +173,8 @@ common_keys = {"targetname": ("Name", "The name that other entities refer to thi
 # ^ similar to guess_key_type, but for descriptions
 
 
-def xml_ent(dossier: Dossier) -> (str, Set[str]):
+def xml_ent(dossier: Dossier) -> (str, Set[str]):  # ("<point name="entity">...</point>", {"choiceType"})
+    """generate xml representation of entity from dossier"""
     out = list()
     choice_types = set()
     defs = ent_definitions(dossier["spec"]) if dossier["spec"] is not None else dict()
@@ -181,7 +195,9 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
     else:  # dummy spec
         fgd_keys = list()
         spawnflags = list()
+    # keys
     out.append("----- KEYS -----")
+    # fgd keys (sourced from fgd and present in ur_entity)
     for key in fgd_keys:  # preserve fgd order
         if key.value_type == "choices":
             # choices_dict = {c.display_name.lower(): c.value for c in key.choices}
@@ -196,12 +212,13 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
         key_description = sanitise_desc(key_description)
         out.append(" ".join([f'<{key_type} key="{key.name}" name="{key.display_name}"',
                              f'value="{key.default_value}">{key_description}</{key_type}>']))
-    omega_keys = {k for k in dossier["new"] if k not in ("classname",)}  # TODO: editorclass, spawnclass
+    # xml keys (sourced from ur_entity)
+    omega_keys = {k for k in dossier["new"] if k not in ("classname", "spawnclass")}
     for key_name in sorted(omega_keys):  # alphabetical order
         # NOTE: will get a handful of false positives from renamed ents w/ forgotten key values
-        if key_name.startswith("*coll") or key_name.startswith("*trigger_brush"):
-            continue  # skip omega entity compiled brushes
-        elif key_name != "spawnflags":
+        if key_name.startswith("*coll") or key_name.startswith("*trigger"):
+            continue  # skip omega entity collision / brushes
+        elif key_name != "spawnflags":  # general keys
             key_type = guess_key_type(key_name, dossier["ur"][key_name])
             key_display_name, key_desc = common_keys.get(key_name, (key_name, "New in Titanfall; TODO: identify"))
             out.append(f'<{key_type} key="{key_name}" name="{key_display_name}">{key_desc}</{key_type}>')
@@ -210,9 +227,11 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):
             used_flags = f"{omega_spawnflag:032b}"  # bits
             spawnflags = [valvefgd.FgdEntitySpawnflag(display_name=f"UNKNOWN_{i}", value=2**i, default_value=0)
                           for i in range(32) if used_flags[::-1][i] == "1"]  # sure hope this lines up
+    # spawnflags
     if len(spawnflags) > 0:
         out.append("----- SPAWNFLAGS -----")
         out.extend(xml_spawnflags(spawnflags))
+    # notes
     out.append("----- NOTES -----")
     out.append(f"Introduced by {dossier['origin']}")
     if dossier["origin"] == "Source":
@@ -239,8 +258,12 @@ def batch(maps: MapDict, fgd: valvefgd.Fgd, classnames: List[Union[str, Dict]]) 
         elif isinstance(x, dict):
             filters = x
         ent_omega = ur_ent(maps, **filters)
+
+        # TODO: feed base classname to id_ent (base classes in general would be handy)
         ent_dossier = id_ent(ent_omega, fgd)
         ent_txt, ent_choices = xml_ent(ent_dossier)
+        # TODO: ent_as_def(ent_dossier) for TrenchBroom
+        # TODO: ent_as_fgd(ent_dossier) for Hammer/Hammer++
         ents.append(ent_txt)
         for ec in ent_choices:
             choice_types[ec].add(filters["classname"])
@@ -301,15 +324,16 @@ if __name__ == "__main__":
     for bsp in maps.values():
         for block in ent_blocks:
             for entity in getattr(bsp, block):
-                all_classnames[block].add(entity["classname"])
-                # TODO: catch unique editorclass & spawnclass
+                all_classnames[block].add((entity["classname"], entity.get("editorclass", "")))
+                # NOTE: default "" editorclass means raw info_target & it's editorclasses should be split
 
     for block in ent_blocks:
         print(len(all_classnames[block]), "classnames found in", block)
 
     for block in ent_blocks:
         print(f"Batching {block}...")
-        choice_types, ents = batch(maps, fgd, all_classnames[block])
+        ent_filters = [dict(zip(("classname", "editorclass"), t)) for t in all_classnames[block]]
+        choice_types, ents = batch(maps, fgd, ent_filters)
         print(f"Writing {outdir}/{block}.xml...")
         with open(f"mrvn/{outdir}/{block}.xml", "w") as ent_file:
             ent_file.write(header + "\n")

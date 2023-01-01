@@ -1,10 +1,12 @@
 import collections
 import fnmatch
+import html
 import json
 import os
 import sys
 from xml.dom import minidom
 
+# parsing xml & json can be very unsafe with a lazy parser, always verify schema before diving in!
 if not sys.argv != (sys.argv[0], "--unsafe"):
     unsafe = False
     import xmlschema  # noqa F401
@@ -16,7 +18,7 @@ else:
 
 
 ent_filename = {"ENTITIES.xml": "entities.ent",
-                "ENTITIES_env.xml": "environment_entites.ent",
+                "ENTITIES_env.xml": "environment_entities.ent",
                 "ENTITIES_fx.xml": "effects_entities.ent",
                 "ENTITIES_script.xml": "script_entities.ent",
                 "ENTITIES_spawn.xml": "spawn_entities.ent",
@@ -126,7 +128,8 @@ if __name__ == "__main__":
                 xml_keys = {k.attributes["key"].value: k for k in xml_ent.childNodes
                             if k.attributes is not None and "key" in k.attributes}
                 json_keys = {k["keyname"]: k for k in json_ent.get("Keys", dict())}
-                choiceTypes.update({t for t in {k.get("type", "string") for k in json_keys.values()} if t not in key_types})
+                choiceTypes.update({t for t in {k.get("type", "string") for k in json_keys.values()}
+                                    if t not in key_types})
                 for keyname in set(xml_keys).intersection(set(json_keys)):
                     override_key(xml_keys[keyname], json_keys[keyname])
                 # write new keys
@@ -142,12 +145,15 @@ if __name__ == "__main__":
                     new_key.setAttribute("name", json_key.get("name", keyname))
                     new_key.setAttribute("value", json_key.get("value", ""))  # default
                     new_key.childNodes = [minidom.Text()]
-                    new_key.childNodes[0].replaceWholeText(json_key.get("description", ""))
+                    # TODO: default to previous description
+                    json_desc = json_key.get("description", "")
+                    new_key.childNodes[0].replaceWholeText(html.escape(json_desc))
                     xml_ent.childNodes.insert(last_key_index, new_key)
                     last_key_index += 1
                 ...
                 # TODO: override SpawnFlags
                 # -- add ----- SPAWNFLAGS ----- line if absent
+                # -- key
                 # -- name
                 # -- default
                 # -- description

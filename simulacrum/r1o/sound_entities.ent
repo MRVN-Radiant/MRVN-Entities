@@ -20,20 +20,11 @@
 =============================================================================
 -->
 <point name="ambient_generic" color="1 0 1" box="-8 -8 -8 8 8 8">
-Universal ambient sound.
-Use it to play and control a single sound.
 ----- KEYS -----
-<targetname key="targetname" name="Name" value="None">The name that other entities refer to this entity by.</targetname>
 <string key="soundName" name="soundName">New in Titanfall; TODO: identify</string>
 <string key="soundscape" name="soundscape">New in Titanfall; TODO: identify</string>
------ SPAWNFLAGS -----
-<flag name="FLAG_PLAY_EVERYWHERE" bit="0" value="0">TODO: get description from VDC</flag>
-<flag name="FLAG_START_SILENT" bit="4" value="1">TODO: get description from VDC</flag>
-<flag name="FLAG_IS_NOT_LOOPED" bit="5" value="1">TODO: get description from VDC</flag>
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
-Introduced by Source
-Added: soundName, soundscape
-Removed: SourceEntityName, cspinup, fadeinsecs, fadeoutsecs, health, lfomodpitch, lfomodvol, lforate, lfotype, message, pitch, pitchstart, preset, radius, spindown, spinup, thinkfunction, volstart, vscripts
-TODO: identify changes
+Introduced by Titanfall
 </point>
 </classes>

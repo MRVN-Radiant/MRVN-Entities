@@ -56,12 +56,9 @@ Introduced by Titanfall
 </point>
 
 <point name="info_intermission" color="1 0 1" box="-8 -8 -8 8 8 8">
-An entity that defines an intermission spot where dead players will float until they respawn.
 ----- KEYS -----
 ----- NOTES -----
-Introduced by Source
-Removed: target
-TODO: identify changes
+Introduced by Titanfall
 </point>
 
 <point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
@@ -94,27 +91,21 @@ Introduced by Titanfall
 <string key="triggerFilterTeamOther" name="triggerFilterTeamOther">New in Titanfall; TODO: identify</string>
 <string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
-<flag name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: get description from VDC</flag>
-<flag name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: get description from VDC</flag>
+<flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
+<flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
 ----- NOTES -----
 Introduced by Titanfall
 </group>
 
-<group name="worldspawn" color="1 0 1">
-This is the world entity.
-Each map can only contain one, and it's automatically created for you.
+<point name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="lightprobe_voronoi_leafsize" name="lightprobe_voronoi_leafsize">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>
 <string key="musicpostfix" name="musicpostfix">New in Titanfall; TODO: identify</string>
 <string key="name" name="name">New in Titanfall; TODO: identify</string>
-<string key="spawnclass" name="spawnclass">New in Titanfall; TODO: identify</string>
 <string key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</string>
 <string key="world_mins" name="world_mins">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
-Introduced by Source
-Added: lightprobe_voronoi_leafsize, mapversion, musicpostfix, name, spawnclass, world_maxs, world_mins
-Removed: ResponseContext, chaptertitle, coldworld, detailmaterial, detailvbsp, gametitle, maxoccludeearea, maxoccludeearea_x360, maxpropscreenwidth, message, minoccluderarea, minoccluderarea_x360, minpropscreenwidth, newunit, skyname, startdark, targetname, thinkfunction, vscripts
-TODO: identify changes
-</group>
+Introduced by Titanfall
+</point>
 </classes>
