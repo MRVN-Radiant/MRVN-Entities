@@ -6,27 +6,27 @@
     "Box": "-64 -64 0 64 64 72",
     "Model": "models/robots/mobile_hardpoint/mobile_hardpoint.obj",
     "Description": "Used to spawn the Hardpoints in Amped Hardpoints.",
-        "Keys": [
-             {
-                "keyname": "teamnum",
-                "type": "teamNumber",
-                "name": "Team Number",
-                "description": "Team(s) that own this flag"
-             },
-             {
-                "keyname": "hardpointGroup",
-                "type": "hardpointGroup",
-                "name": "Hardpoint Group",
-                "description": "Which Hardpoint is this on the HUD?"
-             },
-             {
-                "keyname": "scale",
-                "type": "float",
-                "name": "Scale",
-                "description": "Team(s) that own this flag"
-             }
-            ],
+    "Keys": [
+        {
+            "keyname": "teamnum",
+            "type": "teamNumber",
+            "name": "Team Number",
+            "description": "Team(s) that own this flag"
+        },
+        {
+            "keyname": "hardpointGroup",
+            "type": "hardpointGroup",
+            "name": "Hardpoint Group",
+            "description": "Which Hardpoint is this on the HUD?"
+        },
+        {
+            "keyname": "scale",
+            "type": "float",
+            "name": "Scale",
+            "description": "Team(s) that own this flag"
+        }
+    ],
     "Notes": [
                 "Model can be anything, including the old Titanfall 1 terminals, but you have to pick one!"
-             ]
+    ]
 }
