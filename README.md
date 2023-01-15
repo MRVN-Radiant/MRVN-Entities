@@ -1,4 +1,4 @@
-# MRVN-entities
+# MRVN-Entities
 Turns Pilots into Simulacra with the power of fanfiction  
 [MRVN-radiant](github.com/MRVN-radiant/MRVN-radiant) entity definition generator
 
