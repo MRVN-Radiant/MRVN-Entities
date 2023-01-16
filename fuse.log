@@ -1,0 +1,30 @@
+processing mrvn/r2/
+gathering overrides from pilot/r2/
+collected 52 entities across 3 blocks
+processing mrvn/r2/ENTITIES_spawn.xml
+processing mrvn/r2/ENTITIES.xml
+processing mrvn/r2/ENTITIES_script.xml
+Couldn't find mp_weapon_grenade_sonar to override (editorclass?). Skipping...
+Couldn't find mp_weapon_rspn101_og to override (editorclass?). Skipping...
+Couldn't find mp_weapon_wingman_n to override (editorclass?). Skipping...
+processing mrvn/r2/ENTITIES_env.xml
+processing mrvn/r2/ENTITIES_fx.xml
+processing mrvn/r2/ENTITIES_snd.xml
+processing mrvn/r5/
+gathering overrides from pilot/r5/
+collected 0 entities across 0 blocks
+processing mrvn/r5/ENTITIES_spawn.xml
+processing mrvn/r5/ENTITIES.xml
+processing mrvn/r5/ENTITIES_script.xml
+processing mrvn/r5/ENTITIES_env.xml
+processing mrvn/r5/ENTITIES_fx.xml
+processing mrvn/r5/ENTITIES_snd.xml
+processing mrvn/r1o/
+gathering overrides from pilot/r1o/
+collected 2 entities across 1 blocks
+processing mrvn/r1o/ENTITIES_spawn.xml
+processing mrvn/r1o/ENTITIES.xml
+processing mrvn/r1o/ENTITIES_script.xml
+processing mrvn/r1o/ENTITIES_env.xml
+processing mrvn/r1o/ENTITIES_fx.xml
+processing mrvn/r1o/ENTITIES_snd.xml

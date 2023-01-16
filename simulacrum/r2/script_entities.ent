@@ -660,7 +660,7 @@ Introduced by Titanfall
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber><boolean keyname="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean><boolean keyname="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean keyname="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean keyname="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean keyname="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean><boolean keyname="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean><boolean keyname="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean><boolean keyname="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean><boolean keyname="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean keyname="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean keyname="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean keyname="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean keyname="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean keyname="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean keyname="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean keyname="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean keyname="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean keyname="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean><boolean keyname="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean keyname="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean><boolean keyname="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber><boolean keyname="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean keyname="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean keyname="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean><boolean keyname="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean><boolean keyname="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean keyname="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean><boolean keyname="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean keyname="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean keyname="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean><boolean keyname="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean keyname="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean><boolean keyname="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean><boolean keyname="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean keyname="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean keyname="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean keyname="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean keyname="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean keyname="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean><boolean keyname="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean keyname="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean keyname="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -910,7 +910,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_alternator_smg" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_alternator_smg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/alternator_smg/w_alternator_smg.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -925,7 +926,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_arc_launcher" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_arc_launcher" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/arc_launcher/w_arc_launcher.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -936,115 +938,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_autopistol" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_car" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_defender" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_dmr" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
-<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_doubletake" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_epg" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
-<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_esaw" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_frag_drone" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_frag_grenade" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_autopistol" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/p2011_auto/w_p2011_auto.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1058,46 +953,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_g2" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_grenade_electric_smoke" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_grenade_emp" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_grenade_gravity" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_car" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/car101/w_car101.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1109,7 +966,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_hemlok" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_defender" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/defender/w_defender.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1121,21 +979,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_hemlok_smg" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_lmg" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_dmr" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/rspn101_dmr/w_rspn101dmr.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1151,37 +996,12 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_lstar" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_doubletake" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/doubletake/w_doubletake.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_mastiff" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_mgl" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <model key="model" name="World Model"/>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
@@ -1191,19 +1011,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_pulse_lmg" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
-<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_r97" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_epg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/epg/w_epg.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1217,7 +1026,23 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_rocket_launcher" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_esaw" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/hemlock_br/w_hemlock_br">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_frag_drone" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/sentry_frag/sentry_frag_proj.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1229,7 +1054,106 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_rspn101" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_frag_grenade" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/grenafes/m20_f_grenade.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_g2" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/g2/w_g2a4.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_grenade_electric_smoke" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/grenades/smoke_grenade.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_grenade_emp" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/grenades/arc_grenade.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_grenade_gravity" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/shuriken/w_shuriken.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_hemlok" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/m1a1_hemlok/w_hemlock.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_hemlok_smg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/hemlok_smg/w_hemlock_smg.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_lmg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/lmg_hemlock/w_lmg_hemlock.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1245,7 +1169,51 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_satchel" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_lstar" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/lstar/w_lstar.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_mastiff" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/mastiff_stgn/w_mastiff.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_mgl" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/mgl_at/w_mgl_at.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_pulse_lmg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/pulse_lmg/w_pulse_lmg.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1257,18 +1225,36 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_semipistol" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_r97" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/r97/w_r97.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
+<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_rocket_launcher" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/shoulder_rocket_SRAM/w_shoulder_rocket_SRAM_v2.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <model key="model" name="World Model"/>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_shotgun" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_rspn101" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/rspn101/w_rspn101.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1284,18 +1270,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_shotgun_pistol" color="1 0 1" box="-8 -8 -8 8 8 8">
------ KEYS -----
-<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
-Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"/>
-<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
------ NOTES -----
-Introduced by Titanfall
-</point>
-
-<point name="mp_weapon_smr" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_satchel" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/clacker_detonator/w_detonator_satchel.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1307,7 +1283,49 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_sniper" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_semipistol" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/p2011/w_p2011.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_shotgun" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/w1128/w_w1128.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
+<string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_mods" name="script_mods">New in Titanfall; TODO: identify</string>
+<string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_shotgun_pistol" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/pstl_sa3/w_pstl_sa3.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_smr" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/auto_rocket_launcher_ARL/w_ARL.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1319,7 +1337,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_softball" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_sniper" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/at_rifle/w_at_rifle.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1331,7 +1350,21 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_thermite_grenade" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_softball" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/softball_at/w_softball_at.mdl">
+----- KEYS -----
+<angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
+Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
+<model key="model" name="World Model"/>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
+<string key="script_weapon" name="script_weapon">New in Titanfall; TODO: identify</string>
+<string key="start_constrained" name="start_constrained">New in Titanfall; TODO: identify</string>
+----- NOTES -----
+Introduced by Titanfall
+</point>
+
+<!--snake-biscuits-->
+<point name="mp_weapon_thermite_grenade" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/shuriken/w_shuriken.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1344,7 +1377,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_vinson" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_vinson" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/vinson/w_vinson.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1359,7 +1393,8 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="mp_weapon_wingman" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="mp_weapon_wingman" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/b3wing/w_b3wing.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -3315,7 +3350,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
 <string key="script_noteworthy" name="script_noteworthy">New in Titanfall; TODO: identify</string>
 <string key="starts_when_visible" name="starts_when_visible">New in Titanfall; TODO: identify</string>
-<string key="teleport_to_node" name="teleport_to_node">New in Titanfall; TODO: identify</string><string keyname="editorclass" name="Editor Class" value="">entity subtype</string><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
+<string key="teleport_to_node" name="teleport_to_node">New in Titanfall; TODO: identify</string><teamNumber keyname="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
