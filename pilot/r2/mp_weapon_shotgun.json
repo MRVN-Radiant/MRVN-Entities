@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_shotgun",
+    "Model": "models/weapons/w1128/w_w1128.mdl",
+    "Description": "EVA-8 Auto"
+}

@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_dmr",
+    "Model": "models/weapons/rspn101_dmr/w_rspn101dmr.mdl",
+    "Description": "Longbow DMR"
+}

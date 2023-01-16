@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_arc_launcher",
+    "Model": "models/weapons/arc_launcher/w_arc_launcher.mdl",
+    "Description": "LG-97 Thunderbolt"
+}

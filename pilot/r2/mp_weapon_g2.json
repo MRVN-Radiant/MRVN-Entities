@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_g2",
+    "Model": "models/weapons/g2/w_g2a4.mdl",
+    "Description": "G2A5"
+}

@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_doubletake",
+    "Model": "models/weapons/doubletake/w_doubletake.mdl",
+    "Description": "Double Take"
+}

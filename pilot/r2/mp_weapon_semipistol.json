@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_semipistol",
+    "Model": "models/weapons/p2011/w_p2011.mdl",
+    "Description": "Hammond P2016"
+}

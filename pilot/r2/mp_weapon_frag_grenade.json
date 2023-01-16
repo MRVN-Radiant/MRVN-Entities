@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_frag_grenade",
+    "Model": "models/weapons/grenafes/m20_f_grenade.mdl",
+    "Description": "Frag Grenade"
+}

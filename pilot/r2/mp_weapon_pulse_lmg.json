@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_pulse_lmg",
+    "Model": "models/weapons/pulse_lmg/w_pulse_lmg.mdl",
+    "Description": "EM-4 Cold War"
+}

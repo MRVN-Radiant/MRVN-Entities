@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_softball",
+    "Model": "models/weapons/softball_at/w_softball_at.mdl",
+    "Description": "R-6P Softball"
+}

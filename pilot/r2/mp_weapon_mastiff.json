@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_mastiff",
+    "Model": "models/weapons/mastiff_stgn/w_mastiff.mdl",
+    "Description": "Mastiff"
+}

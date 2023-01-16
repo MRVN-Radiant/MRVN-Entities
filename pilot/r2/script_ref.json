@@ -2,19 +2,13 @@
     "Contributors": ["catornot", "snake-biscuits"],
     "Block": "ENTITIES_script",
     "Entity": "script_ref",
-    "Description": "ref script (baseclass for a bunch of entities)",
-	"Keys": [
-            {
-                "keyname": "teamnum",
-                "type": "teamNumber",
-                "name": "Team Number",
-                "description": "Team(s) allowed to spawn here"
-            },
-            {
-                "keyname": "editorclass",
-                "type": "string",
-                "name": "Editor Class",
-                "description": "entity subtype"
-            }
-        ]
+    "Description": "reference point for script(s)",
+    "Keys": [
+        {
+            "keyname": "teamnum",
+            "type": "teamNumber",
+            "name": "Team Number",
+            "description": "Team(s) allowed to spawn here"
+        }
+    ]
 }

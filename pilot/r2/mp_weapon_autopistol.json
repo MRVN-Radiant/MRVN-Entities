@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_autopistol",
+    "Model": "models/weapons/p2011_auto/w_p2011_auto.mdl",
+    "Description": "RE-45 Auto"
+}

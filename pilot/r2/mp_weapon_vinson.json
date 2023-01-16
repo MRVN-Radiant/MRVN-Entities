@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_vinson",
+    "Model": "models/weapons/vinson/w_vinson.mdl",
+    "Description": "V-47 Flatline"
+}

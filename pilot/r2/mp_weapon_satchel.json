@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_satchel",
+    "Model": "models/weapons/clacker_detonator/w_detonator_satchel.mdl",
+    "Description": "Satchel"
+}

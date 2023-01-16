@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_defender",
+    "Model": "models/weapons/defender/w_defender.mdl",
+    "Description": "Charge Rifle"
+}

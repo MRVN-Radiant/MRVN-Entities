@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_hemlok",
+    "Model": "models/weapons/m1a1_hemlok/w_hemlock.mdl",
+    "Description": "Hemlok BF-R"
+}

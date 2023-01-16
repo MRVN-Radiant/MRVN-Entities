@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_smr",
+    "Model": "models/weapons/auto_rocket_launcher_ARL/w_ARL.mdl",
+    "Description": "Sidewinder SMR"
+}

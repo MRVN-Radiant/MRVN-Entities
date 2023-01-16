@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_thermite_grenade",
+    "Model": "models/weapons/shuriken/w_shuriken.mdl",
+    "Description": "Firestar"
+}

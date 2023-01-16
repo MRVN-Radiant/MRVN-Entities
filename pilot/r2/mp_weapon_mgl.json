@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_mgl",
+    "Model": "models/weapons/mgl_at/w_mgl_at.mdl",
+    "Description": "MGL Mag Launcher"
+}

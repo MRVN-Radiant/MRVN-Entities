@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_grenade_emp",
+    "Model": "models/weapons/grenades/arc_grenade.mdl",
+    "Description": "Arc Grenade"
+}

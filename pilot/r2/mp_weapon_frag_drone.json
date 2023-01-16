@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_frag_drone",
+    "Model": "models/weapons/sentry_frag/sentry_frag_proj.mdl",
+    "Description": "Ticks"
+}

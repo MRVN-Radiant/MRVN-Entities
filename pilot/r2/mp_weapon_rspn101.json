@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_rspn101",
+    "Model": "models/weapons/rspn101/w_rspn101.mdl",
+    "Description": "R-201 Carbine"
+}

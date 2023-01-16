@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_shotgun_pistol",
+    "Model": "models/weapons/pstl_sa3/w_pstl_sa3.mdl",
+    "Description": "SA-3 Mozambique"
+}

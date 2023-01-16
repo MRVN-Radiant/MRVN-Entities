@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_rocket_launcher",
+    "Model": "models/weapons/shoulder_rocket_SRAM/w_shoulder_rocket_SRAM_v2.mdl",
+    "Description": "Archer"
+}

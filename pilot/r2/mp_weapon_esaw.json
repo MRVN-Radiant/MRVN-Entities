@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_esaw",
+    "Model": "models/weapons/hemlock_br/w_hemlock_br",
+    "Description": "X-55 Devotion"
+}

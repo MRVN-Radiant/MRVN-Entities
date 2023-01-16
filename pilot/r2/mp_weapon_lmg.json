@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_lmg",
+    "Model": "models/weapons/lmg_hemlock/w_lmg_hemlock.mdl",
+    "Description": "Spitfire"
+}

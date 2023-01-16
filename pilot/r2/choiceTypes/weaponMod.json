@@ -1,0 +1,29 @@
+{
+    "Name": "weaponMod",
+    "Options": {
+        "Factory Issue": "iron_sights",
+        "AOG": "aog",
+        "HCOG": "hcog",
+        "Holosight": "holosight",
+        "Variable Zoom": "scope_4x",
+        "4x Zoom Scope": "scope_6x",
+        "HCOG Ranger": "redline_sight",
+        "Threat Scope": "threat_scope",
+        "Extended Magazine": "extended_ammo",
+        "Silencer": "silencer",
+        "Stabilizer": "Stabilizer",
+        "Slammer": "slammer",
+        "Enhanced Targetting": "enhanced_targeting",
+        "Single Lock": "single_lock",
+        "Ricochet": "ricochet",
+        "Alt Spread": "alt_spread",
+        "Charge Hack": "quick_charge",
+        "Gunrunner": "pas_run_and_gun",
+        "Tactikill": "tactical_cdr_on_kill",
+        "Gun Ready": "pas_fast_ads",
+        "Quick Swap": "pas_fast_swap",
+        "Speedloader": "pas_fast_reload",
+        "Pro Screen": "pro_screen"
+    }
+}
+

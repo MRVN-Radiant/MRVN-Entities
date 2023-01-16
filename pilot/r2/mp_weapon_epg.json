@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES_script",
+    "Entity": "mp_weapon_epg",
+    "Model": "models/weapons/epg/w_epg.mdl",
+    "Description": "EPG-1"
+}
