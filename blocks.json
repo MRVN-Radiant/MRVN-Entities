@@ -327,7 +327,7 @@
       "trigger_quickdeath_checkpoint",
       "trigger_spawn",
       "trigger_teleporter",
-      "trigger_once" 
+      "trigger_once"
     ],
     "ENTITIES_spawn": [
       "info_frontline",
@@ -349,16 +349,68 @@
   },
   "r5": {
     "ENTITIES": [
+      "env_exposure",
+      "envmap_volume",
+      "func_window_hint",
+      "info_intermission",
+      "info_lightprobe",
+      "trigger_indoor_area",
+      "worldspawn"
     ],
     "ENTITIES_env": [
+      "color_correction",
+      "env_fog_controller",
+      "fog_volume",
+      "light",
+      "light_environment",
+      "light_environment_volume",
+      "light_probe_volume",
+      "light_spot",
+      "sky_camera",
+      "stream_hint_point"
     ],
     "ENTITIES_fx": [
+      "info_particle_system"
     ],
     "ENTITIES_script": [
+      "func_brush",
+      "func_brush_lightweight",
+      "info_hint",
+      "info_node_cover_crouch",
+      "info_node_cover_left",
+      "info_node_cover_right",
+      "info_node_cover_stand",
+      "info_node_safe_hint",
+      "info_player_start",
+      "info_target",
+      "info_target_clientside",
+      "prop_control_panel",
+      "prop_door",
+      "prop_dynamic",
+      "prop_dynamic_lightweight",
+      "prop_physics",
+      "script_mover",
+      "script_mover_lightweight",
+      "script_mover_train_node",
+      "script_ref",
+      "traverse",
+      "trigger_hurt",
+      "trigger_multiple",
+      "trigger_no_grapple",
+      "trigger_no_zipline",
+      "trigger_out_of_bounds",
+      "trigger_slip",
+      "zipline",
+      "zipline_end"
     ],
     "ENTITIES_spawn": [
+      "info_spawnpoint_human",
+      "info_spawnpoint_titan"
     ],
     "ENTITIES_snd": [
+      "ambient_generic",
+      "soundscape_floor",
+      "trigger_soundscape"
     ]
   }
 }
