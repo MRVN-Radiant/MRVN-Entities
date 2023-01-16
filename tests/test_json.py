@@ -9,7 +9,7 @@ import pytest
 games = tuple(filter(lambda p: os.path.isdir(os.path.join("mrvn", p)), os.listdir("mrvn")))
 
 entity_schema = json.load(open("tests/schema/entity.json"))
-entity_json = [os.path.join("pilot", g, j) for g in games
+entity_json = [os.path.join("pilot", g, j).replace("\\", "/") for g in games
                for j in fnmatch.filter(os.listdir(f"pilot/{g}"), "*.json")]
 
 choiceType_schema = json.load(open("tests/schema/choiceType.json"))
@@ -19,7 +19,7 @@ for game_dir in games:
     if not os.path.exists(search_dir):
         continue
     for choiceType in fnmatch.filter(os.listdir(search_dir), "*.json"):
-        choiceType_json.append(os.path.join(search_dir, choiceType))
+        choiceType_json.append(os.path.join(search_dir, choiceType).replace("\\", "/"))
 
 
 @pytest.mark.parametrize("json_filename", entity_json)
