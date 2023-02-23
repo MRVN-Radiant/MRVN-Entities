@@ -1,0 +1,9 @@
+{
+    "Name": "teamNumber",
+    "Options": {
+        "IMC": "2",
+        "Militia": "3",
+        "Both": "4",
+        "Any": "-1"
+    }
+}
