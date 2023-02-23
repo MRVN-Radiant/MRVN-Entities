@@ -21,7 +21,7 @@
         },
         {
             "keyname": "scale",
-            "type": "float",
+            "type": "real",
             "name": "Scale",
             "description": "Team(s) that own this flag"
         }

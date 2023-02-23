@@ -18,7 +18,7 @@
              },
              {
                 "keyname": "path_speed",
-                "type": "float",
+                "type": "real",
                 "name": "Path Speed",
                 "description": "the speed at which the mover travels on its path"
              },
