@@ -42,8 +42,8 @@ def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
     # TODO: force fgd baseclass (default: omega_entity["classname"])
 
     # editorclass -> classname override
-    og_classname, og_editorclass = omega_entity["classname"], omega_entity.get("editorclass", "")
-    omega_entity["classname"] = og_editorclass if og_editorclass != "" else og_classname
+    og_classname, og_editorclass = omega_entity["classname"], omega_entity.get("editorclass")
+    omega_entity["classname"] = og_editorclass if og_editorclass is not None else og_classname
     if "editorclass" in omega_entity:
         omega_entity.pop("editorclass")
     # NOTE: MRVN-radiant remap will reverse this, grouping by editorclass just make writing easier
@@ -135,7 +135,9 @@ key_types = {"float": "real", "boolean": "boolean", "integer": "integer", "studi
 
 def guess_key_type(key_name: str, key_values: Set[str]) -> str:
     """ur_key key_type"""
-    # TODO: sound (need radiant to index soundscripts like source)
+    # https://github.com/MRVN-Radiant/MRVN-Radiant/blob/main/radiant/eclass_xml.cpp#L49-L68
+    # TODO: better checks for false positives
+    key_values.discard("")
     is_vec3, is_vec4, is_path = False, False, False
     if key_name.lower() == "scale":
         return "real"
@@ -150,10 +152,13 @@ def guess_key_type(key_name: str, key_values: Set[str]) -> str:
         return "color"
     if "model" in key_name.lower() and is_path:
         return "model"
-    # TODO: tag paths for TODOs (might be material)
-    if "target" in key_name.lower():  # TEST: false positives
+    # if is_path:
+    # -- sound (need radiant to index soundscripts like source)
+    # -- texture (sprites, light texture)
+    # -- ui & script are possibilities, but aren't supported by Radiant (yet.)
+    if "target" in key_name.lower():
         return "targetname"
-    if "angles" in key_name.lower():  # TEST: false positives
+    if "angles" in key_name.lower() and is_vec3:
         return "angles"
     return "string"
 
@@ -173,10 +178,10 @@ common_keys = {"targetname": ("Name", "The name that other entities refer to thi
 # ^ similar to guess_key_type, but for descriptions
 
 
-def xml_ent(dossier: Dossier) -> (str, Set[str]):  # ("<point name="entity">...</point>", {"choiceType"})
+def xml_ent(dossier: Dossier) -> (str, Set[str]):  # ("<point name="entity">...</point>", {'<list name="choiceType"'})
     """generate xml representation of entity from dossier"""
-    out = list()
-    choice_types = set()
+    out = list()  # lines of xml text
+    choice_types = set()  # blocks of xml choiceType definitions
     defs = ent_definitions(dossier["spec"]) if dossier["spec"] is not None else dict()
     head = f'<{dossier["type"]} name=\"{dossier["classname"]}\"'
     color = " ".join(map(str, defs.get("color", [1, 0, 1])))
@@ -265,8 +270,8 @@ def batch(maps: MapDict, fgd: valvefgd.Fgd, classnames: List[Union[str, Dict]]) 
         # TODO: ent_as_def(ent_dossier) for TrenchBroom
         # TODO: ent_as_fgd(ent_dossier) for Hammer/Hammer++
         ents.append(ent_txt)
-        for ec in ent_choices:
-            choice_types[ec].add(filters["classname"])
+        for ct in ent_choices:
+            choice_types[ct].add(filters["classname"])
         # TODO: ensure list name of each ent_choice_list is unique
         # -- camelCase w/ entity_name
         # -- probably need to regex first line
