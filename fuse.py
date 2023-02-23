@@ -88,6 +88,17 @@ def update_spawnflag(xml_flag: ElementTree.Element, json_spec: dict):
     xml_flag.text = json_spec.get("description", xml_flag.text)
 
 
+def new_choice_type(json_spec: dict) -> ElementTree.Element:
+    out = ElementTree.Element("list")
+    out.set("name", json_spec["Name"])
+    for name, value in json_spec["Options"].items():
+        option = ElementTree.Element("item")
+        option.set("name", name)
+        option.set("value", value)
+        out.append(option)
+    return out
+
+
 if __name__ == "__main__":
     # TODO: make failstates more explicit and give useful error messages
     # -- ideally gather all errors & recommend changes to pilot/*.json (mrvn/*.xml should be stable)
@@ -117,13 +128,30 @@ if __name__ == "__main__":
             ent_overrides[f"{entity['Block']}.xml"].add(json_filename)
         print(f"collected {sum(map(len, ent_overrides.values()))} entities across {len(ent_overrides)} blocks")
 
-        # TODO: find all defined choiceTypes (in mrvn/*.xml & pilot/*/choiceTypes/*.json)
+        print(f"gathering choiceTypes from pilot/{game}/choiceTypes")
+        choice_type_dir = os.path.join(json_dir, "choiceTypes")
+        assert os.path.exists(choice_type_dir)
+        cached_choice_types = dict()
+        # ^ {"choiceType": {"Name": "choiceType", "Options": dict(...)}}
+        for json_filename in fnmatch.filter(os.listdir(choice_type_dir), "*.json"):
+            full_json_filepath = os.path.join(choice_type_dir, json_filename)
+            # if not unsafe:
+            #     tests.test_json.test_choiceType(choice_type)
+            try:
+                with open(full_json_filepath) as json_file:
+                    choice_type = json.load(json_file)
+            except Exception as exc:
+                print(f"{json_filename} broke: {exc.__name__}({exc.msg})")  # TODO: more detail / helpful suggestions
+            cached_choice_types.update({json_filename[:-5]: choice_type})
+        print(f"collected {len(cached_choice_types)} choiceType definitions")
 
         for xml_filename in fnmatch.filter(os.listdir(in_dir), "*.xml"):
             print(f"processing mrvn/{game}/{xml_filename}")
             full_xml_filename = os.path.join(in_dir, xml_filename)
             assert xml_filename in ent_filename.keys(), "Unexpected .xml file in mrvn/"
             xml_file = ElementTree.parse(full_xml_filename)
+            used_choice_types = set()
+            # NOTE: at time of writing, bloodhound doesn't generate choiceTypes; we must add our own.
             ent_classes_node = xml_file.getroot()
             entities = {e.get("name"): e for e in ent_classes_node if e.tag in ("point", "group")}
             for json_filename in ent_overrides[xml_filename]:
@@ -143,7 +171,17 @@ if __name__ == "__main__":
                 update_ent_metadata(xml_ent, json_ent, "Model")
                 xml_keys = {k.get("key"): k for k in xml_ent if k.tag != "flag"}
                 json_keys = {k["keyname"]: k for k in json_ent.get("Keys", dict())}
-                # TODO: add new choiceTypes to .ent
+                # add new choiceTypes to .ent
+                xml_choice_types = {k["type"] for k in xml_keys.values() if k.tag not in key_types}
+                json_choice_types = {k["type"] for k in json_keys.values() if k["type"] not in key_types}
+                ent_choice_types = xml_choice_types.union(json_choice_types)
+                for choice_type in ent_choice_types.difference(used_choice_types):
+                    try:
+                        ct = new_choice_type(cached_choice_types[choice_type])
+                    except KeyError:
+                        raise RuntimeError(f"{json_dir}/choiceTypes/{choice_type}.json not found ({json_ent['Entity']})")
+                    ent_classes_node.insert(0, ct)
+                used_choice_types = used_choice_types.union(ent_choice_types)
                 # update xml ent according to json spec
                 for keyname in set(xml_keys).intersection(set(json_keys)):
                     update_key(xml_keys[keyname], json_keys[keyname])
