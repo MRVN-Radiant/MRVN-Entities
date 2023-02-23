@@ -201,6 +201,6 @@ if __name__ == "__main__":
                         continue
                 ...
                 # TODO: override Notes (preserve "Introduced by Source / Titanfall" on first line)
-            with open(os.path.join(out_dir, ent_filename[xml_filename]), "w") as ent_file:
+            with open(os.path.join(out_dir, ent_filename[xml_filename]), "wb") as ent_file:
                 xml_file.write(ent_file)
         # TODO: check for unused choiceTypes & log warnings
