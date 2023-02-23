@@ -1,20 +1,28 @@
 processing mrvn/r2/
 gathering overrides from pilot/r2/
 collected 52 entities across 3 blocks
+gathering choiceTypes from pilot/r2/choiceTypes
+collected 4 choiceType definitions
 processing mrvn/r2/ENTITIES_spawn.xml
 processing mrvn/r2/ENTITIES.xml
 processing mrvn/r2/ENTITIES_script.xml
-Couldn't find mp_weapon_grenade_sonar to override (editorclass?). Skipping...
-Couldn't find mp_weapon_rspn101_og to override (editorclass?). Skipping...
-Couldn't find mp_weapon_wingman_n to override (editorclass?). Skipping...
+Couldn't find mp_weapon_rspn101_og to override in mrvn/r2/ENTITIES_script.xml; Skipping...
+Couldn't find mp_weapon_wingman_n to override in mrvn/r2/ENTITIES_script.xml; Skipping...
+Couldn't find mp_weapon_grenade_sonar to override in mrvn/r2/ENTITIES_script.xml; Skipping...
 processing mrvn/r2/ENTITIES_env.xml
 processing mrvn/r2/ENTITIES_fx.xml
 processing mrvn/r2/ENTITIES_snd.xml
 processing mrvn/r5/
 gathering overrides from pilot/r5/
-collected 0 entities across 0 blocks
+collected 7 entities across 3 blocks
+gathering choiceTypes from pilot/r5/choiceTypes
+collected 1 choiceType definitions
 processing mrvn/r5/ENTITIES_spawn.xml
+Couldn't find info_spawnpoint_titan_start to override in mrvn/r5/ENTITIES_spawn.xml; Skipping...
+Couldn't find info_spawnpoint_dropship to override in mrvn/r5/ENTITIES_spawn.xml; Skipping...
+Couldn't find info_spawnpoint_dropship_start to override in mrvn/r5/ENTITIES_spawn.xml; Skipping...
 processing mrvn/r5/ENTITIES.xml
+Couldn't find info_spawnpoint_flag to override in mrvn/r5/ENTITIES.xml; Skipping...
 processing mrvn/r5/ENTITIES_script.xml
 processing mrvn/r5/ENTITIES_env.xml
 processing mrvn/r5/ENTITIES_fx.xml
@@ -22,6 +30,8 @@ processing mrvn/r5/ENTITIES_snd.xml
 processing mrvn/r1o/
 gathering overrides from pilot/r1o/
 collected 2 entities across 1 blocks
+gathering choiceTypes from pilot/r1o/choiceTypes
+collected 1 choiceType definitions
 processing mrvn/r1o/ENTITIES_spawn.xml
 processing mrvn/r1o/ENTITIES.xml
 processing mrvn/r1o/ENTITIES_script.xml
