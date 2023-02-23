@@ -22,15 +22,16 @@ ent_filename = {"ENTITIES.xml":        "entities.ent",
                 "ENTITIES_spawn.xml":  "spawn_entities.ent",
                 "ENTITIES_snd.xml":    "sound_entities.ent"}
 
-key_types = {"real": float, "integer": int, "string": str, "boolean": bool,
-             "angles": str, "model": str, "color": str,
-             "targetname": str}  # TODO: see if I forgot any
+key_types = {"string": str, "array": str, "integer": int, "boolean": bool, "real": float,
+             "angle": float, "direction": str, "real3": str, "angles": str, "color": str,  # float x3
+             "target": str, "targetname": str,  # identifiers
+             "sound": str, "texture": str, "model": str, "skin": str}  # paths
 
-key_type_defaults = {"float": "1.0", "integer": "0", "string": "", "boolean": "0",
-                     "angles": "0 0 0", "model": "", "color": "1 0 1", "targetname": ""}
-# TODO: use regex to ensure values conform to key_type
-# NOTE: origin & any *keys (added by compiler) should not appear in definitions
-# -- we might override origin in future actually... some ents might need deeper descriptions
+key_type_defaults = {"string": "", "array": "", "integer": "0", "boolean": "0", "real": "1",
+                     "angle": "0", "direction": "0 1 0", "real3": "0 0 0", "angles": "0 0 0", "color": "1 0 1",
+                     "target": "", "targetname": "",
+                     "sound": "", "texture": "", "model": "", "skin": ""}
+# NOTE: tests.test_json will use regex to ensure values conform to key_type (doesn't yet)
 
 # TODO: choiceTypes should default to first list item
 # -- any type not in key_types should be considered a choiceType
