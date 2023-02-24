@@ -50,7 +50,7 @@ jobs:
 
       - name: Generate Simulacrum name
         run: |
-          echo "SIMULACRUM_NAME=$(echo MRVN-entities_`date -u -Idate`_${GITHUB_SHA::7})" >> $GITHUB_ENV
+          echo "SIMULACRUM_NAME=$(echo MRVN-Entities_`date -u -Idate`_${GITHUB_SHA::7})" >> $GITHUB_ENV
 
       - name: Export Simulacrum Artifact
         uses: actions/upload-artifact@v3
