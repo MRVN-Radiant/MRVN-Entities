@@ -2,6 +2,7 @@
     "Contributors": ["snake-biscuits"],
     "Block": "ENTITIES_script",
     "Entity": "mp_weapon_rspn101_og",
+    "Type": "point",
     "Model": "models/weapons/r101_sfp/w_r101_sfp.mdl",
     "Description": "R-101 Carbine"
 }

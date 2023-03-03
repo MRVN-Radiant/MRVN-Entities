@@ -2,6 +2,7 @@
     "Contributors": ["snake-biscuits"],
     "Block": "ENTITIES_script",
     "Entity": "mp_weapon_grenade_sonar",
+    "Type": "point",
     "Model": "models/weapons/kunai/w_kunai.mdl",
     "Description": "Pulse Blade"
 }

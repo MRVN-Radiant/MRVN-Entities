@@ -2,6 +2,7 @@
     "Contributors": ["snake-biscuits"],
     "Block": "ENTITIES_script",
     "Entity": "mp_weapon_wingman_n",
+    "Type": "point",
     "Model": "models/weapons/wingman_elite/w_wingman_elite.mdl",
     "Description": "Wingman Elite"
 }
