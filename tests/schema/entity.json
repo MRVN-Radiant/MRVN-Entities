@@ -15,7 +15,7 @@
     "Block": {
       "description": "Entity block (mrvn/game/<Block>.xml) this definition overrides",
       "type": "string",
-      "pattern": "ENTITIES(_(env|fx|script|spawn|snd))?"
+      "pattern": "ENTITIES(_(env|fx|script|spawn|snd))?|radiant"
     },
     "Entity": {
       "description": "Entity classname & json filename (TODO: editorclass)",

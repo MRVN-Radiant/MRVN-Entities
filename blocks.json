@@ -83,6 +83,9 @@
     ],
     "ENTITIES_snd": [
       "ambient_generic"
+    ],
+    "radiant": [
+      "func_occluder"
     ]
   },
   "r2": {
@@ -345,6 +348,9 @@
     "ENTITIES_snd": [
       "ambient_generic",
       "trigger_soundscape"
+    ],
+    "radiant": [
+      "func_occluder"
     ]
   },
   "r5": {
@@ -411,6 +417,9 @@
       "ambient_generic",
       "soundscape_floor",
       "trigger_soundscape"
+    ],
+    "radiant": [
+      "func_occluder"
     ]
   }
 }
