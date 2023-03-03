@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits", "F1F7Y"],
+    "Block": "radiant",
+    "Entity": "func_occluder",
+    "Type": "group",
+    "Description": "https://developer.valvesoftware.com/wiki/Func_occluder"
+}

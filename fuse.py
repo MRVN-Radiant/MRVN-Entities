@@ -20,7 +20,8 @@ ent_filename = {"ENTITIES.xml":        "entities.ent",
                 "ENTITIES_fx.xml":     "effects_entities.ent",
                 "ENTITIES_script.xml": "script_entities.ent",
                 "ENTITIES_spawn.xml":  "spawn_entities.ent",
-                "ENTITIES_snd.xml":    "sound_entities.ent"}
+                "ENTITIES_snd.xml":    "sound_entities.ent",
+                "radiant.xml":         "radiant.ent"}
 
 key_types = {"string": str, "array": str, "integer": int, "boolean": bool, "real": float,
              "angle": float, "direction": str, "real3": str, "angles": str, "color": str,  # float x3
