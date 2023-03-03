@@ -152,18 +152,31 @@ if __name__ == "__main__":
             assert xml_filename in ent_filename.keys(), "Unexpected .xml file in mrvn/"
             xml_file = ElementTree.parse(full_xml_filename)
             used_choice_types = set()
-            # NOTE: at time of writing, bloodhound doesn't generate choiceTypes; we must add our own.
             ent_classes_node = xml_file.getroot()
             entities = {e.get("name"): e for e in ent_classes_node if e.tag in ("point", "group")}
             for json_filename in ent_overrides[xml_filename]:
                 with open(os.path.join(json_dir, json_filename)) as json_file:
                     json_ent = json.load(json_file)
                 # index entity
-                if json_ent["Entity"] not in entities:
-                    # TODO: add new entities (e.g. prop_static)
-                    print("Couldn't find", json_ent["Entity"], f"to override in {full_xml_filename}; Skipping...")
-                    continue
-                xml_ent = entities[json_ent["Entity"]]
+                ent_name = json_ent["Entity"]
+                if ent_name in entities:
+                    xml_ent = entities[ent_name]
+                else:  # new ent
+                    try:
+                        assert "Type" in json_ent, "'Type' must be defined"
+                        ent_type = json_ent["Type"]
+                        assert ent_type in ("point", "group"), "'Type' must be either 'point' or 'group'"
+                        print(f"adding new entity: {ent_name}")
+                        ent_index = sorted([*entities.keys(), ent_name]).index(ent_name)
+                        ent_classes_node.insert(ent_index, ElementTree.Element(json_ent["Type"], name=ent_name))
+                        xml_ent = ent_classes_node[ent_index]
+                    except AssertionError as ae:
+                        print(f"NEW entity: {ent_name} .json is missing data: {ae!s}; Skipping...")
+                    except Exception as exc:
+                        exception_type = exc.__class__.__name__
+                        print(f"Failed to add {ent_name} to {full_xml_filename} ({exception_type}); Skipping...")
+                    # NOTE: tests will complain if new ent isn't listed in blocks.json
+                # add .json data
                 contributors_comment = ElementTree.Comment(", ".join(json_ent["Contributors"]))
                 ent_classes_node.insert(ent_classes_node[::].index(xml_ent), contributors_comment)
                 update_ent_metadata(xml_ent, json_ent, "Color", default="1 0 1")
