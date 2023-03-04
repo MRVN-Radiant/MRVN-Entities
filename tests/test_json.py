@@ -60,6 +60,9 @@ key_tests = {k: t if not isinstance(t, str) else (lambda v: re.match(t, v) is no
 def test_entity(json_filename: str):
     with open(json_filename) as json_file:
         entity = json.load(json_file)
+    filename_ext = os.path.basename(json_filename)
+    filename = os.path.splitext(filename_ext)[0]
+    assert filename == entity["Entity"], f"{entity['Entity']} defined in {filename_ext}"
     jsonschema.validate(entity, schema=entity_schema)
     # TODO: test choiceTypes are defined in either mrvn/*.xml or pilot/*/choiceTypes/*.json
     # TODO: verify any choiceType selections are valid
@@ -69,8 +72,10 @@ def test_entity(json_filename: str):
 def test_choiceType(json_filename: str):
     with open(json_filename) as json_file:
         choiceType = json.load(json_file)
+    filename_ext = os.path.basename(json_filename)
+    filename = os.path.splitext(filename_ext)[0]
+    assert filename == choiceType["Name"], f"{choiceType['Name']} defined in {filename_ext}"
     jsonschema.validate(choiceType, schema=choiceType_schema)
-    # TODO: enforce filename matches
 
 
 blocks = json.load(open("blocks.json"))
