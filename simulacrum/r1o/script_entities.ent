@@ -5,7 +5,7 @@
 
 <point name="assault_assaultpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
-<string key="allowdiversion" name="allowdiversion">New in Titanfall; TODO: identify</string>
+<boolean key="allowdiversion" name="allowdiversion">New in Titanfall; TODO: identify</boolean>
 <string key="allowdiversionradius" name="allowdiversionradius">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -14,14 +14,14 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="assaulttolerance" name="assaulttolerance">New in Titanfall; TODO: identify</string>
 <string key="clearoncontact" name="clearoncontact">New in Titanfall; TODO: identify</string>
 <string key="color" name="color">New in Titanfall; TODO: identify</string>
-<angles key="faceAssaultPointAngles" name="faceAssaultPointAngles">New in Titanfall; TODO: identify</angles>
-<string key="forcecrouch" name="forcecrouch">New in Titanfall; TODO: identify</string>
+<boolean key="faceAssaultPointAngles" name="faceAssaultPointAngles">New in Titanfall; TODO: identify</boolean>
+<boolean key="forcecrouch" name="forcecrouch">New in Titanfall; TODO: identify</boolean>
 <string key="nevertimeout" name="nevertimeout">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="strict" name="strict">New in Titanfall; TODO: identify</string>
+<boolean key="strict" name="strict">New in Titanfall; TODO: identify</boolean>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="urgent" name="urgent">New in Titanfall; TODO: identify</string>
+<boolean key="urgent" name="urgent">New in Titanfall; TODO: identify</boolean>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -263,9 +263,9 @@ Introduced by Titanfall
 
 <point name="prop_dynamic" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
-<string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
+<boolean key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</boolean>
 <string key="DefaultAnim" name="DefaultAnim">New in Titanfall; TODO: identify</string>
-<string key="DisableBoneFollowers" name="DisableBoneFollowers">New in Titanfall; TODO: identify</string>
+<boolean key="DisableBoneFollowers" name="DisableBoneFollowers">New in Titanfall; TODO: identify</boolean>
 <string key="ExplodeDamage" name="ExplodeDamage">New in Titanfall; TODO: identify</string>
 <string key="ExplodeRadius" name="ExplodeRadius">New in Titanfall; TODO: identify</string>
 <string key="HoldAnimation" name="HoldAnimation">New in Titanfall; TODO: identify</string>
@@ -282,12 +282,12 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="collide_bullet" name="collide_bullet">New in Titanfall; TODO: identify</string>
 <string key="collide_human" name="collide_human">New in Titanfall; TODO: identify</string>
 <string key="collide_sight" name="collide_sight">New in Titanfall; TODO: identify</string>
-<string key="collide_titan" name="collide_titan">New in Titanfall; TODO: identify</string>
+<boolean key="collide_titan" name="collide_titan">New in Titanfall; TODO: identify</boolean>
 <string key="disableX360" name="disableX360">New in Titanfall; TODO: identify</string>
-<string key="disableflashlight" name="disableflashlight">New in Titanfall; TODO: identify</string>
-<string key="disablereceiveshadows" name="disablereceiveshadows">New in Titanfall; TODO: identify</string>
-<string key="disableshadowdepth" name="disableshadowdepth">New in Titanfall; TODO: identify</string>
-<string key="disableshadows" name="disableshadows">New in Titanfall; TODO: identify</string>
+<boolean key="disableflashlight" name="disableflashlight">New in Titanfall; TODO: identify</boolean>
+<boolean key="disablereceiveshadows" name="disablereceiveshadows">New in Titanfall; TODO: identify</boolean>
+<boolean key="disableshadowdepth" name="disableshadowdepth">New in Titanfall; TODO: identify</boolean>
+<boolean key="disableshadows" name="disableshadows">New in Titanfall; TODO: identify</boolean>
 <string key="drawinfastreflection" name="drawinfastreflection">New in Titanfall; TODO: identify</string>
 <string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>

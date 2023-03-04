@@ -7,7 +7,7 @@
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="radius" name="radius">New in Titanfall; TODO: identify</string>
-<string key="requireLOS" name="requireLOS">New in Titanfall; TODO: identify</string>
+<boolean key="requireLOS" name="requireLOS">New in Titanfall; TODO: identify</boolean>
 <string key="soundscape" name="soundscape">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----

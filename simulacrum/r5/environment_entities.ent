@@ -35,12 +35,12 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="foghalfdisttop" name="foghalfdisttop">New in Titanfall; TODO: identify</string>
 <string key="fogzbottom" name="fogzbottom">New in Titanfall; TODO: identify</string>
 <string key="fogztop" name="fogztop">New in Titanfall; TODO: identify</string>
-<string key="forceontosky" name="forceontosky">New in Titanfall; TODO: identify</string>
+<boolean key="forceontosky" name="forceontosky">New in Titanfall; TODO: identify</boolean>
 <string key="minfadetime" name="minfadetime">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<angles key="use_angles" name="use_angles">New in Titanfall; TODO: identify</angles>
+<boolean key="use_angles" name="use_angles">New in Titanfall; TODO: identify</boolean>
 <string key="vl_color" name="vl_color">New in Titanfall; TODO: identify</string>
 <string key="vl_distFalloff" name="vl_distFalloff">New in Titanfall; TODO: identify</string>
 <string key="vl_in_shadow_scatter" name="vl_in_shadow_scatter">New in Titanfall; TODO: identify</string>
@@ -64,22 +64,22 @@ Introduced by Titanfall
 ----- KEYS -----
 <string key="_cone" name="_cone">New in Titanfall; TODO: identify</string>
 <string key="_distance" name="_distance">New in Titanfall; TODO: identify</string>
-<string key="_emitter_radius" name="_emitter_radius">New in Titanfall; TODO: identify</string>
+<boolean key="_emitter_radius" name="_emitter_radius">New in Titanfall; TODO: identify</boolean>
 <string key="_fifty_percent_distance" name="_fifty_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="_half_bright_fraction" name="_half_bright_fraction">New in Titanfall; TODO: identify</string>
 <string key="_light" name="_light">New in Titanfall; TODO: identify</string>
 <string key="_lightHDR" name="_lightHDR">New in Titanfall; TODO: identify</string>
 <string key="_lightscaleHDR" name="_lightscaleHDR">New in Titanfall; TODO: identify</string>
-<string key="_pbr_falloff" name="_pbr_falloff">New in Titanfall; TODO: identify</string>
+<boolean key="_pbr_falloff" name="_pbr_falloff">New in Titanfall; TODO: identify</boolean>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
 <string key="_zero_percent_distance" name="_zero_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
 <string key="color" name="color">New in Titanfall; TODO: identify</string>
 <string key="instance_name" name="instance_name">New in Titanfall; TODO: identify</string>
 <string key="parentBrushModel" name="parentBrushModel">New in Titanfall; TODO: identify</string>
-<string key="realtime" name="realtime">New in Titanfall; TODO: identify</string>
+<boolean key="realtime" name="realtime">New in Titanfall; TODO: identify</boolean>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_tweakable" name="script_tweakable">New in Titanfall; TODO: identify</string>
+<boolean key="script_tweakable" name="script_tweakable">New in Titanfall; TODO: identify</boolean>
 <string key="style" name="style">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <string key="tweak_light_index" name="tweak_light_index">New in Titanfall; TODO: identify</string>
@@ -135,7 +135,7 @@ Introduced by Titanfall
 <string key="_half_bright_fraction" name="_half_bright_fraction">New in Titanfall; TODO: identify</string>
 <string key="_inner_cone" name="_inner_cone">New in Titanfall; TODO: identify</string>
 <string key="_light" name="_light">New in Titanfall; TODO: identify</string>
-<string key="_pbr_falloff" name="_pbr_falloff">New in Titanfall; TODO: identify</string>
+<boolean key="_pbr_falloff" name="_pbr_falloff">New in Titanfall; TODO: identify</boolean>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
 <string key="_zero_percent_distance" name="_zero_percent_distance">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -145,11 +145,11 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="instance_name" name="instance_name">New in Titanfall; TODO: identify</string>
 <string key="parentBrushModel" name="parentBrushModel">New in Titanfall; TODO: identify</string>
 <string key="pitch" name="pitch">New in Titanfall; TODO: identify</string>
-<string key="realtime" name="realtime">New in Titanfall; TODO: identify</string>
+<boolean key="realtime" name="realtime">New in Titanfall; TODO: identify</boolean>
 <string key="realtime_shadows" name="realtime_shadows">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
-<string key="script_tweakable" name="script_tweakable">New in Titanfall; TODO: identify</string>
-<string key="shadow" name="shadow">New in Titanfall; TODO: identify</string>
+<boolean key="script_tweakable" name="script_tweakable">New in Titanfall; TODO: identify</boolean>
+<boolean key="shadow" name="shadow">New in Titanfall; TODO: identify</boolean>
 <string key="shadow_bias" name="shadow_bias">New in Titanfall; TODO: identify</string>
 <string key="shadow_filter_size" name="shadow_filter_size">New in Titanfall; TODO: identify</string>
 <string key="shadow_upres" name="shadow_upres">New in Titanfall; TODO: identify</string>
@@ -181,7 +181,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="skyscale" name="skyscale">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<angles key="use_angles" name="use_angles">New in Titanfall; TODO: identify</angles>
+<boolean key="use_angles" name="use_angles">New in Titanfall; TODO: identify</boolean>
 <string key="useworldfog" name="useworldfog">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall

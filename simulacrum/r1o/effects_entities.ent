@@ -61,12 +61,12 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
-<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
-<string key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</string>
+<boolean key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</boolean>
+<boolean key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</boolean>
 <model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="solid" name="solid">New in Titanfall; TODO: identify</string>
-<string key="start_active" name="start_active">New in Titanfall; TODO: identify</string>
+<boolean key="start_active" name="start_active">New in Titanfall; TODO: identify</boolean>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
@@ -79,12 +79,12 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
-<string key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</string>
+<boolean key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</boolean>
 <string key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="solid" name="solid">New in Titanfall; TODO: identify</string>
-<string key="start_active" name="start_active">New in Titanfall; TODO: identify</string>
+<boolean key="start_active" name="start_active">New in Titanfall; TODO: identify</boolean>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall

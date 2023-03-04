@@ -5,7 +5,7 @@
 
 <point name="ambient_generic" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
-<string key="enabled" name="enabled">New in Titanfall; TODO: identify</string>
+<boolean key="enabled" name="enabled">New in Titanfall; TODO: identify</boolean>
 <string key="environment" name="environment">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="parentBrushModel" name="parentBrushModel">New in Titanfall; TODO: identify</string>
@@ -19,7 +19,7 @@ Introduced by Titanfall
 
 <group name="trigger_soundscape" color="1 0 1">
 ----- KEYS -----
-<string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
+<boolean key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</boolean>
 <string key="environment" name="environment">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="parentBrushModel" name="parentBrushModel">New in Titanfall; TODO: identify</string>
@@ -28,7 +28,7 @@ Introduced by Titanfall
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
 <string key="soundscape" name="soundscape">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="triggerFilterNonCharacter" name="triggerFilterNonCharacter">New in Titanfall; TODO: identify</string>
+<boolean key="triggerFilterNonCharacter" name="triggerFilterNonCharacter">New in Titanfall; TODO: identify</boolean>
 <string key="triggerFilterNpc" name="triggerFilterNpc">New in Titanfall; TODO: identify</string>
 <string key="triggerFilterNpcFlip" name="triggerFilterNpcFlip">New in Titanfall; TODO: identify</string>
 <string key="triggerFilterNpcOwnedByPlayer" name="triggerFilterNpcOwnedByPlayer">New in Titanfall; TODO: identify</string>
