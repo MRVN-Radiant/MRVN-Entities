@@ -162,7 +162,7 @@ def guess_key_type(key_name: str, key_values: List[str]) -> str:
     # -- ui & script are possibilities, but aren't supported by Radiant (yet.)
     if "target" in key_name.lower():
         return "targetname"
-    if "angles" in key_name.lower() and is_vec3:
+    if "angles" in key_name.lower():  # not questioning is_vec3
         return "angles"
     return "string"
 
