@@ -133,11 +133,12 @@ key_types = {"float": "real", "boolean": "boolean", "integer": "integer", "studi
 # ^ {"fgd_key": "key_type"}
 
 
-def guess_key_type(key_name: str, key_values: Set[str]) -> str:
-    """ur_key key_type"""
+def guess_key_type(key_name: str, key_values: List[str]) -> str:
+    """ur key values -> key_type"""
+    # NOTE: key_values have no duplicates & are sorted alphabetically
     # https://github.com/MRVN-Radiant/MRVN-Radiant/blob/main/radiant/eclass_xml.cpp#L49-L68
     # TODO: better checks for false positives
-    key_values.discard("")
+    key_values = sorted(set(key_values).difference({""}))
     is_vec3, is_vec4, is_path = False, False, False
     if key_name.lower() == "scale":
         return "real"
@@ -148,6 +149,9 @@ def guess_key_type(key_name: str, key_values: Set[str]) -> str:
         is_vec4 = True
     if any(map(lambda v: "/" in v.replace("\\", "/"), key_values)):
         is_path = True
+    if key_values == ["0", "1"]:
+        # NOTE: could also be "real" (float), just 0 or 1 is too ambiguos imo
+        return "boolean"
     if "color" in key_name.lower() and is_vec3 and not is_vec4:
         return "color"
     if "model" in key_name.lower() and is_path:
