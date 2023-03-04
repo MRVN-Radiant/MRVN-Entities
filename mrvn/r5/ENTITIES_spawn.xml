@@ -26,14 +26,14 @@
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_at" name="gamemode_at">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_fd" name="gamemode_fd">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_at" name="gamemode_at">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_fd" name="gamemode_fd">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_ffa" name="gamemode_ffa">New in Titanfall; TODO: identify</string>
 <string key="gamemode_freelance" name="gamemode_freelance">New in Titanfall; TODO: identify</string>
 <string key="gamemode_fw" name="gamemode_fw">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
 <string key="phase_1" name="phase_1">New in Titanfall; TODO: identify</string>

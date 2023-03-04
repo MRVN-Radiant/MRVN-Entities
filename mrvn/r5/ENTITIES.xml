@@ -41,7 +41,7 @@ Introduced by Titanfall
 <string key="mins" name="mins">New in Titanfall; TODO: identify</string>
 <string key="priority" name="priority">New in Titanfall; TODO: identify</string>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
-<targetname key="target_noRename" name="target_noRename">New in Titanfall; TODO: identify</targetname>
+<boolean key="target_noRename" name="target_noRename">New in Titanfall; TODO: identify</boolean>
 ----- NOTES -----
 Introduced by Titanfall
 </group>

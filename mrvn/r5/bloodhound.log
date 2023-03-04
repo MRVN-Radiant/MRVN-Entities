@@ -11,8 +11,8 @@ Loading all 8 maps...
 Gathering entity classnames...
 7 classnames found in ENTITIES
 10 classnames found in ENTITIES_env
-1 classnames found in ENTITIES_fx
-29 classnames found in ENTITIES_script
+2 classnames found in ENTITIES_fx
+58 classnames found in ENTITIES_script
 2 classnames found in ENTITIES_spawn
 3 classnames found in ENTITIES_snd
 Batching ENTITIES...

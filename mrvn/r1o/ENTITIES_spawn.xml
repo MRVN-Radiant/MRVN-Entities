@@ -26,15 +26,15 @@
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="group" name="group">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="spectrepoint" name="spectrepoint">New in Titanfall; TODO: identify</string>
+<boolean key="spectrepoint" name="spectrepoint">New in Titanfall; TODO: identify</boolean>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<boolean key="teamnum" name="teamnum">New in Titanfall; TODO: identify</boolean>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -44,14 +44,14 @@ Introduced by Titanfall
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
-<string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -66,13 +66,13 @@ Introduced by Titanfall
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <model key="model" name="World Model"></model>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
@@ -96,15 +96,15 @@ Introduced by Titanfall
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</string>
-<string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
-<string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -119,14 +119,14 @@ Introduced by Titanfall
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
 <string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
 <string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <model key="model" name="World Model"></model>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="spawn_outdoors" name="spawn_outdoors">New in Titanfall; TODO: identify</string>
@@ -141,15 +141,15 @@ Introduced by Titanfall
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</string>
-<string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
-<string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
@@ -179,11 +179,11 @@ Introduced by Titanfall
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <model key="model" name="World Model"></model>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
@@ -197,15 +197,15 @@ Introduced by Titanfall
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</string>
-<string key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</string>
-<string key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</string>
-<string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
-<string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<string key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
