@@ -1,40 +1,41 @@
 # StyleGuide
 
-> NOTE: this is a guide to aim for consistency, but it's not gonna be strongly enforced
-> -- mostly here as a reference
+This is a reference guide for if you want consistency
 
- - Entity Order
-   * Alphabetical
-   * Group headings (don't break alphabetical order to make groups)
- - Colour
-   * Default point color is "1 0 1"
-   * Default group color is "0 .7 0"
-   * Ziplines (move_rope) are yellow ".8 .5 .1"
-   * Use hammer / base.fgd colours where possible
- - Lists
-   * Choice types (lists) come before all entities in their own block
-   * Order doesn't matter as much as entities
-   * Put a comment at the top detailing your sources (e.g. `scripts/r1_soundscripts.txt`)
- - Debugging
-   * MRVN will complain about memory leaks, HashedCache & stacktraces on exit, everything up to the error will be parsed
-   * Entities are always listed in alphabetical
-   * Comment out suspect code
-   * Look out for `&` (xml escape character [e.g. `&lt;`])
-   * Check for any empty fields `name=""`
-   * Check for unguarded values `value=1`
+If you don't mind your code standing out, feel free to ignore
+
+Not gonna be *strongly* enforcing anything, so don't worry about that
+
+
+## General
+ * Colour
+   - Default point color is "1 0 1"
+   - Default group color is "0 .7 0"
+   - Ziplines (`move_rope`) are yellow (like in Apex) ".8 .5 .1"
+   - Use Hammer / `base.fgd` colours where possible
+ * Documentation
+   - Cite your sources (e.g. `scripts/r1_soundscripts.txt`) in a code comment or pull request thread
+     > NOTE: `.json` doesn't like comments
+ * Debugging
+   - MRVN-Radiant will complain about memory leaks, HashedCache & stacktraces on exit, everything up to the error will be parsed
+     - NOTE: MRVN-Radiant doesn't tell you where the parsing error happened, I plan to fix this in future
+   - Comment out suspect code (temporarily)
+   - Look out for `&` (xml escape character [e.g. `&lt;`])
+   - Check for any empty fields `name=""`
+   - Check for unguarded values `value=1`
+   - Use your debug prints, or `import pdb` if you prefer
 
 
 ### Examples
  * Input
-   - `mrvn/info_example.xml` (**TODO**)
-   - [`pilot/info_example.json`](https://github.com/MRVN-radiant/MRVN-entities/blob/maste/pilot/info_example.json)
+   - [`pilot/info_example.json`](https://github.com/MRVN-Radiant/MRVN-Entities/blob/main/pilot/info_example.json)
  * Output
-   - [`simulacrum/info_example.xml`](https://github.com/MRVN-radiant/MRVN-entities/blob/maste/simulacrum/info_example.ent)
+   - [`simulacrum/info_example.ent`](https://github.com/MRVN-Radiant/MRVN-Entities/blob/main/simulacrum/info_example.ent)
 
 ## Trigger Colours
 
-io_import_rbsp brush entity colours:
-    
+[`io_import_rbsp`](https://github.com/snake-biscuits/io_import_rbsp) brush entity colours:
+
 ```python
 purple = (0.527, 0.006, 1.000)
 orange = (0.947, 0.202, 0.004)
@@ -80,52 +81,52 @@ palette = {  # classnames
 ```
 
 TL;DR:
- - ambient/environment = purple
- - general/trigger = orange
- - general/out_of_bounds = mauve
- - singleplayer/checkpoints = teal
- - singleplayer/flags = lime (scripts)
- - trigger_friendly = pink
- - singleplayer/level_change = teal
- - hazards = red
- - misc = blue (spawn zones etc.)
+ - `ambient/environment` = purple
+ - `general/trigger` = orange
+ - `general/out_of_bounds` = mauve
+ - `singleplayer/checkpoints` = teal
+ - `singleplayer/flags` = lime (scripts)
+ - `trigger_friendly` = pink
+ - `singleplayer/level_change` = teal
+ - `hazards` = red
+ - `misc` = blue (spawn zones etc.)
 
 
 ## Python
 
 Don't upset `flake8` & try to follow [The Zen of Python](https://peps.python.org/pep-0020/)
 
-  
+
 ## JSON
 
-> TODO: `.json` linter
+> TODO: recommend a `.json` linter
 
 Order:
- - Try to maintain order of `index` 1st, `override` 2nd
- - Order of Appearance
-   * ent header
+ * Try to maintain order of `index` 1st, `override` 2nd
+ * Order of Appearance
+   - ent header
      `<point name="info_example">`
-     - name (index)
-     - type (override)
-     - box: bounds (must enclose `0 0 0`)
-     - color: RGB floats
-     - model: filename
+     > name (index)
+     > type (override)
+     > box: bounds (must enclose `0 0 0`)
+     > color: RGB floats
+     > model: filename
        * should add a TODO for creating a `.obj` editor model
-   * ent description
-   * keys
+   - ent description
+   - keys
      `<keytype key="keyname" name="name" value="default">description</keytype>`
-     - keyname (index)
-     - keytype (overrides, comes second)
-     - name
-     - default
-     - description
-   * spawnflags
-   * notes
- - `.json` can reorder keys
- - Order should reflect how often the key is used
-   * `targetname` at the top
-   * try to group keys with shared purpose
-   * look at source entity key orders on [VDC](https://developer.valvesoftware.com/wiki/List_of_Team_Fortress_2_Entities)
+     > keyname (index)
+     > keytype (overrides, comes second)
+     > name
+     > default
+     > description
+   - spawnflags
+   - notes
+ * `.json` can reorder keys
+ * Order should reflect how often the key is used
+   - `targetname` at the top
+   - try to group keys with shared purpose
+   - Use Source key orders for reference: [VDC](https://developer.valvesoftware.com/wiki/List_of_Team_Fortress_2_Entities)
 
 
 ## XML
