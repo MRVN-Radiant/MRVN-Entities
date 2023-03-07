@@ -60,7 +60,10 @@ def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
     # NOTE: og_classname is the fgd entity classname we want; editorclasses wouldn't appear in fgds afaik
     if og_classname not in [e.name for e in fgd.entities]:
         out["origin"] = "Titanfall"
-        if any([v.startswith("*") for v in omega_entity.get("model", list())]):  # brush entity
+        # identify brush entities
+        if out["classname"] == "worldspawn":
+            out["type"] = "group"
+        if any([v.startswith("*") for v in omega_entity.get("model", list())]):
             out["new"].remove("model")
             out["type"] = "group"
         if any([k.startswith("*coll") or k.startswith("*trigger") for k in omega_entity.keys()]):
