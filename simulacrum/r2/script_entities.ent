@@ -3,7 +3,7 @@
 
 
 
-<list name="hardpointGroup"><item name="Point A" value="A" /><item name="Point B" value="B" /><item name="Point C" value="C" /></list><list name="menuType"><item name="Camera" value="menu_camera_target" /><item name="Menu" value="menu_scene_ref" /></list><list name="teamNumber"><item name="IMC" value="2" /><item name="Militia" value="3" /><item name="Both" value="4" /><item name="Any" value="-1" /></list><point name="assault_assaultpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
+<list name="menuType"><item name="Camera" value="menu_camera_target" /><item name="Menu" value="menu_scene_ref" /></list><list name="teamNumber"><item name="IMC" value="2" /><item name="Militia" value="3" /><item name="Both" value="4" /><item name="Any" value="-1" /></list><list name="hardpointGroup"><item name="Point A" value="A" /><item name="Point B" value="B" /><item name="Point C" value="C" /></list><point name="assault_assaultpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="allowdiversionradius" name="allowdiversionradius">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -645,7 +645,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
-<boolean key="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean key="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean key="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean key="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean key="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean><boolean key="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean><boolean key="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean><boolean key="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean key="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean><boolean key="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean key="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean key="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean key="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean><boolean key="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean key="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean key="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean><boolean key="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean key="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean><boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean></point>
+<boolean key="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean><boolean key="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean><boolean key="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean><boolean key="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean><boolean key="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean><boolean key="gamemode_inf" name="Infection" value="">Start here in Infection</boolean><boolean key="gamemode_tdm" name="Skirmish" value="">Start here in Skirmish (Team DeathMatch)</boolean><boolean key="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean><boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean><boolean key="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean><boolean key="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean><boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean><boolean key="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean><boolean key="gamemode_cp" name="Amped Hardpoint" value="">Start here in Amped Hardpoint</boolean><boolean key="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean><boolean key="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean><boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean><boolean key="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean><boolean key="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean><boolean key="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean><boolean key="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean></point>
 
 <point name="info_potential_threat_target" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
@@ -941,7 +941,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><point name="mp_weapon_defender" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/defender/w_defender.mdl">
+<!--snake-biscuits--><point name="mp_weapon_grenade_sonar" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/kunai/w_kunai.mdl" /><!--snake-biscuits--><point name="mp_weapon_defender" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/defender/w_defender.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1076,7 +1076,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><point name="mp_weapon_wingman_n" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/wingman_elite/w_wingman_elite.mdl" /><!--snake-biscuits--><point name="mp_weapon_grenade_sonar" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/kunai/w_kunai.mdl" /><!--snake-biscuits--><point name="mp_weapon_grenade_gravity" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/shuriken/w_shuriken.mdl">
+<!--snake-biscuits--><point name="mp_weapon_grenade_gravity" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/shuriken/w_shuriken.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1208,7 +1208,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><point name="mp_weapon_rspn101" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/rspn101/w_rspn101.mdl">
+<!--snake-biscuits--><point name="mp_weapon_wingman_n" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/wingman_elite/w_wingman_elite.mdl" /><!--snake-biscuits--><point name="mp_weapon_rspn101" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/rspn101/w_rspn101.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>

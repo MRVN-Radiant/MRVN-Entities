@@ -180,6 +180,7 @@ if __name__ == "__main__":
                 # add .json data
                 contributors_comment = ElementTree.Comment(", ".join(json_ent["Contributors"]))
                 ent_classes_node.insert(ent_classes_node[::].index(xml_ent), contributors_comment)
+                xml_ent.tag = json_ent.get("Type", xml_ent.tag)
                 update_ent_metadata(xml_ent, json_ent, "Color", default="1 0 1")
                 if xml_ent.tag == "point":
                     update_ent_metadata(xml_ent, json_ent, "Box", default="-8 -8 -8 8 8 8")
