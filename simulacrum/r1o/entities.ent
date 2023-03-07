@@ -639,10 +639,10 @@ Introduced by Titanfall
 Introduced by Titanfall
 </point>
 
-<point name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits--><point name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
-<string key="chaptertitle" name="chaptertitle">New in Titanfall; TODO: identify</string>
+<string key="chaptertitle" name="Chapter Title Message" keyname="chaptertitle">Chapter Title that appears on-screen when this level starts.</string>
 <string key="detailmaterial" name="detailmaterial">New in Titanfall; TODO: identify</string>
 <string key="detailvbsp" name="detailvbsp">New in Titanfall; TODO: identify</string>
 <string key="editor_drLastCameraAngle" name="editor_drLastCameraAngle">New in Titanfall; TODO: identify</string>
@@ -650,12 +650,12 @@ Introduced by Titanfall
 <string key="instance" name="instance">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>
 <string key="maxblobcount" name="maxblobcount">New in Titanfall; TODO: identify</string>
-<string key="maxpropscreenwidth" name="maxpropscreenwidth">New in Titanfall; TODO: identify</string>
+<real key="maxpropscreenwidth" name="Start Fade Pixels" keyname="maxpropscreenwidth">Number of pixels wide to start fading props (&lt;0 = use fademaxdist). Ignored if the prop has a fade distance set.</real>
 <string key="message" name="message">New in Titanfall; TODO: identify</string>
-<string key="minpropscreenwidth" name="minpropscreenwidth">New in Titanfall; TODO: identify</string>
+<real key="minpropscreenwidth" name="End Fade Pixels" keyname="minpropscreenwidth">Number of pixels wide to unfade props (0 = never fade). Ignored if the prop has a fade distance set.</real>
 <string key="musicpostfix" name="musicpostfix">New in Titanfall; TODO: identify</string>
 <string key="name" name="name">New in Titanfall; TODO: identify</string>
-<string key="skyname" name="skyname">New in Titanfall; TODO: identify</string>
+<string key="skyname" name="SkyBox Texture Name" keyname="skyname">See: https://developer.valvesoftware.com/wiki/List_of_Titanfall_Skies</string>
 <string key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</string>
 <string key="world_mins" name="world_mins">New in Titanfall; TODO: identify</string>
 ----- NOTES -----

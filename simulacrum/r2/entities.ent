@@ -244,7 +244,7 @@ Introduced by Titanfall
 Introduced by Titanfall
 </point>
 
-<point name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits--><point name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
@@ -252,17 +252,17 @@ Introduced by Titanfall
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="disableOccluderMesh" name="disableOccluderMesh">New in Titanfall; TODO: identify</string>
 <string key="disableshadows" name="disableshadows">New in Titanfall; TODO: identify</string>
-<string key="editor_drLastCameraAngle" name="editor_drLastCameraAngle">New in Titanfall; TODO: identify</string>
-<string key="editor_drLastCameraPos" name="editor_drLastCameraPos">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapAngle1" name="editor_drMapAngle1">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapAngle2" name="editor_drMapAngle2">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapAngle3" name="editor_drMapAngle3">New in Titanfall; TODO: identify</string>
+<angles key="editor_drLastCameraAngle" name="Last Camera Angle" keyname="editor_drLastCameraAngle">for saving session data in the editor</angles>
+<real3 key="editor_drLastCameraPos" name="Last Camera Position" keyname="editor_drLastCameraPos">for saving session data in the editor</real3>
+<angles key="editor_drMapAngle1" name="Dev Camera Angle 1" keyname="editor_drMapAngle1">for saving session data in the editor</angles>
+<angles key="editor_drMapAngle2" name="Dev Camera Angle 2" keyname="editor_drMapAngle2">for saving session data in the editor</angles>
+<angles key="editor_drMapAngle3" name="Dev Camera Angle 3" keyname="editor_drMapAngle3">for saving session data in the editor</angles>
 <string key="editor_drMapAngle4" name="editor_drMapAngle4">New in Titanfall; TODO: identify</string>
 <string key="editor_drMapAngle5" name="editor_drMapAngle5">New in Titanfall; TODO: identify</string>
 <string key="editor_drMapAngle8" name="editor_drMapAngle8">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos1" name="editor_drMapPos1">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos2" name="editor_drMapPos2">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos3" name="editor_drMapPos3">New in Titanfall; TODO: identify</string>
+<real3 key="editor_drMapPos1" name="Dev Camera Position 1" keyname="editor_drMapPos1">for saving session data in the editor</real3>
+<real3 key="editor_drMapPos2" name="Dev Camera Position 2" keyname="editor_drMapPos2">for saving session data in the editor</real3>
+<real3 key="editor_drMapPos3" name="Dev Camera Position 3" keyname="editor_drMapPos3">for saving session data in the editor</real3>
 <string key="editor_drMapPos4" name="editor_drMapPos4">New in Titanfall; TODO: identify</string>
 <string key="editor_drMapPos5" name="editor_drMapPos5">New in Titanfall; TODO: identify</string>
 <string key="editor_drMapPos8" name="editor_drMapPos8">New in Titanfall; TODO: identify</string>
