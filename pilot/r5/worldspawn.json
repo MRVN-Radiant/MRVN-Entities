@@ -1,0 +1,7 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES",
+    "Entity": "worldspawn",
+    "Type": "group",
+    "Description": "Global Configuration"
+}

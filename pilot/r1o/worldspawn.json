@@ -1,0 +1,36 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES",
+    "Entity": "worldspawn",
+    "Type": "group",
+    "Description": "Global Configuration",
+    "Keys": [
+        {
+            "keyname": "chaptertitle",
+            "type": "string",
+            "name": "Chapter Title Message",
+            "description": "Chapter Title that appears on-screen when this level starts."
+        },
+        {
+            "keyname": "skyname",
+            "type": "string",
+            "name": "SkyBox Texture Name",
+            "description": "See: https://developer.valvesoftware.com/wiki/List_of_Titanfall_Skies"
+        },
+        {
+            "keyname": "maxpropscreenwidth",
+            "type": "real",
+            "name": "Start Fade Pixels",
+            "description": "Number of pixels wide to start fading props (<0 = use fademaxdist). Ignored if the prop has a fade distance set."
+        },
+        {
+            "keyname": "minpropscreenwidth",
+            "type": "real",
+            "name": "End Fade Pixels",
+            "description": "Number of pixels wide to unfade props (0 = never fade). Ignored if the prop has a fade distance set."
+        }
+    ],
+    "Notes": [
+        "https://developer.valvesoftware.com/wiki/Worldspawn"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES",
+    "Entity": "worldspawn",
+    "Type": "group",
+    "Description": "Global Configuration",
+    "Keys": [
+        {
+            "keyname": "editor_drLastCameraPos",
+            "type": "real3",
+            "name": "Last Camera Position",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drLastCameraAngle",
+            "type": "angles",
+            "name": "Last Camera Angle",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drMapPos1",
+            "type": "real3",
+            "name": "Dev Camera Position 1",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drMapAngle1",
+            "type": "angles",
+            "name": "Dev Camera Angle 1",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drMapPos2",
+            "type": "real3",
+            "name": "Dev Camera Position 2",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drMapAngle2",
+            "type": "angles",
+            "name": "Dev Camera Angle 2",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drMapPos3",
+            "type": "real3",
+            "name": "Dev Camera Position 3",
+            "description": "for saving session data in the editor"
+        },
+        {
+            "keyname": "editor_drMapAngle3",
+            "type": "angles",
+            "name": "Dev Camera Angle 3",
+            "description": "for saving session data in the editor"
+        }
+    ]
+}
