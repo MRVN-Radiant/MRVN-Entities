@@ -191,15 +191,15 @@ if __name__ == "__main__":
                 xml_choice_types = {k["type"] for k in xml_keys.values() if k.tag not in key_types}
                 json_choice_types = {k["type"] for k in json_keys.values() if k["type"] not in key_types}
                 ent_choice_types = xml_choice_types.union(json_choice_types)
-                for choice_type in ent_choice_types.difference(used_choice_types):
+                for choice_type in sorted(ent_choice_types.difference(used_choice_types)):
                     try:
                         ct = new_choice_type(cached_choice_types[choice_type])
                     except KeyError:
-                        raise RuntimeError(f"{json_dir}/choiceTypes/{choice_type}.json not found ({json_ent['Entity']})")
+                        raise RuntimeError(f"{json_dir}/choiceTypes/{choice_type}.json missing ({json_ent['Entity']})")
                     ent_classes_node.insert(0, ct)
                 used_choice_types = used_choice_types.union(ent_choice_types)
                 # update xml ent according to json spec
-                for keyname in set(xml_keys).intersection(set(json_keys)):
+                for keyname in sorted(set(xml_keys).intersection(set(json_keys))):
                     update_key(xml_keys[keyname], json_keys[keyname])
                 # TODO: cut off the tail & regrow, rather than mutating in place
                 last_key_index = len(xml_ent)
@@ -207,16 +207,27 @@ if __name__ == "__main__":
                 if len(xml_spawnflags) > 0:
                     last_key_index = xml_ent[::].index(xml_spawnflags[0]) - 1
                 # TODO: ensure "----- SPAWNFLAGS -----" spacer is positioned correctly
-                for keyname in set(json_keys).difference(set(xml_keys)):
+                for keyname in sorted(set(json_keys).difference(set(xml_keys))):
                     last_key_index += 1
                     xml_ent.insert(last_key_index, new_key(json_keys[keyname]))
                 xml_spawnflags = {int(f.get("bit")): f for f in xml_spawnflags}
                 json_spawnflags = {int(f.get("bit")): f for f in json_ent.get("SpawnFlags", list())}
                 for i in range(32):  # sorting
-                    if i not in {*xml_spawnflags, *json_spawnflags}:
+                    if i not in xml_spawnflags and i not in json_spawnflags:  # not set
                         continue
-                ...
+                    elif i not in json_spawnflags:  # no changes
+                        continue
+                    elif i not in xml_spawnflags:  # new in .json
+                        last_key_index += 1
+                        xml_ent.insert(last_key_index, new_spawnflag(json_spawnflags[i]))
+                    else:
+                        update_spawnflag(xml_spawnflags[i], json_spawnflags[i])
                 # TODO: override Notes (preserve "Introduced by Source / Titanfall" on first line)
+                # xml_ent[-1].tail = "..."
             with open(os.path.join(out_dir, ent_filename[xml_filename]), "wb") as ent_file:
-                xml_file.write(ent_file)
+                ent_file.write(b'<?xml version="1.0"?>')
+                # TODO: capture comment before root node
+                ElementTree.indent(ent_classes_node, space="")
+                xml_text = ElementTree.tostring(ent_classes_node, encoding="utf-8")  # method="html"
+                ent_file.write(xml_text)
         # TODO: check for unused choiceTypes & log warnings
