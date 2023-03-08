@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="beam_spotlight" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="HDRColorScale" name="HDRColorScale">New in Titanfall; TODO: identify</string>
@@ -29,7 +25,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_particle_system" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <boolean key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</boolean>
@@ -55,7 +50,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_particle_system_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <boolean key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</boolean>
@@ -83,7 +77,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_target_fx" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -95,7 +88,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_target_fx_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.

@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="env_exposure" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="auto_compensation" name="auto_compensation">New in Titanfall; TODO: identify</string>
@@ -13,7 +9,6 @@
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="envmap_volume" color="1 0 1">
 ----- KEYS -----
 <string key="cubeMapIndex" name="cubeMapIndex">New in Titanfall; TODO: identify</string>
@@ -26,7 +21,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <point name="func_window_hint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="halfheight" name="halfheight">New in Titanfall; TODO: identify</string>
@@ -35,13 +29,11 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_intermission" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
@@ -51,7 +43,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="trigger_indoor_area" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -77,8 +68,8 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
-<!--snake-biscuits--><group name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<group name="worldspawn" color="1 0 1">
 ----- KEYS -----
 <string key="lightprobe_voronoi_leafsize" name="lightprobe_voronoi_leafsize">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>

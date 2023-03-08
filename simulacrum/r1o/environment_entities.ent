@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="env_fog_controller" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -17,7 +13,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="fogdir" name="fogdir">New in Titanfall; TODO: identify</string>
 <string key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</string>
 <string key="fogdircolorstrength" name="fogdircolorstrength">New in Titanfall; TODO: identify</string>
-<string key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</string>
+<angles key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</angles>
 <string key="fogdistoffset" name="fogdistoffset">New in Titanfall; TODO: identify</string>
 <string key="fogenable" name="fogenable">New in Titanfall; TODO: identify</string>
 <string key="foghalfdistbottom" name="foghalfdistbottom">New in Titanfall; TODO: identify</string>
@@ -38,7 +34,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="sky_camera" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -59,7 +54,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="fogdir" name="fogdir">New in Titanfall; TODO: identify</string>
 <string key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</string>
 <string key="fogdircolorstrength" name="fogdircolorstrength">New in Titanfall; TODO: identify</string>
-<string key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</string>
+<angles key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</angles>
 <string key="fogdistoffset" name="fogdistoffset">New in Titanfall; TODO: identify</string>
 <boolean key="fogenable" name="fogenable">New in Titanfall; TODO: identify</boolean>
 <string key="fogend" name="fogend">New in Titanfall; TODO: identify</string>

@@ -1,9 +1,11 @@
-<classes>
-
-
-
-
-<list name="teamNumber"><item name="IMC" value="2" /><item name="Militia" value="3" /><item name="Both" value="4" /><item name="Any" value="-1" /></list><point name="env_soundscape_triggerable" color="1 0 1" box="-8 -8 -8 8 8 8">
+<?xml version="1.0"?><classes>
+<list name="teamNumber">
+<item name="IMC" value="2" />
+<item name="Militia" value="3" />
+<item name="Both" value="4" />
+<item name="Any" value="-1" />
+</list>
+<point name="env_soundscape_triggerable" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="radius" name="radius">New in Titanfall; TODO: identify</string>
@@ -13,7 +15,6 @@
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="env_wind" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -31,7 +32,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="envmap_volume" color="1 0 1">
 ----- KEYS -----
 <string key="cubemapID" name="cubemapID">New in Titanfall; TODO: identify</string>
@@ -42,7 +42,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="fog_volume" color="1 0 1">
 ----- KEYS -----
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
@@ -53,7 +52,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <point name="func_wallrun_curve" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -64,7 +62,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="func_window_hint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="halfheight" name="halfheight">New in Titanfall; TODO: identify</string>
@@ -73,7 +70,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_intermission" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
@@ -83,23 +79,22 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
-<!--catornot, snake-biscuits--><point name="info_spawnpoint_flag" color=".9 .2, .0" box="-70 -48 0 70 48 224" model="models/signs/flag_base_pole_ctf.obj">
+<!--catornot, snake-biscuits-->
+<point name="info_spawnpoint_flag" color=".9 .2, .0" box="-70 -48 0 70 48 224" model="models/signs/flag_base_pole_ctf.obj">
 ----- KEYS -----
 <string key="TeamNum" name="TeamNum">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall
-<teamNumber key="teamnum" name="Team Number" value="">Team(s) that own this flag</teamNumber></point>
-
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) that own this flag</teamNumber>
+</point>
 <point name="info_teleport_destination" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -109,7 +104,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_dynamic_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="SetBodyGroup" name="SetBodyGroup">New in Titanfall; TODO: identify</string>
@@ -134,7 +128,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_exfil_panel" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="DisableBoneFollowers" name="DisableBoneFollowers">New in Titanfall; TODO: identify</string>
@@ -175,7 +168,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="trigger_indoor_area" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -200,13 +192,11 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_no_grapple" color="1 0 1">
 ----- KEYS -----
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_out_of_bounds" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -234,7 +224,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <point name="water_lod_control" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="cheapwaterenddistance" name="cheapwaterenddistance">New in Titanfall; TODO: identify</string>
@@ -243,8 +232,8 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
-<!--snake-biscuits--><group name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<group name="worldspawn" color="1 0 1">
 ----- KEYS -----
 <string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
@@ -257,9 +246,9 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <angles key="editor_drMapAngle1" name="Dev Camera Angle 1" keyname="editor_drMapAngle1">for saving session data in the editor</angles>
 <angles key="editor_drMapAngle2" name="Dev Camera Angle 2" keyname="editor_drMapAngle2">for saving session data in the editor</angles>
 <angles key="editor_drMapAngle3" name="Dev Camera Angle 3" keyname="editor_drMapAngle3">for saving session data in the editor</angles>
-<string key="editor_drMapAngle4" name="editor_drMapAngle4">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapAngle5" name="editor_drMapAngle5">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapAngle8" name="editor_drMapAngle8">New in Titanfall; TODO: identify</string>
+<angles key="editor_drMapAngle4" name="editor_drMapAngle4">New in Titanfall; TODO: identify</angles>
+<angles key="editor_drMapAngle5" name="editor_drMapAngle5">New in Titanfall; TODO: identify</angles>
+<angles key="editor_drMapAngle8" name="editor_drMapAngle8">New in Titanfall; TODO: identify</angles>
 <real3 key="editor_drMapPos1" name="Dev Camera Position 1" keyname="editor_drMapPos1">for saving session data in the editor</real3>
 <real3 key="editor_drMapPos2" name="Dev Camera Position 2" keyname="editor_drMapPos2">for saving session data in the editor</real3>
 <real3 key="editor_drMapPos3" name="Dev Camera Position 3" keyname="editor_drMapPos3">for saving session data in the editor</real3>

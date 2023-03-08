@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="ambient_generic" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="enabled" name="enabled">New in Titanfall; TODO: identify</string>
@@ -143,7 +139,6 @@
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="soundscape_floor" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
@@ -153,7 +148,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="trigger_soundscape" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>

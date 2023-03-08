@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="assault_assaultpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <boolean key="allowdiversion" name="allowdiversion">New in Titanfall; TODO: identify</boolean>
@@ -25,7 +21,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_hardpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -42,7 +37,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_hint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="IgnoreFacing" name="IgnoreFacing">New in Titanfall; TODO: identify</string>
@@ -62,7 +56,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="collide_titan" name="collide_titan">New in Titanfall; TODO: identify</string>
@@ -71,7 +64,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node_cover_crouch" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="IgnoreFacing" name="IgnoreFacing">New in Titanfall; TODO: identify</string>
@@ -89,7 +81,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node_cover_left" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="IgnoreFacing" name="IgnoreFacing">New in Titanfall; TODO: identify</string>
@@ -107,7 +98,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node_cover_right" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="IgnoreFacing" name="IgnoreFacing">New in Titanfall; TODO: identify</string>
@@ -125,7 +115,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node_cover_stand" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="IgnoreFacing" name="IgnoreFacing">New in Titanfall; TODO: identify</string>
@@ -143,7 +132,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node_safe_hint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="IgnoreFacing" name="IgnoreFacing">New in Titanfall; TODO: identify</string>
@@ -158,7 +146,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_node_spectre" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="nodeid" name="nodeid">New in Titanfall; TODO: identify</string>
@@ -168,7 +155,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_target" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -183,7 +169,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_target_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -196,7 +181,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="path_track" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="SendSignal" name="SendSignal">New in Titanfall; TODO: identify</string>
@@ -214,7 +198,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_control_panel" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="DisableBoneFollowers" name="DisableBoneFollowers">New in Titanfall; TODO: identify</string>
@@ -260,7 +243,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_dynamic" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <boolean key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</boolean>
@@ -314,7 +296,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_refuel_pump" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -327,7 +308,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="script_ref" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -338,7 +318,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="traverse" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="UseableBy" name="UseableBy">New in Titanfall; TODO: identify</string>

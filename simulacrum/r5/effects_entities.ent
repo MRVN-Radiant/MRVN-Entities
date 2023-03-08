@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="info_particle_system" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="VisibilityFlags" name="VisibilityFlags">New in Titanfall; TODO: identify</string>
@@ -24,7 +20,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_particle_system_clientside" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <boolean key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</boolean>

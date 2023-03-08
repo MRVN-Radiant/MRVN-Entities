@@ -1,8 +1,4 @@
-<classes>
-
-
-
-
+<?xml version="1.0"?><classes>
 <point name="color_correction" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <boolean key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</boolean>
@@ -20,7 +16,6 @@
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="env_dropzone" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="radius" name="radius">New in Titanfall; TODO: identify</string>
@@ -30,7 +25,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="env_soundscape_triggerable" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -41,14 +35,12 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="env_tonemap_controller" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="env_wind" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -66,7 +58,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="func_breakable" color="1 0 1">
 ----- KEYS -----
 <string key="disableflashlight" name="disableflashlight">New in Titanfall; TODO: identify</string>
@@ -91,7 +82,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="func_breakable_surf" color="1 0 1">
 ----- KEYS -----
 <string key="disableflashlight" name="disableflashlight">New in Titanfall; TODO: identify</string>
@@ -122,7 +112,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="func_brush" color="1 0 1">
 ----- KEYS -----
 <string key="disableflashlight" name="disableflashlight">New in Titanfall; TODO: identify</string>
@@ -142,7 +131,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <point name="func_window_hint" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="halfheight" name="halfheight">New in Titanfall; TODO: identify</string>
@@ -151,7 +139,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_intermission" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
@@ -159,14 +146,12 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_player_start" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -177,7 +162,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_replacement_titan_spawn" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -189,7 +173,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_spawnpoint_flag" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="TeamNum" name="TeamNum">New in Titanfall; TODO: identify</string>
@@ -198,7 +181,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="info_teleport_destination" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -209,7 +191,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="keyframe_rope" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="Barbed" name="Barbed">New in Titanfall; TODO: identify</string>
@@ -236,7 +217,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="light" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="_cone" name="_cone">New in Titanfall; TODO: identify</string>
@@ -244,8 +224,8 @@ Introduced by Titanfall
 <string key="_fifty_percent_distance" name="_fifty_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="_half_bright_fraction" name="_half_bright_fraction">New in Titanfall; TODO: identify</string>
 <string key="_inner_cone" name="_inner_cone">New in Titanfall; TODO: identify</string>
-<string key="_light" name="_light">New in Titanfall; TODO: identify</string>
-<string key="_lightHDR" name="_lightHDR">New in Titanfall; TODO: identify</string>
+<real3 key="_light" name="_light">New in Titanfall; TODO: identify</real3>
+<real3 key="_lightHDR" name="_lightHDR">New in Titanfall; TODO: identify</real3>
 <string key="_lightscaleHDR" name="_lightscaleHDR">New in Titanfall; TODO: identify</string>
 <string key="_zero_percent_distance" name="_zero_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
@@ -259,13 +239,12 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="light_environment" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
-<string key="SunSpreadAngle" name="SunSpreadAngle">New in Titanfall; TODO: identify</string>
-<string key="_ambient" name="_ambient">New in Titanfall; TODO: identify</string>
+<angles key="SunSpreadAngle" name="SunSpreadAngle">New in Titanfall; TODO: identify</angles>
+<real3 key="_ambient" name="_ambient">New in Titanfall; TODO: identify</real3>
 <string key="_cone" name="_cone">New in Titanfall; TODO: identify</string>
-<string key="_light" name="_light">New in Titanfall; TODO: identify</string>
+<real3 key="_light" name="_light">New in Titanfall; TODO: identify</real3>
 <string key="ambient_brightness" name="ambient_brightness">New in Titanfall; TODO: identify</string>
 <string key="ambient_color" name="ambient_color">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -280,7 +259,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="light_spot" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="_cone" name="_cone">New in Titanfall; TODO: identify</string>
@@ -289,7 +267,7 @@ Introduced by Titanfall
 <string key="_fifty_percent_distance" name="_fifty_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="_half_bright_fraction" name="_half_bright_fraction">New in Titanfall; TODO: identify</string>
 <string key="_inner_cone" name="_inner_cone">New in Titanfall; TODO: identify</string>
-<string key="_light" name="_light">New in Titanfall; TODO: identify</string>
+<real3 key="_light" name="_light">New in Titanfall; TODO: identify</real3>
 <string key="_zero_percent_distance" name="_zero_percent_distance">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -306,7 +284,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="move_rope" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="Barbed" name="Barbed">New in Titanfall; TODO: identify</string>
@@ -339,7 +316,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="npc_turret_mega" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="AccuracyMultiplier" name="AccuracyMultiplier">New in Titanfall; TODO: identify</string>
@@ -352,7 +328,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="npc_turret_mega_bb" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="AccuracyMultiplier" name="AccuracyMultiplier">New in Titanfall; TODO: identify</string>
@@ -365,7 +340,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="phys_ragdollmagnet" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -376,7 +350,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_bigbrother_panel" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="DisableBoneFollowers" name="DisableBoneFollowers">New in Titanfall; TODO: identify</string>
@@ -423,7 +396,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_exfil_panel" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="DisableBoneFollowers" name="DisableBoneFollowers">New in Titanfall; TODO: identify</string>
@@ -467,7 +439,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="prop_physics" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="Damagetype" name="Damagetype">New in Titanfall; TODO: identify</string>
@@ -521,7 +492,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <point name="script_marvin_job" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
@@ -535,7 +505,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
 <group name="trigger_capture_point" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -546,7 +515,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_hurt" color="1 0 1">
 ----- KEYS -----
 <boolean key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</boolean>
@@ -565,7 +533,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_indoor_area" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -576,7 +543,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_multiple" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -592,7 +558,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_once" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -604,7 +569,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_out_of_bounds" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
@@ -616,7 +580,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <group name="trigger_soundscape" color="1 0 1">
 ----- KEYS -----
 <boolean key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</boolean>
@@ -629,7 +592,6 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
-
 <point name="water_lod_control" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="cheapwaterenddistance" name="cheapwaterenddistance">New in Titanfall; TODO: identify</string>
@@ -638,14 +600,14 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </point>
-
-<!--snake-biscuits--><group name="worldspawn" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<group name="worldspawn" color="1 0 1">
 ----- KEYS -----
 <string key="ClientSide" name="ClientSide">New in Titanfall; TODO: identify</string>
 <string key="chaptertitle" name="Chapter Title Message" keyname="chaptertitle">Chapter Title that appears on-screen when this level starts.</string>
 <string key="detailmaterial" name="detailmaterial">New in Titanfall; TODO: identify</string>
 <string key="detailvbsp" name="detailvbsp">New in Titanfall; TODO: identify</string>
-<string key="editor_drLastCameraAngle" name="editor_drLastCameraAngle">New in Titanfall; TODO: identify</string>
+<angles key="editor_drLastCameraAngle" name="editor_drLastCameraAngle">New in Titanfall; TODO: identify</angles>
 <string key="editor_drLastCameraPos" name="editor_drLastCameraPos">New in Titanfall; TODO: identify</string>
 <string key="instance" name="instance">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>

@@ -1,9 +1,12 @@
-<classes>
-
-
-
-
-<list name="teamNumber"><item name="IMC" value="2" /><item name="Militia" value="3" /><item name="Both" value="4" /><item name="Any" value="-1" /></list><!--snake-biscuits--><point name="info_spawnpoint_human" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
+<?xml version="1.0"?><classes>
+<list name="teamNumber">
+<item name="IMC" value="2" />
+<item name="Militia" value="3" />
+<item name="Both" value="4" />
+<item name="Any" value="-1" />
+</list>
+<!--snake-biscuits-->
+<point name="info_spawnpoint_human" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -31,9 +34,10 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall
-<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber></point>
-
-<!--snake-biscuits--><point name="info_spawnpoint_titan" color=".3 .3 1" box="-70 -48 0 70 48 224" model="models/dev/mp_titan_spawn_start.obj">
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
+</point>
+<!--snake-biscuits-->
+<point name="info_spawnpoint_titan" color=".3 .3 1" box="-70 -48 0 70 48 224" model="models/dev/mp_titan_spawn_start.obj">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -64,5 +68,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall
-<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber></point>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
+</point>
 </classes>
