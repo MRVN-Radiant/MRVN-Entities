@@ -29,14 +29,14 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="farz" name="farz">New in Titanfall; TODO: identify</string>
 <angles key="fogangles" name="fogangles">New in Titanfall; TODO: identify</angles>
 <boolean key="fogblend" name="fogblend">New in Titanfall; TODO: identify</boolean>
-<string key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</string>
-<string key="fogcolor2" name="fogcolor2">New in Titanfall; TODO: identify</string>
+<color key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</color>
+<color key="fogcolor2" name="fogcolor2">New in Titanfall; TODO: identify</color>
 <string key="fogcolorstrength" name="fogcolorstrength">New in Titanfall; TODO: identify</string>
 <string key="fogdensity" name="fogdensity">New in Titanfall; TODO: identify</string>
-<string key="fogdir" name="fogdir">New in Titanfall; TODO: identify</string>
-<string key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</string>
+<real3 key="fogdir" name="fogdir">New in Titanfall; TODO: identify</real3>
+<color key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</color>
 <string key="fogdircolorstrength" name="fogdircolorstrength">New in Titanfall; TODO: identify</string>
-<angles key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</angles>
+<string key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</string>
 <string key="fogdistoffset" name="fogdistoffset">New in Titanfall; TODO: identify</string>
 <string key="fogenable" name="fogenable">New in Titanfall; TODO: identify</string>
 <string key="foghalfdistbottom" name="foghalfdistbottom">New in Titanfall; TODO: identify</string>
@@ -50,7 +50,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="minfadetime" name="minfadetime">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<angles key="use_angles" name="use_angles">New in Titanfall; TODO: identify</angles>
+<string key="use_angles" name="use_angles">New in Titanfall; TODO: identify</string>
 <string key="useworldfog" name="useworldfog">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
@@ -71,14 +71,14 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="fogblend" name="fogblend">New in Titanfall; TODO: identify</string>
 <string key="fogbottomstrength" name="fogbottomstrength">New in Titanfall; TODO: identify</string>
 <string key="fogbottomz" name="fogbottomz">New in Titanfall; TODO: identify</string>
-<string key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</string>
-<string key="fogcolor2" name="fogcolor2">New in Titanfall; TODO: identify</string>
+<color key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</color>
+<color key="fogcolor2" name="fogcolor2">New in Titanfall; TODO: identify</color>
 <string key="fogcolorstrength" name="fogcolorstrength">New in Titanfall; TODO: identify</string>
 <string key="fogdensity" name="fogdensity">New in Titanfall; TODO: identify</string>
 <string key="fogdir" name="fogdir">New in Titanfall; TODO: identify</string>
-<string key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</string>
+<color key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</color>
 <string key="fogdircolorstrength" name="fogdircolorstrength">New in Titanfall; TODO: identify</string>
-<angles key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</angles>
+<string key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</string>
 <string key="fogdistoffset" name="fogdistoffset">New in Titanfall; TODO: identify</string>
 <boolean key="fogenable" name="fogenable">New in Titanfall; TODO: identify</boolean>
 <string key="fogend" name="fogend">New in Titanfall; TODO: identify</string>
@@ -96,7 +96,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="skyscale" name="skyscale">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<angles key="use_angles" name="use_angles">New in Titanfall; TODO: identify</angles>
+<string key="use_angles" name="use_angles">New in Titanfall; TODO: identify</string>
 <boolean key="useworldfog" name="useworldfog">New in Titanfall; TODO: identify</boolean>
 ----- NOTES -----
 Introduced by Titanfall

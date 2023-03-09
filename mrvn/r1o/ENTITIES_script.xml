@@ -32,7 +32,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="assaulttimeout" name="assaulttimeout">New in Titanfall; TODO: identify</string>
 <string key="assaulttolerance" name="assaulttolerance">New in Titanfall; TODO: identify</string>
 <string key="clearoncontact" name="clearoncontact">New in Titanfall; TODO: identify</string>
-<string key="color" name="color">New in Titanfall; TODO: identify</string>
+<color key="color" name="color">New in Titanfall; TODO: identify</color>
 <boolean key="faceAssaultPointAngles" name="faceAssaultPointAngles">New in Titanfall; TODO: identify</boolean>
 <boolean key="forcecrouch" name="forcecrouch">New in Titanfall; TODO: identify</boolean>
 <string key="nevertimeout" name="nevertimeout">New in Titanfall; TODO: identify</string>
@@ -267,7 +267,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -320,7 +320,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <model key="model" name="World Model"></model>
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>

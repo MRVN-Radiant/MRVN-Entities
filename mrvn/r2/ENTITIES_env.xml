@@ -42,12 +42,12 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <angles key="fogangles" name="fogangles">New in Titanfall; TODO: identify</angles>
-<string key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</string>
+<color key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</color>
 <string key="fogcolorstrength" name="fogcolorstrength">New in Titanfall; TODO: identify</string>
 <string key="fogdensity" name="fogdensity">New in Titanfall; TODO: identify</string>
-<string key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</string>
+<color key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</color>
 <string key="fogdircolorstrength" name="fogdircolorstrength">New in Titanfall; TODO: identify</string>
-<angles key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</angles>
+<string key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</string>
 <string key="fogdistoffset" name="fogdistoffset">New in Titanfall; TODO: identify</string>
 <boolean key="fogenable" name="fogenable">New in Titanfall; TODO: identify</boolean>
 <string key="foghalfdistbottom" name="foghalfdistbottom">New in Titanfall; TODO: identify</string>
@@ -75,14 +75,14 @@ Introduced by Titanfall
 <string key="_fifty_percent_distance" name="_fifty_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="_half_bright_fraction" name="_half_bright_fraction">New in Titanfall; TODO: identify</string>
 <string key="_inner_cone" name="_inner_cone">New in Titanfall; TODO: identify</string>
-<real3 key="_light" name="_light">New in Titanfall; TODO: identify</real3>
-<real3 key="_lightHDR" name="_lightHDR">New in Titanfall; TODO: identify</real3>
+<string key="_light" name="_light">New in Titanfall; TODO: identify</string>
+<string key="_lightHDR" name="_lightHDR">New in Titanfall; TODO: identify</string>
 <string key="_lightscaleHDR" name="_lightscaleHDR">New in Titanfall; TODO: identify</string>
 <string key="_pbr_falloff" name="_pbr_falloff">New in Titanfall; TODO: identify</string>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
 <string key="_zero_percent_distance" name="_zero_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
-<string key="color" name="color">New in Titanfall; TODO: identify</string>
+<color key="color" name="color">New in Titanfall; TODO: identify</color>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="parentBrushModel" name="parentBrushModel">New in Titanfall; TODO: identify</string>
 <boolean key="realtime" name="realtime">New in Titanfall; TODO: identify</boolean>
@@ -97,19 +97,19 @@ Introduced by Titanfall
 
 <point name="light_environment" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
-<angles key="SunSpreadAngle" name="SunSpreadAngle">New in Titanfall; TODO: identify</angles>
-<real3 key="_ambient" name="_ambient">New in Titanfall; TODO: identify</real3>
+<string key="SunSpreadAngle" name="SunSpreadAngle">New in Titanfall; TODO: identify</string>
+<string key="_ambient" name="_ambient">New in Titanfall; TODO: identify</string>
 <string key="_emitter_radius" name="_emitter_radius">New in Titanfall; TODO: identify</string>
-<real3 key="_light" name="_light">New in Titanfall; TODO: identify</real3>
+<string key="_light" name="_light">New in Titanfall; TODO: identify</string>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
 <string key="ambient_brightness" name="ambient_brightness">New in Titanfall; TODO: identify</string>
-<string key="ambient_color" name="ambient_color">New in Titanfall; TODO: identify</string>
+<color key="ambient_color" name="ambient_color">New in Titanfall; TODO: identify</color>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
 <string key="cloudmask" name="cloudmask">New in Titanfall; TODO: identify</string>
-<real3 key="cloudoffset" name="cloudoffset">New in Titanfall; TODO: identify</real3>
-<string key="color" name="color">New in Titanfall; TODO: identify</string>
+<string key="cloudoffset" name="cloudoffset">New in Titanfall; TODO: identify</string>
+<color key="color" name="color">New in Titanfall; TODO: identify</color>
 <string key="lightEnvironmentIndex" name="lightEnvironmentIndex">New in Titanfall; TODO: identify</string>
 <string key="pitch" name="pitch">New in Titanfall; TODO: identify</string>
 <string key="realtime_shadows" name="realtime_shadows">New in Titanfall; TODO: identify</string>
@@ -148,14 +148,14 @@ Introduced by Titanfall
 <string key="_fifty_percent_distance" name="_fifty_percent_distance">New in Titanfall; TODO: identify</string>
 <string key="_half_bright_fraction" name="_half_bright_fraction">New in Titanfall; TODO: identify</string>
 <string key="_inner_cone" name="_inner_cone">New in Titanfall; TODO: identify</string>
-<real3 key="_light" name="_light">New in Titanfall; TODO: identify</real3>
+<string key="_light" name="_light">New in Titanfall; TODO: identify</string>
 <boolean key="_pbr_falloff" name="_pbr_falloff">New in Titanfall; TODO: identify</boolean>
 <string key="_specular_intensity" name="_specular_intensity">New in Titanfall; TODO: identify</string>
 <string key="_zero_percent_distance" name="_zero_percent_distance">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="brightness" name="brightness">New in Titanfall; TODO: identify</string>
-<string key="color" name="color">New in Titanfall; TODO: identify</string>
+<color key="color" name="color">New in Titanfall; TODO: identify</color>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="parentBrushModel" name="parentBrushModel">New in Titanfall; TODO: identify</string>
 <string key="pitch" name="pitch">New in Titanfall; TODO: identify</string>
@@ -181,12 +181,12 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <angles key="fogangles" name="fogangles">New in Titanfall; TODO: identify</angles>
 <boolean key="fogbottomstrength" name="fogbottomstrength">New in Titanfall; TODO: identify</boolean>
 <string key="fogbottomz" name="fogbottomz">New in Titanfall; TODO: identify</string>
-<string key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</string>
+<color key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</color>
 <string key="fogcolorstrength" name="fogcolorstrength">New in Titanfall; TODO: identify</string>
 <string key="fogdensity" name="fogdensity">New in Titanfall; TODO: identify</string>
-<string key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</string>
+<color key="fogdircolor" name="fogdircolor">New in Titanfall; TODO: identify</color>
 <string key="fogdircolorstrength" name="fogdircolorstrength">New in Titanfall; TODO: identify</string>
-<angles key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</angles>
+<string key="fogdirhalfangle" name="fogdirhalfangle">New in Titanfall; TODO: identify</string>
 <string key="fogdistoffset" name="fogdistoffset">New in Titanfall; TODO: identify</string>
 <boolean key="fogenable" name="fogenable">New in Titanfall; TODO: identify</boolean>
 <string key="fogend" name="fogend">New in Titanfall; TODO: identify</string>

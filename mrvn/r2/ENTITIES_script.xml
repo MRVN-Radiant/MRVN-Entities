@@ -28,7 +28,7 @@
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="arrivaltolerance" name="arrivaltolerance">New in Titanfall; TODO: identify</string>
-<angles key="faceAssaultPointAngles" name="faceAssaultPointAngles">New in Titanfall; TODO: identify</angles>
+<string key="faceAssaultPointAngles" name="faceAssaultPointAngles">New in Titanfall; TODO: identify</string>
 <string key="nevertimeout" name="nevertimeout">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
@@ -86,7 +86,7 @@ Introduced by Titanfall
 <boolean key="splitNavmesh" name="splitNavmesh">New in Titanfall; TODO: identify</boolean>
 <boolean key="startdisabled" name="startdisabled">New in Titanfall; TODO: identify</boolean>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<angles key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</angles>
+<string key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</string>
 <boolean key="useNonLocalWorldLights" name="useNonLocalWorldLights">New in Titanfall; TODO: identify</boolean>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
@@ -112,7 +112,7 @@ Introduced by Titanfall
 <string key="solidity" name="solidity">New in Titanfall; TODO: identify</string>
 <string key="startdisabled" name="startdisabled">New in Titanfall; TODO: identify</string>
 <string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
-<angles key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</angles>
+<string key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</string>
 <string key="useNonLocalWorldLights" name="useNonLocalWorldLights">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall
@@ -135,7 +135,7 @@ Introduced by Titanfall
 <string key="solidity" name="solidity">New in Titanfall; TODO: identify</string>
 <boolean key="splitNavmesh" name="splitNavmesh">New in Titanfall; TODO: identify</boolean>
 <string key="startdisabled" name="startdisabled">New in Titanfall; TODO: identify</string>
-<angles key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</angles>
+<string key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</string>
 <string key="useNonLocalWorldLights" name="useNonLocalWorldLights">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
@@ -151,7 +151,7 @@ Introduced by Titanfall
 <string key="script_flag" name="script_flag">New in Titanfall; TODO: identify</string>
 <string key="script_name" name="script_name">New in Titanfall; TODO: identify</string>
 <boolean key="startDisconnected" name="startDisconnected">New in Titanfall; TODO: identify</boolean>
-<angles key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</angles>
+<string key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</string>
 ----- NOTES -----
 Introduced by Titanfall
 </group>
@@ -1698,7 +1698,7 @@ Introduced by Titanfall
 <string key="additionalequipment" name="additionalequipment">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<angles key="face_angles" name="face_angles">New in Titanfall; TODO: identify</angles>
+<string key="face_angles" name="face_angles">New in Titanfall; TODO: identify</string>
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
 <string key="grenadeWeaponName" name="grenadeWeaponName">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
@@ -2647,7 +2647,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="physicsmode" name="physicsmode">New in Titanfall; TODO: identify</string>
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -2701,7 +2701,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="physicsmode" name="physicsmode">New in Titanfall; TODO: identify</string>
 <string key="player_collides" name="player_collides">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -2752,7 +2752,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <boolean key="physicsmode" name="physicsmode">New in Titanfall; TODO: identify</boolean>
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -2984,7 +2984,7 @@ Introduced by Titanfall
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="job" name="job">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <boolean key="teleport" name="teleport">New in Titanfall; TODO: identify</boolean>
 <boolean key="tempJob" name="tempJob">New in Titanfall; TODO: identify</boolean>
@@ -3000,7 +3000,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="job" name="job">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <boolean key="teleport" name="teleport">New in Titanfall; TODO: identify</boolean>
@@ -3107,7 +3107,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="collide_titan" name="collide_titan">New in Titanfall; TODO: identify</string>
 <string key="dangerous_area_radius" name="dangerous_area_radius">New in Titanfall; TODO: identify</string>
 <string key="leveled_animation" name="leveled_animation">New in Titanfall; TODO: identify</string>
-<string key="leveled_model" name="leveled_model">New in Titanfall; TODO: identify</string>
+<real3 key="leveled_model" name="leveled_model">New in Titanfall; TODO: identify</real3>
 <string key="leveledplaced" name="leveledplaced">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
@@ -4165,7 +4165,7 @@ Introduced by Titanfall
 <string key="triggerFilterTeamOther" name="triggerFilterTeamOther">New in Titanfall; TODO: identify</string>
 <string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
 <string key="triggerNearbyRadius" name="triggerNearbyRadius">New in Titanfall; TODO: identify</string>
-<angles key="useAngles" name="useAngles">New in Titanfall; TODO: identify</angles>
+<string key="useAngles" name="useAngles">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_4" name="FLAG_UNKNOWN_4" bit="4" value="0">TODO: description</flag>
 ----- NOTES -----

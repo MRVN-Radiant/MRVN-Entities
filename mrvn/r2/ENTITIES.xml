@@ -88,7 +88,7 @@ Introduced by Titanfall
 ----- KEYS -----
 <string key="halfheight" name="halfheight">New in Titanfall; TODO: identify</string>
 <string key="halfwidth" name="halfwidth">New in Titanfall; TODO: identify</string>
-<string key="right" name="right">New in Titanfall; TODO: identify</string>
+<real3 key="right" name="right">New in Titanfall; TODO: identify</real3>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -143,7 +143,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"></model>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -183,7 +183,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -272,27 +272,27 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="disableOccluderMesh" name="disableOccluderMesh">New in Titanfall; TODO: identify</string>
 <string key="disableshadows" name="disableshadows">New in Titanfall; TODO: identify</string>
 <angles key="editor_drLastCameraAngle" name="editor_drLastCameraAngle">New in Titanfall; TODO: identify</angles>
-<string key="editor_drLastCameraPos" name="editor_drLastCameraPos">New in Titanfall; TODO: identify</string>
+<real3 key="editor_drLastCameraPos" name="editor_drLastCameraPos">New in Titanfall; TODO: identify</real3>
 <angles key="editor_drMapAngle1" name="editor_drMapAngle1">New in Titanfall; TODO: identify</angles>
 <angles key="editor_drMapAngle2" name="editor_drMapAngle2">New in Titanfall; TODO: identify</angles>
 <angles key="editor_drMapAngle3" name="editor_drMapAngle3">New in Titanfall; TODO: identify</angles>
 <angles key="editor_drMapAngle4" name="editor_drMapAngle4">New in Titanfall; TODO: identify</angles>
 <angles key="editor_drMapAngle5" name="editor_drMapAngle5">New in Titanfall; TODO: identify</angles>
 <angles key="editor_drMapAngle8" name="editor_drMapAngle8">New in Titanfall; TODO: identify</angles>
-<string key="editor_drMapPos1" name="editor_drMapPos1">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos2" name="editor_drMapPos2">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos3" name="editor_drMapPos3">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos4" name="editor_drMapPos4">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos5" name="editor_drMapPos5">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos8" name="editor_drMapPos8">New in Titanfall; TODO: identify</string>
+<real3 key="editor_drMapPos1" name="editor_drMapPos1">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos2" name="editor_drMapPos2">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos3" name="editor_drMapPos3">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos4" name="editor_drMapPos4">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos5" name="editor_drMapPos5">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos8" name="editor_drMapPos8">New in Titanfall; TODO: identify</real3>
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
 <string key="lightprobe_voronoi_leafsize" name="lightprobe_voronoi_leafsize">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>
 <string key="musicpostfix" name="musicpostfix">New in Titanfall; TODO: identify</string>
 <string key="name" name="name">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</string>
-<string key="world_mins" name="world_mins">New in Titanfall; TODO: identify</string>
+<real3 key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</real3>
+<real3 key="world_mins" name="world_mins">New in Titanfall; TODO: identify</real3>
 ----- NOTES -----
 Introduced by Titanfall
 </group>

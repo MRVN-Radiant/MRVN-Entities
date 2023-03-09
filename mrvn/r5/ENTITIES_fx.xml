@@ -51,7 +51,7 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
-<string key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</string>
+<color key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</color>
 <string key="fogenable" name="fogenable">New in Titanfall; TODO: identify</string>
 <boolean key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</boolean>
 <boolean key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</boolean>

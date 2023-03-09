@@ -145,11 +145,11 @@ def guess_key_type(key_name: str, key_values: List[str]) -> str:
     is_vec3, is_vec4, is_path = False, False, False
     if key_name.lower() == "scale":
         return "real"
-    # TODO: regex numbers
-    if all(map(lambda v: v.count(" ") == 3, key_values)):
+    # TODO: regex numbers (real vs. int)
+    if all(map(lambda v: len(v.split()) == 3, key_values)):
         is_vec3 = True
         # NOTE: some vec3 types fail this test, idk why
-    if all(map(lambda v: v.count(" ") == 4, key_values)):
+    if all(map(lambda v: len(v.split()) == 4, key_values)):
         is_vec4 = True
     if any(map(lambda v: "/" in v.replace("\\", "/"), key_values)):
         is_path = True
@@ -166,7 +166,7 @@ def guess_key_type(key_name: str, key_values: List[str]) -> str:
     # -- ui & script are possibilities, but aren't supported by Radiant (yet.)
     if "target" in key_name.lower():
         return "targetname"
-    if "angle" in key_name.lower():  # and is_vec3
+    if "angle" in key_name.lower() and is_vec3:
         return "angles"
     if is_vec3:
         return "real3"  # base vector type, could be color
