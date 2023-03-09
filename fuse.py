@@ -225,7 +225,7 @@ if __name__ == "__main__":
                 # TODO: override Notes (preserve "Introduced by Source / Titanfall" on first line)
                 # xml_ent[-1].tail = "..."
             with open(os.path.join(out_dir, ent_filename[xml_filename]), "wb") as ent_file:
-                ent_file.write(b'<?xml version="1.0"?>')
+                ent_file.write(b'<?xml version="1.0"?>\n')
                 # TODO: capture comment before root node
                 ElementTree.indent(ent_classes_node, space="")
                 xml_text = ElementTree.tostring(ent_classes_node, encoding="utf-8")  # method="html"

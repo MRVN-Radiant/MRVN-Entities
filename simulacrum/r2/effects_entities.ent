@@ -1,10 +1,11 @@
-<?xml version="1.0"?><classes>
+<?xml version="1.0"?>
+<classes>
 <point name="beam_spotlight" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="HDRColorScale" name="HDRColorScale">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="color" name="color">New in Titanfall; TODO: identify</string>
+<color key="color" name="color">New in Titanfall; TODO: identify</color>
 <string key="disableX360" name="disableX360">New in Titanfall; TODO: identify</string>
 <string key="disablereceiveshadows" name="disablereceiveshadows">New in Titanfall; TODO: identify</string>
 <string key="maxcpulevel" name="maxcpulevel">New in Titanfall; TODO: identify</string>
@@ -13,7 +14,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="mincpulevel" name="mincpulevel">New in Titanfall; TODO: identify</string>
 <string key="mingpulevel" name="mingpulevel">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -57,7 +58,7 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="effect_name" name="effect_name">New in Titanfall; TODO: identify</string>
-<string key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</string>
+<color key="fogcolor" name="fogcolor">New in Titanfall; TODO: identify</color>
 <string key="fogenable" name="fogenable">New in Titanfall; TODO: identify</string>
 <boolean key="in_skybox" name="in_skybox">New in Titanfall; TODO: identify</boolean>
 <boolean key="kill_for_replay" name="kill_for_replay">New in Titanfall; TODO: identify</boolean>

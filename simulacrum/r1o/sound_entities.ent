@@ -1,4 +1,5 @@
-<?xml version="1.0"?><classes>
+<?xml version="1.0"?>
+<classes>
 <point name="ambient_generic" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="soundName" name="soundName">New in Titanfall; TODO: identify</string>

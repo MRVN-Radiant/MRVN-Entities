@@ -1,4 +1,5 @@
-<?xml version="1.0"?><classes>
+<?xml version="1.0"?>
+<classes>
 <list name="teamNumber">
 <item name="IMC" value="2" />
 <item name="Militia" value="3" />

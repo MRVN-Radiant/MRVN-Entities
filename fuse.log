@@ -20,9 +20,9 @@ processing mrvn/r2/ENTITIES.xml
 processing mrvn/r2/ENTITIES_env.xml
 processing mrvn/r2/ENTITIES_fx.xml
 processing mrvn/r2/ENTITIES_script.xml
+adding new entity: mp_weapon_wingman_n
 adding new entity: mp_weapon_rspn101_og
 adding new entity: mp_weapon_grenade_sonar
-adding new entity: mp_weapon_wingman_n
 processing mrvn/r2/ENTITIES_snd.xml
 processing mrvn/r2/ENTITIES_spawn.xml
 processing mrvn/r2/radiant.xml

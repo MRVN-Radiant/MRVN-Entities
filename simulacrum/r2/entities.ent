@@ -1,4 +1,5 @@
-<?xml version="1.0"?><classes>
+<?xml version="1.0"?>
+<classes>
 <list name="teamNumber">
 <item name="IMC" value="2" />
 <item name="Militia" value="3" />
@@ -66,7 +67,7 @@ Introduced by Titanfall
 ----- KEYS -----
 <string key="halfheight" name="halfheight">New in Titanfall; TODO: identify</string>
 <string key="halfwidth" name="halfwidth">New in Titanfall; TODO: identify</string>
-<string key="right" name="right">New in Titanfall; TODO: identify</string>
+<real3 key="right" name="right">New in Titanfall; TODO: identify</real3>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -118,7 +119,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model" />
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -157,7 +158,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -252,17 +253,17 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <real3 key="editor_drMapPos1" name="Dev Camera Position 1" keyname="editor_drMapPos1">for saving session data in the editor</real3>
 <real3 key="editor_drMapPos2" name="Dev Camera Position 2" keyname="editor_drMapPos2">for saving session data in the editor</real3>
 <real3 key="editor_drMapPos3" name="Dev Camera Position 3" keyname="editor_drMapPos3">for saving session data in the editor</real3>
-<string key="editor_drMapPos4" name="editor_drMapPos4">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos5" name="editor_drMapPos5">New in Titanfall; TODO: identify</string>
-<string key="editor_drMapPos8" name="editor_drMapPos8">New in Titanfall; TODO: identify</string>
+<real3 key="editor_drMapPos4" name="editor_drMapPos4">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos5" name="editor_drMapPos5">New in Titanfall; TODO: identify</real3>
+<real3 key="editor_drMapPos8" name="editor_drMapPos8">New in Titanfall; TODO: identify</real3>
 <string key="fadedist" name="fadedist">New in Titanfall; TODO: identify</string>
 <string key="lightprobe_voronoi_leafsize" name="lightprobe_voronoi_leafsize">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>
 <string key="musicpostfix" name="musicpostfix">New in Titanfall; TODO: identify</string>
 <string key="name" name="name">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<string key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</string>
-<string key="world_mins" name="world_mins">New in Titanfall; TODO: identify</string>
+<real3 key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</real3>
+<real3 key="world_mins" name="world_mins">New in Titanfall; TODO: identify</real3>
 ----- NOTES -----
 Introduced by Titanfall
 </group>

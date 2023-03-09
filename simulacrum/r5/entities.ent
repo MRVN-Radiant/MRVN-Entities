@@ -1,4 +1,5 @@
-<?xml version="1.0"?><classes>
+<?xml version="1.0"?>
+<classes>
 <point name="env_exposure" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="auto_compensation" name="auto_compensation">New in Titanfall; TODO: identify</string>
@@ -13,8 +14,8 @@ Introduced by Titanfall
 ----- KEYS -----
 <string key="cubeMapIndex" name="cubeMapIndex">New in Titanfall; TODO: identify</string>
 <string key="cubemapID" name="cubemapID">New in Titanfall; TODO: identify</string>
-<string key="maxs" name="maxs">New in Titanfall; TODO: identify</string>
-<string key="mins" name="mins">New in Titanfall; TODO: identify</string>
+<real3 key="maxs" name="maxs">New in Titanfall; TODO: identify</real3>
+<real3 key="mins" name="mins">New in Titanfall; TODO: identify</real3>
 <string key="priority" name="priority">New in Titanfall; TODO: identify</string>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <boolean key="target_noRename" name="target_noRename">New in Titanfall; TODO: identify</boolean>
@@ -25,7 +26,7 @@ Introduced by Titanfall
 ----- KEYS -----
 <string key="halfheight" name="halfheight">New in Titanfall; TODO: identify</string>
 <string key="halfwidth" name="halfwidth">New in Titanfall; TODO: identify</string>
-<string key="right" name="right">New in Titanfall; TODO: identify</string>
+<real3 key="right" name="right">New in Titanfall; TODO: identify</real3>
 ----- NOTES -----
 Introduced by Titanfall
 </point>
@@ -75,8 +76,8 @@ Introduced by Titanfall
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>
 <string key="musicpostfix" name="musicpostfix">New in Titanfall; TODO: identify</string>
 <string key="name" name="name">New in Titanfall; TODO: identify</string>
-<string key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</string>
-<string key="world_mins" name="world_mins">New in Titanfall; TODO: identify</string>
+<real3 key="world_maxs" name="world_maxs">New in Titanfall; TODO: identify</real3>
+<real3 key="world_mins" name="world_mins">New in Titanfall; TODO: identify</real3>
 ----- NOTES -----
 Introduced by Titanfall
 </group>

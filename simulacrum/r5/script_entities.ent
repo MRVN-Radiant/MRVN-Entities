@@ -1,4 +1,5 @@
-<?xml version="1.0"?><classes>
+<?xml version="1.0"?>
+<classes>
 <group name="func_brush" color="1 0 1">
 ----- KEYS -----
 <string key="bakedSunFraction" name="bakedSunFraction">New in Titanfall; TODO: identify</string>
@@ -13,7 +14,7 @@
 <string key="solidity" name="solidity">New in Titanfall; TODO: identify</string>
 <string key="splitNavmesh" name="splitNavmesh">New in Titanfall; TODO: identify</string>
 <string key="startdisabled" name="startdisabled">New in Titanfall; TODO: identify</string>
-<angles key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</angles>
+<string key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</string>
 <string key="useNonLocalWorldLights" name="useNonLocalWorldLights">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
@@ -31,7 +32,7 @@ Introduced by Titanfall
 <string key="solidity" name="solidity">New in Titanfall; TODO: identify</string>
 <string key="splitNavmesh" name="splitNavmesh">New in Titanfall; TODO: identify</string>
 <string key="startdisabled" name="startdisabled">New in Titanfall; TODO: identify</string>
-<angles key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</angles>
+<string key="triangle_collision" name="triangle_collision">New in Titanfall; TODO: identify</string>
 <string key="useNonLocalWorldLights" name="useNonLocalWorldLights">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
@@ -396,7 +397,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="onMovingGeo" name="onMovingGeo">New in Titanfall; TODO: identify</string>
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -426,7 +427,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <model key="model" name="World Model" />
 <string key="navMeshUnwalkable_extra_large" name="navMeshUnwalkable_extra_large">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -458,7 +459,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model" />
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -500,7 +501,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="physicsmode" name="physicsmode">New in Titanfall; TODO: identify</string>
 <string key="pressuredelay" name="pressuredelay">New in Titanfall; TODO: identify</string>
 <string key="renderamt" name="renderamt">New in Titanfall; TODO: identify</string>
-<string key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</string>
+<color key="rendercolor" name="rendercolor">New in Titanfall; TODO: identify</color>
 <string key="renderfx" name="renderfx">New in Titanfall; TODO: identify</string>
 <string key="rendermode" name="rendermode">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -1045,38 +1046,38 @@ Introduced by Titanfall
 <string key="ZiplineSpeedScale" name="ZiplineSpeedScale">New in Titanfall; TODO: identify</string>
 <string key="ZiplineVersion" name="ZiplineVersion">New in Titanfall; TODO: identify</string>
 <boolean key="ZiplineVertical" name="ZiplineVertical">New in Titanfall; TODO: identify</boolean>
-<string key="_zipline_rest_point_0" name="_zipline_rest_point_0">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_1" name="_zipline_rest_point_1">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_10" name="_zipline_rest_point_10">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_11" name="_zipline_rest_point_11">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_12" name="_zipline_rest_point_12">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_13" name="_zipline_rest_point_13">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_14" name="_zipline_rest_point_14">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_15" name="_zipline_rest_point_15">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_16" name="_zipline_rest_point_16">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_17" name="_zipline_rest_point_17">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_18" name="_zipline_rest_point_18">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_19" name="_zipline_rest_point_19">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_2" name="_zipline_rest_point_2">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_20" name="_zipline_rest_point_20">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_21" name="_zipline_rest_point_21">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_22" name="_zipline_rest_point_22">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_23" name="_zipline_rest_point_23">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_24" name="_zipline_rest_point_24">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_25" name="_zipline_rest_point_25">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_26" name="_zipline_rest_point_26">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_27" name="_zipline_rest_point_27">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_28" name="_zipline_rest_point_28">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_29" name="_zipline_rest_point_29">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_3" name="_zipline_rest_point_3">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_30" name="_zipline_rest_point_30">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_31" name="_zipline_rest_point_31">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_4" name="_zipline_rest_point_4">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_5" name="_zipline_rest_point_5">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_6" name="_zipline_rest_point_6">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_7" name="_zipline_rest_point_7">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_8" name="_zipline_rest_point_8">New in Titanfall; TODO: identify</string>
-<string key="_zipline_rest_point_9" name="_zipline_rest_point_9">New in Titanfall; TODO: identify</string>
+<real3 key="_zipline_rest_point_0" name="_zipline_rest_point_0">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_1" name="_zipline_rest_point_1">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_10" name="_zipline_rest_point_10">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_11" name="_zipline_rest_point_11">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_12" name="_zipline_rest_point_12">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_13" name="_zipline_rest_point_13">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_14" name="_zipline_rest_point_14">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_15" name="_zipline_rest_point_15">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_16" name="_zipline_rest_point_16">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_17" name="_zipline_rest_point_17">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_18" name="_zipline_rest_point_18">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_19" name="_zipline_rest_point_19">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_2" name="_zipline_rest_point_2">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_20" name="_zipline_rest_point_20">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_21" name="_zipline_rest_point_21">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_22" name="_zipline_rest_point_22">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_23" name="_zipline_rest_point_23">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_24" name="_zipline_rest_point_24">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_25" name="_zipline_rest_point_25">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_26" name="_zipline_rest_point_26">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_27" name="_zipline_rest_point_27">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_28" name="_zipline_rest_point_28">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_29" name="_zipline_rest_point_29">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_3" name="_zipline_rest_point_3">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_30" name="_zipline_rest_point_30">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_31" name="_zipline_rest_point_31">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_4" name="_zipline_rest_point_4">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_5" name="_zipline_rest_point_5">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_6" name="_zipline_rest_point_6">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_7" name="_zipline_rest_point_7">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_8" name="_zipline_rest_point_8">New in Titanfall; TODO: identify</real3>
+<real3 key="_zipline_rest_point_9" name="_zipline_rest_point_9">New in Titanfall; TODO: identify</real3>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
