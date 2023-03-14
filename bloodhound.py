@@ -33,44 +33,42 @@ def ur_ent(maps: MapDict, classname: str = None, **filters: Entity) -> OmegaEnti
 
 
 Dossier = Dict[str, Union[str, OmegaEntity]]
+# {"classname": "info_example", "ur": omega_entity, "type": "point", "spec": fgd_entity,
+#  "new": {*omega_entity.keys()}, "old": {*fgd_entity.keys()}, "shared": new.intersection(old)}
 
 class_types = dict(PointClass="point", KeyFrameClass="point", MoveClass="point",
                    NPCClass="point", SolidClass="group")
 
 
 def id_ent(omega_entity: OmegaEntity, fgd: valvefgd.Fgd) -> Dossier:
-    # TODO: force fgd baseclass (default: omega_entity["classname"])
+    # TODO: force a chosen fgd baseclass (default: omega_entity["classname"])
 
     # editorclass -> classname override
     og_classname, og_editorclass = omega_entity["classname"], omega_entity.get("editorclass")
     omega_entity["classname"] = og_editorclass if og_editorclass is not None else og_classname
     if "editorclass" in omega_entity:
         omega_entity.pop("editorclass")
-    # NOTE: MRVN-radiant remap will reverse this, grouping by editorclass just make writing easier
-    classname = omega_entity["classname"][0]  # new classname, overridden by editorclass if present
+    classname = omega_entity["classname"][0]
 
     omega_keys = set(omega_entity.keys())
     out = {"classname": classname,
            "ur": omega_entity,
-           "type": "point",
            "new": omega_keys,
            "shared": set(),
            "old": set(),
-           "spec": None}
-    # NOTE: og_classname is the fgd entity classname we want; editorclasses wouldn't appear in fgds afaik
+           "spec": None,
+           "type": "point"}
     if og_classname not in [e.name for e in fgd.entities]:
         out["origin"] = "Titanfall"
         # identify brush entities
         if out["classname"] == "worldspawn":
             out["type"] = "group"
-        if any([v.startswith("*") for v in omega_entity.get("model", list())]):
+        if any([v.startswith("*") for v in omega_entity.get("model", list())]):  # rendered brush model
             out["new"].remove("model")
             out["type"] = "group"
-        if any([k.startswith("*coll") or k.startswith("*trigger") for k in omega_entity.keys()]):
+        if any([k.startswith("*coll") or k.startswith("*trigger") for k in omega_entity.keys()]):  # triggers
             out["type"] = "group"
-            # NOTE: xml_ent will remove these keys for us
-        if "origin" in out["new"]:  # automatically added by Radiant
-            out["new"].remove("origin")
+            # NOTE: xml_ent() will remove all keys starting with "*" later
         return out
     # fgd baseclass found
     fgd_entity = fgd.entity_by_name(og_classname)  # ignore editorclass
@@ -200,9 +198,15 @@ def xml_ent(dossier: Dossier) -> (str, Set[str]):  # ("<point name="entity">...<
         studio = defs["studio"][0]
         out.append(f'<!-- TODO: convert {studio} to .obj -->')
         bonus.append(f'model="{studio}"')
+    elif len(dossier["ur"].get("model", [])) == 1 and "model" not in dossier["shared"]:
+        editor_model = dossier["ur"]["model"][0]
+        out.append(f'<!-- TODO: convert {editor_model} to .obj -->')
+        bonus.append(f'model="{editor_model}"')
+        dossier["new"].remove("model")
     elif dossier["type"] == "point":
         bonus.append('box="-8 -8 -8 8 8 8"')
-    out.append(" ".join([head, f'color="{color}"', *bonus]) + ">")
+    out.append(" ".join([head, f'color="{color}"', *bonus]) + ">")  # main xml Entity Node
+    # gather fgd definition
     if dossier["spec"] is not None:  # source based
         out.append(sanitise_desc(dossier["spec"].description))
         fgd_keys = [p for p in dossier["spec"].properties if p.name not in dossier["old"]]
