@@ -24,7 +24,7 @@ simulacrum_ent = [os.path.join("simulacrum", g, e) for g in games
 
 
 blocks = json.load(open("blocks.json"))
-exclude = {g: {b: set() for b in blocks[g]} for g in blocks}
+exclude = {g: {b: set() for b in blocks[g]} for g in blocks}  # new / unused entities
 exclude["r2"]["ENTITIES_script"].update({"mp_weapon_rspn101_og", "mp_weapon_wingman_n", "mp_weapon_grenade_sonar"})
 
 
@@ -35,4 +35,4 @@ def test_coverage(game: str, xml_block: str):
     expected.difference_update(exclude[game][xml_block])
     written = {e.get("name") for e in xml.getroot() if e.tag in ("point", "group")}
     assert expected.difference(written) == set(), "some entity classes were not written"
-    assert written.difference(expected) == set(), "xml entity not listed in blocks.json"
+    assert written.difference(expected) == set(), "bsp entity not listed in blocks.json"
