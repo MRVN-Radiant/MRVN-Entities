@@ -46,6 +46,7 @@
       "beam_spotlight",
       "env_sprite_clientside",
       "info_particle_system",
+      "info_particle_system_clientside",
       "info_target_fx",
       "info_target_fx_clientside"
     ],
@@ -121,7 +122,6 @@
     ],
     "ENTITIES_fx": [
       "beam_spotlight",
-      "env_sprite_clientside",
       "info_particle_system",
       "info_particle_system_clientside",
       "info_target_fx",
@@ -376,7 +376,8 @@
       "stream_hint_point"
     ],
     "ENTITIES_fx": [
-      "info_particle_system"
+      "info_particle_system",
+      "info_particle_system_clientside"
     ],
     "ENTITIES_script": [
       "func_brush",
