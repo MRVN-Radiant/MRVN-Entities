@@ -3,16 +3,8 @@ import fnmatch
 import html
 import json
 import os
-import sys
-from xml.etree import ElementTree
 
-# parsing xml & json can be very unsafe with a lazy parser, always verify schema before diving in!
-if not sys.argv != (sys.argv[0], "--unsafe"):
-    unsafe = False
-    # from tests import test_json, test_xml
-else:
-    unsafe = True
-    # TODO: UserWarning
+from lxml import etree as ElementTree
 
 
 ent_filename = {"ENTITIES.xml":        "entities.ent",
@@ -120,8 +112,6 @@ if __name__ == "__main__":
         # ^ {"ENTITIES.xml": {"entity.json"}}
         for json_filename in fnmatch.filter(os.listdir(json_dir), "*.json"):
             full_json_filepath = os.path.join(json_dir, json_filename)
-            # if not unsafe:
-            #     test_json.test_entity(full_json_filepath)
             try:
                 with open(full_json_filepath) as json_file:
                     entity = json.load(json_file)
@@ -137,8 +127,6 @@ if __name__ == "__main__":
         # ^ {"choiceType": {"Name": "choiceType", "Options": dict(...)}}
         for json_filename in fnmatch.filter(os.listdir(choice_type_dir), "*.json"):
             full_json_filepath = os.path.join(choice_type_dir, json_filename)
-            # if not unsafe:
-            #     tests.test_json.test_choiceType(choice_type)
             try:
                 with open(full_json_filepath) as json_file:
                     choice_type = json.load(json_file)
@@ -227,7 +215,5 @@ if __name__ == "__main__":
             with open(os.path.join(out_dir, ent_filename[xml_filename]), "wb") as ent_file:
                 ent_file.write(b'<?xml version="1.0"?>\n')
                 # TODO: capture comment before root node
-                ElementTree.indent(ent_classes_node, space="")
-                xml_text = ElementTree.tostring(ent_classes_node, encoding="utf-8")  # method="html"
-                ent_file.write(xml_text)
+                xml_file.write(ent_file, pretty_print=True)
         # TODO: check for unused choiceTypes & log warnings
