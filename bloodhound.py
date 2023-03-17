@@ -11,6 +11,7 @@ import valvefgd
 
 
 MapDict = Dict[str, bsp_tool.base.Bsp]
+# ^ {"mp_mapname": <RespawnBsp ... @ 0x...>}
 Entity = Dict[str, str]
 # ^ {"key": "value"}
 OmegaEntity = Dict[str, List[str]]
