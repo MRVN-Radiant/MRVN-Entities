@@ -37,7 +37,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="Skirmish" keyname="gamemode_tdm">Start here in Skirmish (Team DeathMatch)</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
@@ -75,7 +74,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="Skirmish" keyname="gamemode_tdm">Start here in Skirmish (Team DeathMatch)</boolean>
-<model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
@@ -124,7 +122,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
@@ -144,7 +141,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
-<model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="spawn_outdoors" name="spawn_outdoors">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
@@ -167,7 +163,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model" />
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
@@ -198,7 +193,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
-<model key="model" name="World Model" />
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
@@ -220,7 +214,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model" />
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>

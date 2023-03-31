@@ -1,6 +1,6 @@
 processing mrvn/r1o/
 gathering overrides from pilot/r1o/
-collected 4 entities across 3 blocks
+collected 5 entities across 3 blocks
 gathering choiceTypes from pilot/r1o/choiceTypes
 collected 1 choiceType definitions
 processing mrvn/r1o/ENTITIES.xml
@@ -13,23 +13,23 @@ processing mrvn/r1o/radiant.xml
 adding new entity: func_occluder
 processing mrvn/r2/
 gathering overrides from pilot/r2/
-collected 54 entities across 4 blocks
+collected 55 entities across 4 blocks
 gathering choiceTypes from pilot/r2/choiceTypes
 collected 4 choiceType definitions
 processing mrvn/r2/ENTITIES.xml
 processing mrvn/r2/ENTITIES_env.xml
 processing mrvn/r2/ENTITIES_fx.xml
 processing mrvn/r2/ENTITIES_script.xml
-adding new entity: mp_weapon_wingman_n
-adding new entity: mp_weapon_rspn101_og
 adding new entity: mp_weapon_grenade_sonar
+adding new entity: mp_weapon_rspn101_og
+adding new entity: mp_weapon_wingman_n
 processing mrvn/r2/ENTITIES_snd.xml
 processing mrvn/r2/ENTITIES_spawn.xml
 processing mrvn/r2/radiant.xml
 adding new entity: func_occluder
 processing mrvn/r5/
 gathering overrides from pilot/r5/
-collected 4 entities across 3 blocks
+collected 5 entities across 4 blocks
 gathering choiceTypes from pilot/r5/choiceTypes
 collected 1 choiceType definitions
 processing mrvn/r5/ENTITIES.xml
