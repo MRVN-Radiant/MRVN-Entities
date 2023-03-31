@@ -52,7 +52,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <targetname key="controlTarget" name="controlTarget">New in Titanfall; TODO: identify</targetname>
 <string key="hardpointGroup" name="hardpointGroup">New in Titanfall; TODO: identify</string>
 <string key="hardpointName" name="hardpointName">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <targetname key="nearTarget" name="nearTarget">New in Titanfall; TODO: identify</targetname>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
@@ -100,7 +99,6 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="hinttype" name="hinttype">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <string key="nodeFOV" name="nodeFOV">New in Titanfall; TODO: identify</string>
 <string key="nodeid" name="nodeid">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -118,7 +116,6 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="hinttype" name="hinttype">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <string key="nodeFOV" name="nodeFOV">New in Titanfall; TODO: identify</string>
 <string key="nodeid" name="nodeid">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -136,7 +133,6 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="hinttype" name="hinttype">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <string key="nodeFOV" name="nodeFOV">New in Titanfall; TODO: identify</string>
 <string key="nodeid" name="nodeid">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -154,7 +150,6 @@ Introduced by Titanfall
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <string key="hinttype" name="hinttype">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <string key="nodeFOV" name="nodeFOV">New in Titanfall; TODO: identify</string>
 <string key="nodeid" name="nodeid">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
@@ -207,7 +202,6 @@ Introduced by Titanfall
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<model key="model" name="World Model"></model>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- SPAWNFLAGS -----
