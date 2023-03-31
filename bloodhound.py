@@ -139,6 +139,8 @@ def guess_key_type(key_name: str, key_values: List[str]) -> str:
     # NOTE: key_values have no duplicates & are sorted alphabetically
     # https://github.com/MRVN-Radiant/MRVN-Radiant/blob/main/radiant/eclass_xml.cpp#L49-L68
     # TODO: better checks for false positives
+    # TODO: take more context (ENTITIES_spawn & "gamemode_*") -> boolean + description (gamemode LUT / dict)
+    # TODO: "teamnum" + set of valid teamnums to confirm teamNumber choiceType
     key_values = sorted(set(key_values).difference({""}))
     is_vec3, is_vec4, is_path = False, False, False
     if key_name.lower() == "scale":
