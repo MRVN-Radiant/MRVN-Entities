@@ -155,7 +155,7 @@ if __name__ == "__main__":
             used_choice_types = set()
             ent_classes_node = xml_file.getroot()
             entities = {e.get("name"): e for e in ent_classes_node if e.tag in ("point", "group")}
-            for json_filename in ent_overrides[xml_filename]:
+            for json_filename in sorted(ent_overrides[xml_filename]):
                 with open(os.path.join(json_dir, json_filename)) as json_file:
                     json_ent = json.load(json_file)
                 # index entity
