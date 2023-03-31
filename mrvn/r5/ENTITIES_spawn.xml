@@ -35,7 +35,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="gamemode_fw" name="gamemode_fw">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <string key="phase_1" name="phase_1">New in Titanfall; TODO: identify</string>
 <string key="phase_2" name="phase_2">New in Titanfall; TODO: identify</string>
 <string key="phase_3" name="phase_3">New in Titanfall; TODO: identify</string>
@@ -68,7 +67,6 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="link_to_guid_1" name="link_to_guid_1">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_2" name="link_to_guid_2">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_3" name="link_to_guid_3">New in Titanfall; TODO: identify</string>
-<model key="model" name="World Model"></model>
 <string key="phase_1" name="phase_1">New in Titanfall; TODO: identify</string>
 <string key="phase_2" name="phase_2">New in Titanfall; TODO: identify</string>
 <string key="phase_3" name="phase_3">New in Titanfall; TODO: identify</string>
