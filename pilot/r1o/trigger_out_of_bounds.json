@@ -1,0 +1,35 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES",
+    "Entity": "trigger_out_of_bounds",
+    "Type": "group",
+    "Description": "Leaving Combat Zone",
+    "Keys": [
+        {
+            "keyname": "startDisabled",
+            "type": "boolean",
+            "name": "Display Name",
+            "description": "Start inactive (can be activated later with a script)"
+        }
+    ],
+    "SpawnFlags": [
+       {
+           "bit": 0,
+           "name": "PILOTS",
+           "default": "True",
+           "description": "Warn pilots"
+       },
+       {
+           "bit": 1,
+           "name": "NPCS",
+           "default": "False",
+           "description": "Might affect minions, would need navmeshes to confirm"
+       },
+       {
+           "bit": 12,
+           "name": "BOTS",
+           "default": "False",
+           "description": "Warn bots (ai players)"
+       }
+    ]
+}
