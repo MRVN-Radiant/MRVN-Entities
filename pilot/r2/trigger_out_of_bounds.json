@@ -8,7 +8,8 @@
         {
             "keyname": "startDisabled",
             "type": "boolean",
-            "name": "Display Name",
+            "name": "Start Disabled",
+            "default": "False",
             "description": "Start inactive (can be activated later with a script)"
         }
     ],

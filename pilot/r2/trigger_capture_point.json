@@ -1,0 +1,107 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES",
+    "Entity": "trigger_capture_point",
+    "Type": "group",
+    "Description": "Capture area for info_hardpoint",
+    "Keys": [
+        {
+            "keyname": "startDisabled",
+            "type": "boolean",
+            "name": "Start Disabled",
+            "default": "False",
+            "description": "Start inactive (can be activated later with a script)"
+        },
+        {
+            "keyname": "triggerFilterNonCharacter",
+            "type": "boolean",
+            "name": "Allow Non-Character",
+            "default": "False"
+        },
+        {
+            "keyname": "triggerFilterNpc",
+            "type": "String",
+            "name": "NPC Filter",
+            "default": "all",
+            "description": "TODO: choiceType"
+        },
+        {
+            "keyname": "triggerFilterNpcFlip",
+            "type": "boolean",
+            "name": "Invert NPC Filter",
+            "default": "False"
+        },
+        {
+            "keyname": "triggerFilterNpcOwnedByPlayer",
+            "type": "string",
+            "name": "Allow Player Owned NPCs",
+            "default": "any",
+            "description": "TODO: choiceType"
+        },
+        {
+            "keyname": "triggerFilterPhaseShift",
+            "type": "string",
+            "name": "Allow Phase Shifted Pilots",
+            "default": "nonphaseshift",
+            "description": "TODO: choiceType"
+        },
+        {
+            "keyname": "triggerFilterTeamBeast",
+            "type": "boolean",
+            "name": "Allow BEAST Team",
+            "default": "False",
+            "description": "Prowlers & Flyers (idk about Leviathans)"
+        },
+        {
+            "keyname": "triggerFilterTeamIMC",
+            "type": "boolean",
+            "name": "Allow MILITIA Team",
+            "default": "True"
+        },
+        {
+            "keyname": "triggerFilterTeamMilitia",
+            "type": "boolean",
+            "name": "Allow MILITIA",
+            "default": "True"
+        },
+        {
+            "keyname": "triggerFilterTeamNeutral",
+            "type": "boolean",
+            "name": "Allow NEUTRAL Team",
+            "default": "False"
+        },
+        {
+            "keyname": "triggerFilterTeamOther",
+            "type": "boolean",
+            "name": "Allow OTHER Team",
+            "default": "False"
+        },
+        {
+            "keyname": "triggerFilterUseNew",
+            "type": "boolean",
+            "name": "triggerFilterUseNew",
+            "default": "True",
+            "description": "idk; leave it on"
+        },
+        {
+            "keyname": "triggerNearbyRadius",
+            "type": "float",
+            "name": "Nearby Radius",
+            "default": "0"
+        }
+    ],
+    "SpawnFlags": [
+       {
+           "bit": 0,
+           "name": "PILOTS",
+           "default": "True",
+           "description": "Allow pilots"
+       },
+       {
+           "bit": 1,
+           "name": "NPCS",
+           "default": "True",
+           "description": "Allow NPCs"
+       }
+    ]
+}
