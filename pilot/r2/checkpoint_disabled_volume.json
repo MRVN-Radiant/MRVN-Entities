@@ -44,7 +44,7 @@
             "type": "filterNpc",
             "name": "NPC Filter",
             "default": "all",
-            "description": "Allow minions and titans"
+            "description": "Allow Minions and Titans"
         },
         {
             "keyname": "triggerFilterNpcFlip",
