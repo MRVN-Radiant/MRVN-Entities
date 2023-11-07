@@ -123,6 +123,26 @@
             "name": "Wait",
             "default": "False"
         }
+    ],
+    "SpawnFlags": [
+       {
+           "bit": 0,
+           "name": "PILOTS",
+           "default": "True",
+           "description": "Allow Pilots"
+       },
+       {
+           "bit": 1,
+           "name": "NPCS",
+           "default": "True",
+           "description": "Allow NPCs"
+       },
+       {
+           "bit": 12,
+           "name": "NO BOTS",
+           "default": "True",
+           "description": "Disallow bots"
+       }
     ]
 }
 
