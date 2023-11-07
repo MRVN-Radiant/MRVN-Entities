@@ -1,6 +1,5 @@
 import collections
 import fnmatch
-import html
 import json
 import os
 
@@ -48,7 +47,8 @@ def new_key(json_spec: dict) -> ElementTree.Element:
     out.set("name", json_spec.get("name", json_spec["keyname"]))  # editor friendly name
     # TODO: key_type_defaults?, choiceType defaults need a Dict[str, choiceType_spec] arg
     out.set("value", json_spec.get("value", ""))  # default value
-    out.text = html.escape(json_spec.get("description", ""))  # use / effects
+    out.text = json_spec.get("description", "")
+    out.tail = "\n"
     return out
 
 
@@ -58,7 +58,6 @@ def update_key(xml_key: ElementTree.Element, json_spec: dict):
         if json_spec.get(attr) is None and xml_key.get(attr) is None:
             continue
         xml_key.set(attr, json_spec.get(attr, xml_key.get(attr)))
-    # TODO: UX DESIGN QUESTION: do we expect pilot/*.json to html.escape() descriptions?
     xml_key.text = json_spec.get("description", "")
 
 
@@ -69,7 +68,8 @@ def new_spawnflag(json_spec: dict) -> ElementTree.Element:
     out.set("bit", str(json_spec["bit"]))  # bit set / unset by flag
     default = {"False": "0", "True": "1"}[json_spec.get("default", "False")]
     out.set("value", str(default))
-    out.text = html.escape(json_spec.get("description", ""))  # use / effects
+    out.text = json_spec.get("description", "")
+    out.tail = "\n"
     return out
 
 
@@ -78,8 +78,7 @@ def update_spawnflag(xml_flag: ElementTree.Element, json_spec: dict):
     xml_flag.set("key", keyname)
     xml_flag.set("name", keyname)
     xml_flag.set("value", json_spec.get("value", xml_flag.get("value")))
-    # TODO: UX DESIGN QUESTION: do we expect pilot/*.json to html.escape() descriptions?
-    xml_flag.text = json_spec.get("description", xml_flag.text)
+    xml_flag.text = json_spec.get("description", "")
 
 
 def new_choice_type(json_spec: dict) -> ElementTree.Element:
@@ -89,7 +88,9 @@ def new_choice_type(json_spec: dict) -> ElementTree.Element:
         option = ElementTree.Element("item")
         option.set("name", name)
         option.set("value", value)
+        option.tail = "\n"
         out.append(option)
+    out.tail = "\n"
     return out
 
 
@@ -167,6 +168,7 @@ if __name__ == "__main__":
                     # NOTE: tests will complain if new ent isn't listed in blocks.json
                 # add .json data
                 contributors_comment = ElementTree.Comment(", ".join(json_ent["Contributors"]))
+                contributors_comment.tail = "\n"
                 ent_classes_node.insert(ent_classes_node[::].index(xml_ent), contributors_comment)
                 xml_ent.tag = json_ent.get("Type", xml_ent.tag)
                 update_ent_metadata(xml_ent, json_ent, "Color", default="1 0 1")
