@@ -42,20 +42,20 @@ Introduced by Titanfall
 <boolean key="mobility_1_easy" name="Easy" keyname="mobility_1_easy" default="True">Applied on Easy Difficulty</boolean>
 <boolean key="mobility_2_normal" name="Normal" keyname="mobility_2_normal" default="True">Applied on Normal Difficulty</boolean>
 <boolean key="mobility_3_hard" name="Hard" keyname="mobility_3_hard" default="True">Applied on Hard Difficulty</boolean>
-<boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False">New in Titanfall; TODO: identify</boolean>
-<filterNpc key="triggerFilterNpc" name="NPC Filter" keyname="triggerFilterNpc" default="all">Allow minions and titans</filterNpc>
-<boolean key="triggerFilterNpcFlip" name="Invert NPC Filter" keyname="triggerFilterNpcFlip" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False"></boolean>
+<filterNpc key="triggerFilterNpc" name="NPC Filter" keyname="triggerFilterNpc" default="all">Allow Minions and Titans</filterNpc>
+<boolean key="triggerFilterNpcFlip" name="Invert NPC Filter" keyname="triggerFilterNpcFlip" default="False"></boolean>
 <filterNpcOwned key="triggerFilterNpcOwnedByPlayer" name="Allow Player Owned NPCs" keyname="triggerFilterNpcOwnedByPlayer" default="any">Hacked Spectres and recruited Grunts</filterNpcOwned>
 <filterPhase key="triggerFilterPhaseShift" name="Allow Phase Shifted Pilots" keyname="triggerFilterPhaseShift" default="nonphaseshift">Might be possible to only allow Pilots in Phase Shift</filterPhase>
 <filterPlayer key="triggerFilterPlayer" name="Allow Players" keyname="triggerFilterPlayer" default="all">Choose between Pilots and Titans</filterPlayer>
 <boolean key="triggerFilterTeamBeast" name="Allow BEAST Team" keyname="triggerFilterTeamBeast" default="False">Prowlers &amp; Flyers (idk about Leviathans)</boolean>
-<boolean key="triggerFilterTeamIMC" name="Allow MILITIA Team" keyname="triggerFilterTeamIMC" default="True">New in Titanfall; TODO: identify</boolean>
-<boolean key="triggerFilterTeamMilitia" name="Allow MILITIA" keyname="triggerFilterTeamMilitia" default="True">New in Titanfall; TODO: identify</boolean>
-<boolean key="triggerFilterTeamNeutral" name="Allow NEUTRAL Team" keyname="triggerFilterTeamNeutral" default="False">New in Titanfall; TODO: identify</boolean>
-<boolean key="triggerFilterTeamOther" name="Allow OTHER Team" keyname="triggerFilterTeamOther" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamIMC" name="Allow MILITIA Team" keyname="triggerFilterTeamIMC" default="True"></boolean>
+<boolean key="triggerFilterTeamMilitia" name="Allow MILITIA" keyname="triggerFilterTeamMilitia" default="True"></boolean>
+<boolean key="triggerFilterTeamNeutral" name="Allow NEUTRAL Team" keyname="triggerFilterTeamNeutral" default="False"></boolean>
+<boolean key="triggerFilterTeamOther" name="Allow OTHER Team" keyname="triggerFilterTeamOther" default="False"></boolean>
 <boolean key="triggerFilterUseNew" name="triggerFilterUseNew" keyname="triggerFilterUseNew" default="True">should always be true</boolean>
-<real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0">New in Titanfall; TODO: identify</real>
-<boolean key="wait" name="Wait" keyname="wait" default="False">New in Titanfall; TODO: identify</boolean>
+<real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0"></real>
+<boolean key="wait" name="Wait" keyname="wait" default="False"></boolean>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
 <flag key="FLAG_UNKNOWN_12" name="FLAG_UNKNOWN_12" bit="12" value="0">TODO: description</flag>
@@ -3468,19 +3468,19 @@ Introduced by Titanfall
 <boolean key="StartDisabled" name="Start Disabled" keyname="StartDisabled" default="False">Start inactive (can be activated later with a script)</boolean>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False"></boolean>
 <filterNpc key="triggerFilterNpc" name="NPC Filter" keyname="triggerFilterNpc" default="all">Allow minions and titans</filterNpc>
-<boolean key="triggerFilterNpcFlip" name="Invert NPC Filter" keyname="triggerFilterNpcFlip" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterNpcFlip" name="Invert NPC Filter" keyname="triggerFilterNpcFlip" default="False"></boolean>
 <filterNpcOwned key="triggerFilterNpcOwnedByPlayer" name="Allow Player Owned NPCs" keyname="triggerFilterNpcOwnedByPlayer" default="any">Hacked Spectres and recruited Grunts</filterNpcOwned>
 <filterPhase key="triggerFilterPhaseShift" name="Allow Phase Shifted Pilots" keyname="triggerFilterPhaseShift" default="nonphaseshift">Might be possible to only allow Pilots in Phase Shift</filterPhase>
 <filterPlayer key="triggerFilterPlayer" name="Allow Players" keyname="triggerFilterPlayer" default="all">Choose between Pilots and Titans</filterPlayer>
 <boolean key="triggerFilterTeamBeast" name="Allow BEAST Team" keyname="triggerFilterTeamBeast" default="False">Prowlers &amp; Flyers (idk about Leviathans)</boolean>
-<boolean key="triggerFilterTeamIMC" name="Allow MILITIA Team" keyname="triggerFilterTeamIMC" default="True">New in Titanfall; TODO: identify</boolean>
-<boolean key="triggerFilterTeamMilitia" name="Allow MILITIA" keyname="triggerFilterTeamMilitia" default="True">New in Titanfall; TODO: identify</boolean>
-<boolean key="triggerFilterTeamNeutral" name="Allow NEUTRAL Team" keyname="triggerFilterTeamNeutral" default="False">New in Titanfall; TODO: identify</boolean>
-<boolean key="triggerFilterTeamOther" name="Allow OTHER Team" keyname="triggerFilterTeamOther" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamIMC" name="Allow MILITIA Team" keyname="triggerFilterTeamIMC" default="True"></boolean>
+<boolean key="triggerFilterTeamMilitia" name="Allow MILITIA" keyname="triggerFilterTeamMilitia" default="True"></boolean>
+<boolean key="triggerFilterTeamNeutral" name="Allow NEUTRAL Team" keyname="triggerFilterTeamNeutral" default="False"></boolean>
+<boolean key="triggerFilterTeamOther" name="Allow OTHER Team" keyname="triggerFilterTeamOther" default="False"></boolean>
 <boolean key="triggerFilterUseNew" name="triggerFilterUseNew" keyname="triggerFilterUseNew" default="True">should always be true</boolean>
-<real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0">New in Titanfall; TODO: identify</real>
+<real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0"></real>
 ----- SPAWNFLAGS -----
 <flag key="PILOTS" name="PILOTS" bit="0" value="0">Allow pilots</flag>
 <flag key="NPCS" name="NPCS" bit="1" value="0">Allow NPCs</flag>
