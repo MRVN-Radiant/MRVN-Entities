@@ -10,7 +10,7 @@
     Test if Titanfall can handle missing entity keys (some scripts might complain)
 -->
 <classes>
-<list name="filterPlayer"><item name="Allow All" value="any"/><item name="Disallow All" value="none"/><item name="Pilots Only" value="pilot"/><item name="Titans Only" value="titan"/></list><list name="filterPhase"><item name="Allow All" value="any"/><item name="Phased Only" value="phaseshift"/><item name="Unphased Only" value="nonphaseshift"/></list><list name="filterNpcOwned"><item name="Allow All" value="any"/><item name="Owned Only" value="owned"/><item name="Not Owned Only" value="notowned"/></list><list name="filterNpc"><item name="Allow All" value="all"/><item name="Disallow All" value="none"/><item name="Minions Only" value="soldier"/><item name="Titans Only" value="titan"/></list><list name="menuType"><item name="Camera" value="menu_camera_target"/><item name="Menu" value="menu_scene_ref"/></list><list name="teamNumber"><item name="IMC" value="2"/><item name="Militia" value="3"/><item name="Both" value="4"/><item name="Any" value="-1"/></list><list name="hardpointGroup"><item name="Point A" value="A"/><item name="Point B" value="B"/><item name="Point C" value="C"/></list><!--
+<list name="menuType"><item name="Camera" value="menu_camera_target"/><item name="Menu" value="menu_scene_ref"/></list><list name="teamNumber"><item name="IMC" value="2"/><item name="Militia" value="3"/><item name="Both" value="4"/><item name="Any" value="-1"/></list><list name="hardpointGroup"><item name="Point A" value="A"/><item name="Point B" value="B"/><item name="Point C" value="C"/></list><list name="filterPlayer"><item name="Allow All" value="any"/><item name="Disallow All" value="none"/><item name="Pilots Only" value="pilot"/><item name="Titans Only" value="titan"/></list><list name="filterPhase"><item name="Allow All" value="any"/><item name="Phased Only" value="phaseshift"/><item name="Unphased Only" value="nonphaseshift"/></list><list name="filterNpcOwned"><item name="Allow All" value="any"/><item name="Owned Only" value="owned"/><item name="Not Owned Only" value="notowned"/></list><list name="filterNpc"><item name="Allow All" value="all"/><item name="Disallow All" value="none"/><item name="Minions Only" value="soldier"/><item name="Titans Only" value="titan"/></list><!--
 =============================================================================
  OPTION KEY TYPES
 =============================================================================
@@ -36,26 +36,26 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<group name="checkpoint_disabled_volume" color="1 0 1">
+<!--snake-biscuits--><group name="checkpoint_disabled_volume" color="1 0 1">
 ----- KEYS -----
-<string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
-<string key="mobility_1_easy" name="mobility_1_easy">New in Titanfall; TODO: identify</string>
-<string key="mobility_2_normal" name="mobility_2_normal">New in Titanfall; TODO: identify</string>
-<string key="mobility_3_hard" name="mobility_3_hard">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNonCharacter" name="triggerFilterNonCharacter">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNpc" name="triggerFilterNpc">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNpcFlip" name="triggerFilterNpcFlip">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNpcOwnedByPlayer" name="triggerFilterNpcOwnedByPlayer">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterPhaseShift" name="triggerFilterPhaseShift">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterPlayer" name="triggerFilterPlayer">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamBeast" name="triggerFilterTeamBeast">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamIMC" name="triggerFilterTeamIMC">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamMilitia" name="triggerFilterTeamMilitia">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamNeutral" name="triggerFilterTeamNeutral">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamOther" name="triggerFilterTeamOther">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
-<string key="triggerNearbyRadius" name="triggerNearbyRadius">New in Titanfall; TODO: identify</string>
-<string key="wait" name="wait">New in Titanfall; TODO: identify</string>
+<boolean key="StartDisabled" name="Start Disabled" keyname="StartDisabled" default="False">Start inactive (can be activated later with a script)</boolean>
+<boolean key="mobility_1_easy" name="Easy" keyname="mobility_1_easy" default="True">Applied on Easy Difficulty</boolean>
+<boolean key="mobility_2_normal" name="Normal" keyname="mobility_2_normal" default="True">Applied on Normal Difficulty</boolean>
+<boolean key="mobility_3_hard" name="Hard" keyname="mobility_3_hard" default="True">Applied on Hard Difficulty</boolean>
+<boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False">New in Titanfall; TODO: identify</boolean>
+<filterNpc key="triggerFilterNpc" name="NPC Filter" keyname="triggerFilterNpc" default="all">Allow minions and titans</filterNpc>
+<boolean key="triggerFilterNpcFlip" name="Invert NPC Filter" keyname="triggerFilterNpcFlip" default="False">New in Titanfall; TODO: identify</boolean>
+<filterNpcOwned key="triggerFilterNpcOwnedByPlayer" name="Allow Player Owned NPCs" keyname="triggerFilterNpcOwnedByPlayer" default="any">Hacked Spectres and recruited Grunts</filterNpcOwned>
+<filterPhase key="triggerFilterPhaseShift" name="Allow Phase Shifted Pilots" keyname="triggerFilterPhaseShift" default="nonphaseshift">Might be possible to only allow Pilots in Phase Shift</filterPhase>
+<filterPlayer key="triggerFilterPlayer" name="Allow Players" keyname="triggerFilterPlayer" default="all">Choose between Pilots and Titans</filterPlayer>
+<boolean key="triggerFilterTeamBeast" name="Allow BEAST Team" keyname="triggerFilterTeamBeast" default="False">Prowlers &amp; Flyers (idk about Leviathans)</boolean>
+<boolean key="triggerFilterTeamIMC" name="Allow MILITIA Team" keyname="triggerFilterTeamIMC" default="True">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamMilitia" name="Allow MILITIA" keyname="triggerFilterTeamMilitia" default="True">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamNeutral" name="Allow NEUTRAL Team" keyname="triggerFilterTeamNeutral" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamOther" name="Allow OTHER Team" keyname="triggerFilterTeamOther" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterUseNew" name="triggerFilterUseNew" keyname="triggerFilterUseNew" default="True">should always be true</boolean>
+<real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0">New in Titanfall; TODO: identify</real>
+<boolean key="wait" name="Wait" keyname="wait" default="False">New in Titanfall; TODO: identify</boolean>
 ----- SPAWNFLAGS -----
 <flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
 <flag key="FLAG_UNKNOWN_12" name="FLAG_UNKNOWN_12" bit="12" value="0">TODO: description</flag>
@@ -908,7 +908,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><point name="mp_weapon_alternator_smg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/alternator_smg/w_alternator_smg.mdl">
+<!--snake-biscuits--><point name="mp_weapon_grenade_sonar" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/kunai/w_kunai.mdl"/><!--snake-biscuits--><point name="mp_weapon_alternator_smg" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/alternator_smg/w_alternator_smg.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -934,7 +934,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><!--snake-biscuits--><point name="mp_weapon_grenade_sonar" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/kunai/w_kunai.mdl"/><point name="mp_weapon_autopistol" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/p2011_auto/w_p2011_auto.mdl">
+<!--snake-biscuits--><point name="mp_weapon_autopistol" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/p2011_auto/w_p2011_auto.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -960,7 +960,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><point name="mp_weapon_defender" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/defender/w_defender.mdl">
+<!--snake-biscuits--><point name="mp_weapon_rspn101_og" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/r101_sfp/w_r101_sfp.mdl"/><!--snake-biscuits--><point name="mp_weapon_defender" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/defender/w_defender.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -988,7 +988,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><!--snake-biscuits--><point name="mp_weapon_rspn101_og" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/r101_sfp/w_r101_sfp.mdl"/><point name="mp_weapon_doubletake" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/doubletake/w_doubletake.mdl">
+<!--snake-biscuits--><point name="mp_weapon_doubletake" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/doubletake/w_doubletake.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1016,7 +1016,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><point name="mp_weapon_esaw" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/hemlock_br/w_hemlock_br">
+<!--snake-biscuits--><point name="mp_weapon_wingman_n" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/wingman_elite/w_wingman_elite.mdl"/><!--snake-biscuits--><point name="mp_weapon_esaw" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/hemlock_br/w_hemlock_br">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -1042,7 +1042,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits--><!--snake-biscuits--><point name="mp_weapon_wingman_n" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/wingman_elite/w_wingman_elite.mdl"/><point name="mp_weapon_frag_grenade" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/grenafes/m20_f_grenade.mdl">
+<!--snake-biscuits--><point name="mp_weapon_frag_grenade" color="1 0 1" box="-8 -8 -8 8 8 8" model="models/weapons/grenafes/m20_f_grenade.mdl">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -3465,7 +3465,7 @@ Introduced by Titanfall
 
 <!--snake-biscuits--><group name="trigger_capture_point" color="1 0 1">
 ----- KEYS -----
-<string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
+<boolean key="StartDisabled" name="Start Disabled" keyname="StartDisabled" default="False">Start inactive (can be activated later with a script)</boolean>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False">New in Titanfall; TODO: identify</boolean>
@@ -3482,7 +3482,7 @@ Introduced by Titanfall
 <boolean key="triggerFilterUseNew" name="triggerFilterUseNew" keyname="triggerFilterUseNew" default="True">should always be true</boolean>
 <real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0">New in Titanfall; TODO: identify</real>
 ----- SPAWNFLAGS -----
-<boolean key="startDisabled" name="Start Disabled" value="">Start inactive (can be activated later with a script)</boolean><flag key="PILOTS" name="PILOTS" bit="0" value="0">Allow pilots</flag>
+<flag key="PILOTS" name="PILOTS" bit="0" value="0">Allow pilots</flag>
 <flag key="NPCS" name="NPCS" bit="1" value="0">Allow NPCs</flag>
 ----- NOTES -----
 Introduced by Titanfall
