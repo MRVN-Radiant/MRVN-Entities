@@ -66,7 +66,7 @@ def new_spawnflag(json_spec: dict) -> ElementTree.Element:
     out = ElementTree.Element("flag")
     out.set("key", json_spec["name"])
     out.set("name", json_spec["name"])
-    out.set("bit", json_spec["bit"])  # bit set / unset by flag
+    out.set("bit", str(json_spec["bit"]))  # bit set / unset by flag
     default = {"False": "0", "True": "1"}[json_spec.get("default", "False")]
     out.set("value", str(default))
     out.text = html.escape(json_spec.get("description", ""))  # use / effects
