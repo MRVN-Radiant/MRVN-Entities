@@ -983,7 +983,8 @@ Introduced by Titanfall
 Introduced by Titanfall
 </group>
 
-<!--snake-biscuits--><group name="trigger_out_of_bounds" color="1 0 1">
+<!--snake-biscuits-->
+<group name="trigger_out_of_bounds" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="teamnumber" name="teamnumber">New in Titanfall; TODO: identify</string>
@@ -1003,7 +1004,8 @@ Introduced by Titanfall
 <string key="triggerFilterTeamOther" name="triggerFilterTeamOther">New in Titanfall; TODO: identify</string>
 <string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
-<boolean key="startDisabled" name="Display Name" value="">Start inactive (can be activated later with a script)</boolean><flag key="PILOTS" name="PILOTS" bit="0" value="0">Warn pilots</flag>
+<boolean key="startDisabled" name="Display Name" value="">Start inactive (can be activated later with a script)</boolean>
+<flag key="PILOTS" name="PILOTS" bit="0" value="0">Warn pilots</flag>
 <flag key="NPCS" name="NPCS" bit="1" value="0">Might affect minions, would need navmeshes to confirm</flag>
 <flag key="BOTS" name="BOTS" bit="12" value="0">Warn bots (ai players)</flag>
 ----- NOTES -----

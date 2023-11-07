@@ -97,7 +97,8 @@ Introduced by Titanfall
 Introduced by Titanfall
 </group>
 
-<!--snake-biscuits--><group name="worldspawn" color="1 0 1">
+<!--snake-biscuits-->
+<group name="worldspawn" color="1 0 1">
 ----- KEYS -----
 <string key="lightprobe_voronoi_leafsize" name="lightprobe_voronoi_leafsize">New in Titanfall; TODO: identify</string>
 <string key="mapversion" name="mapversion">New in Titanfall; TODO: identify</string>
