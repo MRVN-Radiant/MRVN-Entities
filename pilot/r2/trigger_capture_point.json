@@ -1,6 +1,6 @@
 {
     "Contributors": ["snake-biscuits"],
-    "Block": "ENTITIES",
+    "Block": "ENTITIES_script",
     "Entity": "trigger_capture_point",
     "Type": "group",
     "Description": "Capture area for info_hardpoint",
@@ -20,7 +20,7 @@
         },
         {
             "keyname": "triggerFilterNpc",
-            "type": "String",
+            "type": "string",
             "name": "NPC Filter",
             "default": "all",
             "description": "TODO: choiceType"
@@ -43,6 +43,13 @@
             "type": "string",
             "name": "Allow Phase Shifted Pilots",
             "default": "nonphaseshift",
+            "description": "TODO: choiceType"
+        },
+        {
+            "keyname": "triggerFilterPlayer",
+            "type": "string",
+            "name": "Allow Players",
+            "default": "all",
             "description": "TODO: choiceType"
         },
         {
@@ -85,7 +92,7 @@
         },
         {
             "keyname": "triggerNearbyRadius",
-            "type": "float",
+            "type": "real",
             "name": "Nearby Radius",
             "default": "0"
         }
