@@ -1,0 +1,10 @@
+{
+    "Name": "filterPlayer",
+    "Options": {
+        "Allow All": "any",
+        "Disallow All": "none",
+        "Pilots Only": "pilot",
+        "Titans Only": "titan"
+    }
+}
+

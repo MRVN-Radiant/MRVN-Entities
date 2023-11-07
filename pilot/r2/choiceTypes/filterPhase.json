@@ -1,0 +1,9 @@
+{
+    "Name": "filterPhase",
+    "Options": {
+        "Allow All": "any",
+        "Phased Only": "phaseshift",
+        "Unphased Only": "nonphaseshift"
+    }
+}
+

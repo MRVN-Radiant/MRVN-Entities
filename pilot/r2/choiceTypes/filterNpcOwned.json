@@ -1,0 +1,8 @@
+{
+    "Name": "filterNpcOwned",
+    "Options": {
+        "Allow All": "any",
+        "Owned Only": "owned",
+        "Not Owned Only": "notowned"
+    }
+}

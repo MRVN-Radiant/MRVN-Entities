@@ -1,0 +1,9 @@
+{
+    "Name": "filterNpc",
+    "Options": {
+        "Allow All": "all",
+        "Disallow All": "none",
+        "Minions Only": "soldier",
+        "Titans Only": "titan"
+    }
+}
