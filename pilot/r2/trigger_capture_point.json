@@ -20,10 +20,10 @@
         },
         {
             "keyname": "triggerFilterNpc",
-            "type": "string",
+            "type": "filterNpc",
             "name": "NPC Filter",
             "default": "all",
-            "description": "TODO: choiceType"
+            "description": "Allow minions and titans"
         },
         {
             "keyname": "triggerFilterNpcFlip",
@@ -33,24 +33,24 @@
         },
         {
             "keyname": "triggerFilterNpcOwnedByPlayer",
-            "type": "string",
+            "type": "filterNpcOwned",
             "name": "Allow Player Owned NPCs",
             "default": "any",
-            "description": "TODO: choiceType"
+            "description": "Hacked Spectres and recruited Grunts"
         },
         {
             "keyname": "triggerFilterPhaseShift",
-            "type": "string",
+            "type": "filterPhase",
             "name": "Allow Phase Shifted Pilots",
             "default": "nonphaseshift",
-            "description": "TODO: choiceType"
+            "description": "Might be possible to only allow Pilots in Phase Shift"
         },
         {
             "keyname": "triggerFilterPlayer",
-            "type": "string",
+            "type": "filterPlayer",
             "name": "Allow Players",
             "default": "all",
-            "description": "TODO: choiceType"
+            "description": "Choose between Pilots and Titans"
         },
         {
             "keyname": "triggerFilterTeamBeast",
@@ -88,7 +88,7 @@
             "type": "boolean",
             "name": "triggerFilterUseNew",
             "default": "True",
-            "description": "idk; leave it on"
+            "description": "should always be true"
         },
         {
             "keyname": "triggerNearbyRadius",
