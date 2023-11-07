@@ -59,7 +59,7 @@ def update_key(xml_key: ElementTree.Element, json_spec: dict):
             continue
         xml_key.set(attr, json_spec.get(attr, xml_key.get(attr)))
     # TODO: UX DESIGN QUESTION: do we expect pilot/*.json to html.escape() descriptions?
-    xml_key.text = json_spec.get("description", xml_key.text)
+    xml_key.text = json_spec.get("description", "")
 
 
 def new_spawnflag(json_spec: dict) -> ElementTree.Element:
