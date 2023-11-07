@@ -1,10 +1,31 @@
 {
     "Contributors": ["snake-biscuits"],
     "Block": "ENTITIES_script",
-    "Entity": "trigger_capture_point",
+    "Entity": "checkpoint_disabled_volume",
     "Type": "group",
-    "Description": "Capture area for info_hardpoint",
+    "Description": "Disable checkpointing here",
     "Keys": [
+        {
+            "keyname": "mobility_1_easy",
+            "type": "boolean",
+            "name": "Easy",
+            "default": "True",
+            "description": "Applied on Easy Difficulty"
+        },
+        {
+            "keyname": "mobility_2_normal",
+            "type": "boolean",
+            "name": "Normal",
+            "default": "True",
+            "description": "Applied on Normal Difficulty"
+        },
+        {
+            "keyname": "mobility_3_hard",
+            "type": "boolean",
+            "name": "Hard",
+            "default": "True",
+            "description": "Applied on Hard Difficulty"
+        },
         {
             "keyname": "StartDisabled",
             "type": "boolean",
@@ -95,20 +116,13 @@
             "type": "real",
             "name": "Nearby Radius",
             "default": "0"
+        },
+        {
+            "keyname": "wait",
+            "type": "boolean",
+            "name": "Wait",
+            "default": "False"
         }
-    ],
-    "SpawnFlags": [
-       {
-           "bit": 0,
-           "name": "PILOTS",
-           "default": "True",
-           "description": "Allow pilots"
-       },
-       {
-           "bit": 1,
-           "name": "NPCS",
-           "default": "True",
-           "description": "Allow NPCs"
-       }
     ]
 }
+
