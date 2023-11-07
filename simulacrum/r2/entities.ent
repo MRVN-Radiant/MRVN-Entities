@@ -247,7 +247,7 @@ Introduced by Titanfall
 <string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
 <string key="triggerNearbyRadius" name="triggerNearbyRadius">New in Titanfall; TODO: identify</string>
 ----- SPAWNFLAGS -----
-<boolean key="startDisabled" name="Display Name" value="">Start inactive (can be activated later with a script)</boolean><flag key="PILOTS" name="PILOTS" bit="0" value="0">Warn pilots</flag>
+<boolean key="startDisabled" name="Start Disabled" value="">Start inactive (can be activated later with a script)</boolean><flag key="PILOTS" name="PILOTS" bit="0" value="0">Warn pilots</flag>
 <flag key="NPCS" name="NPCS" bit="1" value="0">Might affect minions, would need navmeshes to confirm</flag>
 <flag key="BOTS" name="BOTS" bit="12" value="0">Warn bots (ai players)</flag>
 ----- NOTES -----

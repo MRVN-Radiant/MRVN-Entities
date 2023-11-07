@@ -3463,27 +3463,27 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<group name="trigger_capture_point" color="1 0 1">
+<!--snake-biscuits--><group name="trigger_capture_point" color="1 0 1">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="triggerFilterNonCharacter" name="triggerFilterNonCharacter">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNpc" name="triggerFilterNpc">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNpcFlip" name="triggerFilterNpcFlip">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterNpcOwnedByPlayer" name="triggerFilterNpcOwnedByPlayer">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterPhaseShift" name="triggerFilterPhaseShift">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterPlayer" name="triggerFilterPlayer">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamBeast" name="triggerFilterTeamBeast">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamIMC" name="triggerFilterTeamIMC">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamMilitia" name="triggerFilterTeamMilitia">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamNeutral" name="triggerFilterTeamNeutral">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterTeamOther" name="triggerFilterTeamOther">New in Titanfall; TODO: identify</string>
-<string key="triggerFilterUseNew" name="triggerFilterUseNew">New in Titanfall; TODO: identify</string>
-<string key="triggerNearbyRadius" name="triggerNearbyRadius">New in Titanfall; TODO: identify</string>
+<boolean key="triggerFilterNonCharacter" name="Allow Non-Character" keyname="triggerFilterNonCharacter" default="False">New in Titanfall; TODO: identify</boolean>
+<string key="triggerFilterNpc" name="NPC Filter" keyname="triggerFilterNpc" default="all">TODO: choiceType</string>
+<boolean key="triggerFilterNpcFlip" name="Invert NPC Filter" keyname="triggerFilterNpcFlip" default="False">New in Titanfall; TODO: identify</boolean>
+<string key="triggerFilterNpcOwnedByPlayer" name="Allow Player Owned NPCs" keyname="triggerFilterNpcOwnedByPlayer" default="any">TODO: choiceType</string>
+<string key="triggerFilterPhaseShift" name="Allow Phase Shifted Pilots" keyname="triggerFilterPhaseShift" default="nonphaseshift">TODO: choiceType</string>
+<string key="triggerFilterPlayer" name="Allow Players" keyname="triggerFilterPlayer" default="all">TODO: choiceType</string>
+<boolean key="triggerFilterTeamBeast" name="Allow BEAST Team" keyname="triggerFilterTeamBeast" default="False">Prowlers &amp; Flyers (idk about Leviathans)</boolean>
+<boolean key="triggerFilterTeamIMC" name="Allow MILITIA Team" keyname="triggerFilterTeamIMC" default="True">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamMilitia" name="Allow MILITIA" keyname="triggerFilterTeamMilitia" default="True">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamNeutral" name="Allow NEUTRAL Team" keyname="triggerFilterTeamNeutral" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterTeamOther" name="Allow OTHER Team" keyname="triggerFilterTeamOther" default="False">New in Titanfall; TODO: identify</boolean>
+<boolean key="triggerFilterUseNew" name="triggerFilterUseNew" keyname="triggerFilterUseNew" default="True">idk; leave it on</boolean>
+<real key="triggerNearbyRadius" name="Nearby Radius" keyname="triggerNearbyRadius" default="0">New in Titanfall; TODO: identify</real>
 ----- SPAWNFLAGS -----
-<flag key="FLAG_UNKNOWN_0" name="FLAG_UNKNOWN_0" bit="0" value="0">TODO: description</flag>
-<flag key="FLAG_UNKNOWN_1" name="FLAG_UNKNOWN_1" bit="1" value="0">TODO: description</flag>
+<boolean key="startDisabled" name="Start Disabled" value="">Start inactive (can be activated later with a script)</boolean><flag key="PILOTS" name="PILOTS" bit="0" value="0">Allow pilots</flag>
+<flag key="NPCS" name="NPCS" bit="1" value="0">Allow NPCs</flag>
 ----- NOTES -----
 Introduced by Titanfall
 </group>
