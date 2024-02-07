@@ -361,6 +361,7 @@
       "info_intermission",
       "info_lightprobe",
       "trigger_indoor_area",
+      "water_body",
       "worldspawn"
     ],
     "ENTITIES_env": [

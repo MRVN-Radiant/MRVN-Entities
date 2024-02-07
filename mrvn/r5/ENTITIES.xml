@@ -97,6 +97,13 @@ Introduced by Titanfall
 Introduced by Titanfall
 </group>
 
+<point name="water_body" color="1 0 1" box="-8 -8 -8 8 8 8">
+----- KEYS -----
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
+----- NOTES -----
+Introduced in Season 11
+</point>
+
 <group name="worldspawn" color="1 0 1">
 ----- KEYS -----
 <string key="lightprobe_voronoi_leafsize" name="lightprobe_voronoi_leafsize">New in Titanfall; TODO: identify</string>
