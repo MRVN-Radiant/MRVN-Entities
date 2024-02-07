@@ -10,6 +10,125 @@
     Test if Titanfall can handle missing entity keys (some scripts might complain)
 -->
 <classes>
+<list name="surfaceProperty"><item name="Default" value="0"/>
+<item name="Metal Titan" value="5"/>
+<item name="Metal Solid" value="6"/>
+<item name="Metal Generic" value="22"/>
+<item name="Metal Box" value="38"/>
+<item name="Metal Panel" value="41"/>
+<item name="Metal Grate" value="7"/>
+<item name="Metal Vent" value="8"/>
+<item name="Dirt" value="9"/>
+<item name="Tile" value="10"/>
+<item name="Vortex Shield" value="11"/>
+<item name="Wood Generic" value="12"/>
+<item name="Wood Solid" value="13"/>
+<item name="Water" value="14"/>
+<item name="Concrete" value="15"/>
+<item name="Glass" value="16"/>
+<item name="Glass Breakable" value="17"/>
+<item name="Flesh" value="18"/>
+<item name="Armour Flesh" value="19"/>
+<item name="Sand" value="20"/>
+<item name="Mud" value="21"/>
+<item name="Grass" value="23"/>
+<item name="Broken Glass" value="24"/>
+<item name="Gravel" value="25"/>
+<item name="Bloody Flesh" value="26"/>
+<item name="Shell Casing Small" value="27"/>
+<item name="Shell Casing Large" value="28"/>
+<item name="Weapon" value="29"/>
+<item name="Computer" value="30"/>
+<item name="Canister" value="31"/>
+<item name="Metal Barrel" value="32"/>
+<item name="Glass Bottle" value="33"/>
+<item name="Pottery" value="34"/>
+<item name="Grenade" value="35"/>
+<item name="Grenade Triple Threat" value="36"/>
+<item name="Bouncy Grenade" value="37"/>
+<item name="Metal Bouncy" value="39"/>
+<item name="Metal Slippery" value="40"/>
+<item name="Slime Slippery" value="42"/>
+<item name="Wood lowdensity" value="43"/>
+<item name="Wood Box" value="44"/>
+<item name="Wood Crate" value="45"/>
+<item name="Wood Plank" value="46"/>
+<item name="Wood Furniture" value="47"/>
+<item name="Wood Panel" value="48"/>
+<item name="Slime" value="49"/>
+<item name="Quicksand" value="50"/>
+<item name="Rock" value="51"/>
+<item name="Lava Rock" value="116"/>
+<item name="Lava Rock Hot" value="117"/>
+<item name="Lava Flow" value="118"/>
+<item name="Porcelain" value="52"/>
+<item name="Boulder" value="53"/>
+<item name="Asphalt" value="54"/>
+<item name="Brick" value="55"/>
+<item name="Concrete Block" value="56"/>
+<item name="Chainlink" value="57"/>
+<item name="Chain" value="58"/>
+<item name="Alien Flesh" value="59"/>
+<item name="Watermelon" value="60"/>
+<item name="Snow" value="61"/>
+<item name="Ice" value="62"/>
+<item name="Carpet" value="63"/>
+<item name="Plaster" value="65"/>
+<item name="Cardboard" value="66"/>
+<item name="Plastic Barrel" value="67"/>
+<item name="Plastic Box" value="68"/>
+<item name="Plastic" value="69"/>
+<item name="Item" value="70"/>
+<item name="Floating Standable" value="71"/>
+<item name="Rubber" value="72"/>
+<item name="Rubber Tire" value="73"/>
+<item name="Jeep Tire" value="74"/>
+<item name="Sliding Rubber Tire" value="75"/>
+<item name="Braking Rubber Tire" value="76"/>
+<item name="Sliding Rubber Tire Front" value="77"/>
+<item name="Sliding Rubber Tire Rear" value="78"/>
+<item name="Floating Metal Barrel" value="79"/>
+<item name="Plastic Barrel Buoyant" value="80"/>
+<item name="Roller" value="81"/>
+<item name="Pop Can" value="82"/>
+<item name="Paint Can" value="83"/>
+<item name="Paper" value="84"/>
+<item name="Paper Cup" value="85"/>
+<item name="Ceiling Tile" value="86"/>
+<item name="Default Silent" value="87"/>
+<item name="Player" value="88"/>
+<item name="Player Control Clip" value="89"/>
+<item name="Foliage" value="90"/>
+<item name="Underground Cube" value="91"/>
+<item name="Turret Gib" value="92"/>
+<item name="Metal Spectre" value="93"/>
+<item name="Arc Grenade" value="94"/>
+<item name="Upholstery" value="95"/>
+<item name="Flyer Flesh" value="96"/>
+<item name="Ammo Box" value="97"/>
+<item name="Helmet" value="98"/>
+<item name="Large Backpack" value="99"/>
+<item name="Small Backpack" value="100"/>
+<item name="Large Medkit" value="101"/>
+<item name="Small Medkit" value="102"/>
+<item name="Attachment Scope" value="103"/>
+<item name="Attachment Sup" value="104"/>
+<item name="Weapon AR" value="105"/>
+<item name="Weapon Sniper" value="106"/>
+<item name="Weapon SMG" value="107"/>
+<item name="Weapon Pistol" value="108"/>
+<item name="Weapon Shotgun" value="109"/>
+<item name="Vest" value="110"/>
+<item name="Mags" value="111"/>
+<item name="Cyn Medkit" value="112"/>
+<item name="Frag" value="113"/>
+<item name="Arc Blade" value="114"/>
+<item name="Battery Shield" value="115"/>
+<item name="Reflective" value="1"/>
+<item name="Weighted Cube Bounce" value="2"/>
+<item name="Paint Bomb" value="3"/>
+<item name="Sphere 2" value="4"/>
+</list>
 <!--
 =============================================================================
  OPTION KEY TYPES
@@ -61,7 +180,13 @@ Introduced by Titanfall
 Introduced by Titanfall
 </point>
 
-<point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits-->
+<point name="water_body" color="0 0 1" box="-16 -16 16 16 16 16"><real key="height" name="Sea Level" value="">z-height of the water surface</real>
+<string key="material" name="Material" value="">should be in materials/world/OceanWater</string>
+<real key="nodesize" name="Node Size" value="">wave voxel scale</real>
+<integer key="solid" name="Collision" value="">always 0 for no collision</integer>
+<surfaceProperty key="surfpropindex" name="Surface Property" value="">should be water</surfaceProperty>
+</point><point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>

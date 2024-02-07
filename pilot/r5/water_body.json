@@ -1,0 +1,47 @@
+{
+    "Contributors": ["snake-biscuits"],
+    "Block": "ENTITIES",
+    "Entity": "water_body",
+    "Type": "point",
+    "Color": "0 0 1",
+    "Box": "-16 -16 16 16 16 16",
+    "Description": "Ocean Water",
+    "Keys": [
+        {
+             "keyname": "surfpropindex",
+             "type": "surfaceProperty",
+             "name": "Surface Property",
+             "default": "14",
+             "description": "should be water"
+        },
+        {
+            "keyname": "solid",
+            "type": "integer",
+            "name": "Collision",
+            "default": "0",
+            "description": "always 0 for no collision"
+        },
+        {
+            "keyname": "nodesize",
+            "type": "real",
+            "name": "Node Size",
+            "default": "1024",
+            "description": "wave voxel scale"
+        },
+        {
+            "keyname": "material",
+            "type": "string",
+            "name": "Material",
+            "description": "should be in materials/world/OceanWater"
+        },
+        {
+            "keyname": "height",
+            "type": "real",
+            "name": "Sea Level",
+            "description": "z-height of the water surface"
+        }
+    ],
+    "Notes": [
+        "Used for the ocean on Storm Point and Habitat"
+    ]
+}
