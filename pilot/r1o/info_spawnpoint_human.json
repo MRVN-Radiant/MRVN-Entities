@@ -64,14 +64,14 @@
              {
                 "keyname": "gamemode_ps",
                 "type": "boolean",
-                "name": "Pilots vs Pilots",
-                "description": "Start here in Pilots vs Pilots"
+                "name": "Pilot Skirmish",
+                "description": "Start here in Pilot Skirmish"
              },
              {
                 "keyname": "gamemode_tdm",
                 "type": "boolean",
-                "name": "Pilot Skirmish",
-                "description": "Start here in Pilot Skirmish (Team DeathMatch)"
+                "name": "Pilot Hunter",
+                "description": "Start here in Pilot Hunter"
              },
              {
                 "keyname": "gamemode_ffa",
@@ -82,7 +82,7 @@
              {
                 "keyname": "gamemode_scv",
                 "type": "boolean",
-                "name": "Pilot Skirmish",
+                "name": "Scavenger",
                 "description": "Start here in Scavenger"
              }
     ],
