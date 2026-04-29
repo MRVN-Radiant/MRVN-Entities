@@ -1,11 +1,11 @@
 {
     "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
     "Block": "ENTITIES_spawn",
-    "Entity": "info_spawnpoint_droppod",
+    "Entity": "info_spawnpoint_human_start",
     "Color": ".3 .3 1",
-    "Box": "TODO",
-    "Model": "TODO: models/dev/mp_droppod_spawn.mdl",
-    "Description": "Used for spawning grunts and spectres in drop pods during a match.",
+    "Box": "-16 -16 0 16 16 72",
+    "Model": "models/editor/playerstart.obj",
+    "Description": "Used for spawning players when match starts.",
     "Keys": [
              {
                 "keyname": "teamnum",
@@ -85,9 +85,8 @@
                 "name": "Pilot Skirmish",
                 "description": "Start here in Scavenger"
              }
-            ],
+    ],
     "Notes": [
-                "Place slightly above the floor so players won't spawn stuck in the floor",
-                "Must have at least one per-team for Attrition"
-             ]
+                "Place slightly above the floor so players won't spawn stuck in the floor"
+    ]
 }

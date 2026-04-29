@@ -1,17 +1,26 @@
 {
     "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
-    "Block": "ENTITIES_spawn",
-    "Entity": "info_spawnpoint_droppod",
-    "Color": ".3 .3 1",
-    "Box": "TODO",
-    "Model": "TODO: models/dev/mp_droppod_spawn.mdl",
-    "Description": "Used for spawning grunts and spectres in drop pods during a match.",
-    "Keys": [
+    "Block": "ENTITIES_script",
+    "Entity": "info_frontline",
+    "Description": "Used to indicate the frontlines to NPCs (where they should go and shoot at eachother)",
+        "Keys": [
              {
                 "keyname": "teamnum",
                 "type": "teamNumber",
                 "name": "Team Number",
                 "description": "Team(s) allowed to spawn here"
+             },
+             {
+             	"keyname": "group",
+             	"type": "string",
+             	"name": "Group",
+             	"description": "Used to indicate which frontlines are linked together"
+             },
+             {
+             	"keyname": "spectrepoint",
+             	"type": "boolean",
+             	"name": "spectrepoint",
+             	"description": "Used to indicate whether only Spectres should use this frontline entity. These should be used in combination with regular frontlines"
              },
              {
                 "keyname": "gamemode_at",
@@ -87,7 +96,11 @@
              }
             ],
     "Notes": [
-                "Place slightly above the floor so players won't spawn stuck in the floor",
-                "Must have at least one per-team for Attrition"
+                "Enough player and NPC deaths for a specific team will make the frontlines fall back for that team",
+                "Should be used to divide the map in lines, with each line corresponding to a team",
+				"Those lines can be straight, diagonal or curved depending on your map",
+                "So, for example, the left side of a map (near the starting milita spawn) should be ONLY militia info_frontlines",
+                "And the right side, should be ONLY IMC info_frontlines",
+                "Make sure to set each of the info_frontlines in the same line to the same group"
              ]
 }

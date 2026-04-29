@@ -1,0 +1,59 @@
+{
+    "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "info_hardpoint",
+    "Color": ".9 .2, .0",
+    "Box": "-64 -64 0 64 64 72",
+    "Model": "models/robots/mobile_hardpoint/mobile_hardpoint.obj",
+    "Description": "Used to spawn the Hardpoints in Hardpoint Domination.",
+    "Keys": [
+        {
+            "keyname": "triggerTarget",
+            "type": "string",
+            "name": "Trigger Name",
+            "description": "Targetname of this hardpoint's trigger"
+        },
+        {
+            "keyname": "target",
+            "type": "string",
+            "name": "Target",
+            "description": "Targetname of multiple assault_assaultpoint entities"
+        },
+        {
+            "keyname": "nearTarget",
+            "type": "string",
+            "name": "Near Target",
+            "description": "Targetname of multiple assault_assaultpoint entities"
+        },
+        {
+            "keyname": "turretTarget",
+            "type": "string",
+            "name": "Turret Target",
+            "description": "Targetname of a npc_turret_mega linked to this hardpoint"
+        },
+        {
+            "keyname": "hardpointGroup",
+            "type": "hardpointGroup",
+            "name": "Hardpoint Group",
+            "description": "Which Hardpoint is this on the HUD?"
+        },
+        {
+            "keyname": "hardpointName",
+            "type": "string",
+            "name": "Hardpoint Name",
+            "description": "Internal name for this hardpoint"
+        },
+        {
+            "keyname": "scale",
+            "type": "real",
+            "name": "Scale",
+            "description": "Team(s) that own this flag"
+        }
+    ],
+    "Notes": [
+        "Model can be anything, but you have to pick one!",
+		"There must be at least 3 entities on the map"
+		"target and nearTarget must target assault_assaultpoint entities"
+		"nearTarget must target at least 4 entities by using a wildcard"
+    ]
+}
