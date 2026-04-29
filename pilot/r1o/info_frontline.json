@@ -1,6 +1,6 @@
 {
     "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
-    "Block": "ENTITIES_script",
+    "Block": "ENTITIES_spawn",
     "Entity": "info_frontline",
     "Description": "Used to indicate the frontlines to NPCs (where they should go and shoot at eachother)",
         "Keys": [
