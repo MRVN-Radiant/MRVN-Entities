@@ -14,18 +14,6 @@
                 "description": "Team(s) allowed to spawn here"
              },
              {
-                "keyname": "bodytype",
-                "type": "marvinBody",
-                "name": "Body Type",
-                "description": "Body type to use"
-             },
-             {
-                "keyname": "headtype",
-                "type": "marvinHead",
-                "name": "Head Type",
-                "description": "Head type to use"
-             },
-             {
                 "keyname": "gamemode_aitdm",
                 "type": "boolean",
                 "name": "Attrition",
