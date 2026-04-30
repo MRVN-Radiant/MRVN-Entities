@@ -52,8 +52,8 @@
     ],
     "Notes": [
         "Model can be anything, but you have to pick one!",
-		"There must be at least 3 entities on the map"
-		"target and nearTarget must target assault_assaultpoint entities"
+		"There must be at least 3 entities on the map",
+		"target and nearTarget must target assault_assaultpoint entities",
 		"nearTarget must target at least 4 entities by using a wildcard"
     ]
 }
