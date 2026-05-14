@@ -1,11 +1,11 @@
 {
-    "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
+    "Contributors": ["snake-biscuits", "NachosChipeados"],
     "Block": "ENTITIES_spawn",
-    "Entity": "info_spawnpoint_droppod_start",
+    "Entity": "info_spawnpoint_dropship",
     "Color": ".3 .3 1",
-    "Box": "TODO",
-    "Model": "TODO: models/dev/mp_droppod_spawn_start.mdl",
-    "Description": "Used for spawning grunts in drop pods when match starts.",
+    "Box": "-16 -16 0 16 16 72",
+    "Model": "models/dev/mp_dropship_spawn_start.obj",
+    "Description": "Used for spawning players in a dropship.",
     "Keys": [
              {
                 "keyname": "teamnum",

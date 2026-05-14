@@ -1,0 +1,92 @@
+{
+    "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "info_player_start",
+    "Color": ".3 .3 1",
+    "Box": "-16 -16 0 16 16 72",
+    "Model": "models/editor/playerstart.obj",
+    "Description": "Used for spawning player when match starts.",
+    "Keys": [
+        {
+            "keyname": "teamnum",
+            "type": "teamNumber",
+            "name": "Team Number",
+            "description": "Team(s) allowed to spawn here"
+        },
+        {
+           "keyname": "gamemode_at",
+           "type": "boolean",
+           "name": "Attrition",
+           "description": "Start here in Attrition"
+        },
+        {
+           "keyname": "gamemode_cp",
+           "type": "boolean",
+           "name": "Hardpoint Domination",
+           "description": "Start here in Hardpoint Domination"
+        },
+        {
+           "keyname": "gamemode_ctf",
+           "type": "boolean",
+           "name": "Capture the Flag",
+           "description": "Start here in Capture the Flag"
+        },
+        {
+           "keyname": "gamemode_ctfp",
+           "type": "boolean",
+           "name": "Capture the Flag Pro",
+           "description": "Start here in Capture the Flag Pro"
+        },
+        {
+           "keyname": "gamemode_mfd",
+           "type": "boolean",
+           "name": "Marked for Death",
+           "description": "Start here in Marked for Death"
+        },
+        {
+           "keyname": "gamemode_mfdp",
+           "type": "boolean",
+           "name": "Marked for Death Pro",
+           "description": "Start here in Marked for Death Pro"
+        },
+        {
+           "keyname": "gamemode_lts",
+           "type": "boolean",
+           "name": "Last Titan Standing",
+           "description": "Start here in Last Titan Standing"
+        },
+        {
+           "keyname": "gamemode_wlts",
+           "type": "boolean",
+           "name": "Wingman Last Titan Standing",
+           "description": "Start here in Wingman Last Titan Standing"
+        },
+        {
+           "keyname": "gamemode_ps",
+           "type": "boolean",
+           "name": "Pilot Skirmish",
+           "description": "Start here in Pilot Skirmish"
+        },
+        {
+           "keyname": "gamemode_tdm",
+           "type": "boolean",
+           "name": "Pilot Hunter",
+           "description": "Start here in Pilot Hunter"
+        },
+        {
+           "keyname": "gamemode_ffa",
+           "type": "boolean",
+           "name": "Free For All",
+           "description": "Start here in Free For All"
+        },
+        {
+           "keyname": "gamemode_scv",
+           "type": "boolean",
+           "name": "Scavenger",
+           "description": "Start here in Scavenger"
+        }
+    ],
+    "Notes": [
+                "Place slightly above the floor so players won't spawn stuck in the floor"
+    ]
+}

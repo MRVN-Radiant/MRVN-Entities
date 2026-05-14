@@ -1,12 +1,12 @@
 {
     "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
     "Block": "ENTITIES_spawn",
-    "Entity": "info_spawnpoint_droppod_start",
+    "Entity": "info_spawnpoint_titan_start",
     "Color": ".3 .3 1",
-    "Box": "TODO",
-    "Model": "TODO: models/dev/mp_droppod_spawn_start.mdl",
-    "Description": "Used for spawning grunts in drop pods when match starts.",
-    "Keys": [
+    "Box": "-70 -48 0 70 48 224",
+    "Model": "models/dev/mp_titan_spawn_start.obj",
+    "Description": "Used for spawning player in their titan when match starts.",
+        "Keys": [
              {
                 "keyname": "teamnum",
                 "type": "teamNumber",
@@ -88,6 +88,6 @@
             ],
     "Notes": [
                 "Place slightly above the floor so players won't spawn stuck in the floor",
-                "Must have at least one per-team for Attrition"
+                "Last Titan Standing requires at least one per team"
              ]
 }

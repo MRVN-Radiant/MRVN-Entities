@@ -1,11 +1,11 @@
 {
     "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
     "Block": "ENTITIES_spawn",
-    "Entity": "info_spawnpoint_droppod_start",
+    "Entity": "info_spawnpoint_human",
     "Color": ".3 .3 1",
-    "Box": "TODO",
-    "Model": "TODO: models/dev/mp_droppod_spawn_start.mdl",
-    "Description": "Used for spawning grunts in drop pods when match starts.",
+    "Box": "-16 -16 0 16 16 72",
+    "Model": "models/editor/playerstart.obj",
+    "Description": "Used for respawning players.",
     "Keys": [
              {
                 "keyname": "teamnum",
@@ -85,9 +85,8 @@
                 "name": "Scavenger",
                 "description": "Start here in Scavenger"
              }
-            ],
+    ],
     "Notes": [
-                "Place slightly above the floor so players won't spawn stuck in the floor",
-                "Must have at least one per-team for Attrition"
-             ]
+                "Place slightly above the floor so players won't spawn stuck in the floor"
+    ]
 }

@@ -1,10 +1,11 @@
 {
-    "Contributors": ["catornot", "snake-biscuits"],
+    "Contributors": ["catornot", "snake-biscuits", "NachosChipeados"],
     "Block": "ENTITIES_spawn",
     "Entity": "info_spawnpoint_droppod",
     "Color": ".3 .3 1",
     "Box": "TODO",
     "Model": "TODO: models/dev/mp_droppod_spawn.mdl",
+    "Description": "Used for spawning grunts and spectres in drop pods during a match.",
     "Keys": [
              {
                 "keyname": "teamnum",
@@ -13,28 +14,16 @@
                 "description": "Team(s) allowed to spawn here"
              },
              {
-                "keyname": "gamemode_aitdm",
+                "keyname": "gamemode_at",
                 "type": "boolean",
                 "name": "Attrition",
                 "description": "Start here in Attrition"
              },
              {
-                "keyname": "gamemode_at",
-                "type": "boolean",
-                "name": "Bounty Hunt",
-                "description": "Start here in Bounty Hunt"
-             },
-             {
-                "keyname": "gamemode_coliseum",
-                "type": "boolean",
-                "name": "Coliseum",
-                "description": "Start here in Coliseum"
-             },
-             {
                 "keyname": "gamemode_cp",
                 "type": "boolean",
-                "name": "Amped Hardpoint",
-                "description": "Start here in Amped Hardpoint"
+                "name": "Hardpoint Domination",
+                "description": "Start here in Hardpoint Domination"
              },
              {
                 "keyname": "gamemode_ctf",
@@ -43,10 +32,10 @@
                 "description": "Start here in Capture the Flag"
              },
              {
-                "keyname": "gamemode_ctf_comp",
+                "keyname": "gamemode_ctfp",
                 "type": "boolean",
-                "name": "Capture the Flag (Competitive)",
-                "description": "Start here in Competitive CtF"
+                "name": "Capture the Flag Pro",
+                "description": "Start here in Capture the Flag Pro"
              },
              {
                 "keyname": "gamemode_mfd",
@@ -55,28 +44,34 @@
                 "description": "Start here in Marked for Death"
              },
              {
-                "keyname": "gamemode_ps",
+                "keyname": "gamemode_mfdp",
                 "type": "boolean",
-                "name": "Pilots vs Pilots",
-                "description": "Start here in Pilots vs Pilots"
+                "name": "Marked for Death Pro",
+                "description": "Start here in Marked for Death Pro"
              },
              {
-                "keyname": "gamemode_solo",
+                "keyname": "gamemode_lts",
                 "type": "boolean",
-                "name": "Singleplayer (Campaign)",
-                "description": "Start here in Singleplayer"
+                "name": "Last Titan Standing",
+                "description": "Start here in Last Titan Standing"
+             },
+             {
+                "keyname": "gamemode_wlts",
+                "type": "boolean",
+                "name": "Wingman Last Titan Standing",
+                "description": "Start here in Wingman Last Titan Standing"
+             },
+             {
+                "keyname": "gamemode_ps",
+                "type": "boolean",
+                "name": "Pilot Skirmish",
+                "description": "Start here in Pilot Skirmish"
              },
              {
                 "keyname": "gamemode_tdm",
                 "type": "boolean",
-                "name": "Skirmish",
-                "description": "Start here in Skirmish (Team DeathMatch)"
-             },
-             {
-                "keyname": "gamemode_lf",
-                "type": "boolean",
-                "name": "Live Fire",
-                "description": "Start here in Live Fire"
+                "name": "Pilot Hunter",
+                "description": "Start here in Pilot Hunter"
              },
              {
                 "keyname": "gamemode_ffa",
@@ -85,58 +80,10 @@
                 "description": "Start here in Free For All"
              },
              {
-                "keyname": "gamemode_fra",
+                "keyname": "gamemode_scv",
                 "type": "boolean",
-                "name": "Free Agents",
-                "description": "Start here in Free Agents"
-             },
-             {
-                "keyname": "gamemode_chamber",
-                "type": "boolean",
-                "name": "One in the Chamber",
-                "description": "Start here in One in the Chamber"
-             },
-             {
-                "keyname": "gamemode_fastball",
-                "type": "boolean",
-                "name": "Fastball",
-                "description": "Start here in Fastball"
-             },
-             {
-                "keyname": "gamemode_gg",
-                "type": "boolean",
-                "name": "Gun Game",
-                "description": "Start here in Gun Game"
-             },
-             {
-                "keyname": "gamemode_hidden",
-                "type": "boolean",
-                "name": "The Hidden",
-                "description": "Start here in The Hidden"
-             },
-             {
-                "keyname": "gamemode_hs",
-                "type": "boolean",
-                "name": "Hide and Seek",
-                "description": "Start here in Hide and Seek"
-             },
-             {
-                "keyname": "gamemode_inf",
-                "type": "boolean",
-                "name": "Infection",
-                "description": "Start here in Infection"
-             },
-             {
-                "keyname": "gamemode_kr",
-                "type": "boolean",
-                "name": "Amped Killrace",
-                "description": "Start here in Amped Killrace"
-             },
-             {
-                "keyname": "gamemode_sns",
-                "type": "boolean",
-                "name": "Sticks and Stones",
-                "description": "Start here in Sticks and Stones"
+                "name": "Scavenger",
+                "description": "Start here in Scavenger"
              }
             ],
     "Notes": [
