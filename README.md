@@ -1,6 +1,6 @@
 # MRVN-Entities
 Turns Pilots into Simulacra with the power of fanfiction  
-[MRVN-Radiant](github.com/MRVN-radiant/MRVN-radiant) entity definition generator
+[MRVN-Radiant](github.com/MRVN-Radiant/MRVN-Radiant) entity definition generator
 
 
 ## Installing `.ent` files in MRVN-Radiant
@@ -16,9 +16,14 @@ MRVN-Radiant will now use the latest entity definitions
 <!-- TODO: automate updating `simulacrum/` & adding releases to MRVN-Radiant (pull request) -->
 
 
-## Dependants
- * [pySourceSDK/ValveFGD](https://github.com/pySourceSDK/ValveFGD)
- * [snake-biscuits/bsp_tool](https://github.com/snake-biscuits/bsp_tool)
+## Dependencies
+ * reverse engineering
+   - [pySourceSDK/ValveFGD](https://github.com/pySourceSDK/ValveFGD)
+   - [snake-biscuits/bsp_tool](https://github.com/snake-biscuits/bsp_tool)
+ * processing & validating files
+   - `jsonschema`
+   - `lxml`
+   - `xmlschema`
 
 
 ## Offline Use
@@ -26,7 +31,7 @@ MRVN-Radiant will now use the latest entity definitions
 Clone this repo:  
 
 ```
-$ git clone https://github.com/MRVN-Radiant/MRVN-entities.git
+$ git clone https://github.com/MRVN-Radiant/MRVN-Entities.git
 ```  
 
 ### Windows
@@ -34,8 +39,8 @@ $ git clone https://github.com/MRVN-Radiant/MRVN-entities.git
 Install dependencies with `pip`  
 
 ```
-$ py -3.9 -m venv venv
-$ call venv/scripts/activate
+$ py -3.13 -m venv .env
+$ call .env/scripts/activate
 $ python -m pip --upgrade pip
 $ python -m pip install -r requirements.txt
 ```
@@ -43,8 +48,8 @@ $ python -m pip install -r requirements.txt
 ### Linux
 
 ```
-$ python3 -m venv venv
-$ source venv/bin/activate
+$ python3 -m venv .env
+$ source .env/bin/activate
 $ python -m pip --upgrade pip
 $ python -m pip install -r requirements.txt
 ```
@@ -52,11 +57,13 @@ $ python -m pip install -r requirements.txt
 
 ## Offline Workflow
  * `bloodhound.py` searches `.fgd` & `.bsp` sources to generate initial `.xml` entities
-   - outputs `.xml` to `mrvn/` game subfolder (`r1o`, `r2` or `r5`)
+   - outputs `.xml` to `mrvn/` game folders (`r1o`, `r2` or `r5`)
  * **PILOT_NAME_MISSING** writes changes (you write ~~fanfiction~~ documentation)
-   - outputs `.json` to `pilot/` game subfolder (`r1o`, `r2` or `r5`)
- * `fuse.py` fuses the contents of `human/` with the generated `.xml`
-   - outputs `.ent` to `simulacrum/` game subfolder (`r1o`, `r2` or `r5`)
+   - outputs `.json` to `pilot/` game folders (`r1o`, `r2` or `r5`)
+ * `pytest -vv` checks files against schemas & `blocks.json`
+   - validates `mrvn/**/*.xml` & `pilot/**/*.json`
+ * `fuse.py` fuses the contents of `pilot/` with `mrvn/`
+   - outputs `.ent` to `simulacrum/` game folders (`r1o`, `r2` or `r5`)
 
 TL;DR: Bloodhound hunts and Fuse does the dishes
 
