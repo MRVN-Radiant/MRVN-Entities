@@ -10,6 +10,11 @@
     Test if Titanfall can handle missing entity keys (some scripts might complain)
 -->
 <classes>
+<list name="teamNumber"><item name="IMC" value="2"/>
+<item name="Militia" value="3"/>
+<item name="Both" value="4"/>
+<item name="Any" value="-1"/>
+</list>
 <!--
 =============================================================================
  OPTION KEY TYPES
@@ -186,7 +191,8 @@ Introduced by Titanfall
 Introduced by Titanfall
 </point>
 
-<point name="info_player_start" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_player_start" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
@@ -195,6 +201,19 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" value="">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" value="">Start here in Last Titan Standing</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" value="">Start here in Pilot Hunter</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
 </point>
 
 <point name="info_replacement_titan_spawn" color="1 0 1" box="-8 -8 -8 8 8 8">

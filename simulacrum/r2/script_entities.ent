@@ -481,7 +481,7 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
 <model key="model" name="World Model"/>
 <targetname key="nearTarget" name="nearTarget">New in Titanfall; TODO: identify</targetname>
-<real key="scale" name="Scale" keyname="scale">Team(s) that own this flag</real>
+<real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <targetname key="triggerTarget" name="triggerTarget">New in Titanfall; TODO: identify</targetname>

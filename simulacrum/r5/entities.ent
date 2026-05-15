@@ -180,13 +180,7 @@ Introduced by Titanfall
 Introduced by Titanfall
 </point>
 
-<!--snake-biscuits-->
-<point name="water_body" color="0 0 1" box="-16 -16 16 16 16 16"><real key="height" name="Sea Level" value="">z-height of the water surface</real>
-<string key="material" name="Material" value="">should be in materials/world/OceanWater</string>
-<real key="nodesize" name="Node Size" value="">wave voxel scale</real>
-<integer key="solid" name="Collision" value="">always 0 for no collision</integer>
-<surfaceProperty key="surfpropindex" name="Surface Property" value="">should be water</surfaceProperty>
-</point><point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
+<point name="info_lightprobe" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <string key="link_guid" name="link_guid">New in Titanfall; TODO: identify</string>
 <string key="link_to_guid_0" name="link_to_guid_0">New in Titanfall; TODO: identify</string>
@@ -221,6 +215,19 @@ Introduced by Titanfall
 ----- NOTES -----
 Introduced by Titanfall
 </group>
+
+<!--snake-biscuits-->
+<point name="water_body" color="0 0 1" box="-16 -16 16 16 16 16">
+----- KEYS -----
+<targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
+----- NOTES -----
+Introduced in Season 11
+<real key="height" name="Sea Level" value="">z-height of the water surface</real>
+<string key="material" name="Material" value="">should be in materials/world/OceanWater</string>
+<real key="nodesize" name="Node Size" value="">wave voxel scale</real>
+<integer key="solid" name="Collision" value="">always 0 for no collision</integer>
+<surfaceProperty key="surfpropindex" name="Surface Property" value="">should be water</surfaceProperty>
+</point>
 
 <!--snake-biscuits-->
 <group name="worldspawn" color="1 0 1">

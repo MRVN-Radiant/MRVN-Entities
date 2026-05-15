@@ -10,6 +10,12 @@
     Test if Titanfall can handle missing entity keys (some scripts might complain)
 -->
 <classes>
+<list name="marvinHead"><item name="Regular" value="0"/>
+<item name="Wargames" value="4"/>
+</list>
+<list name="marvinBody"><item name="Regular" value="1"/>
+<item name="FireFighter" value="3"/>
+</list>
 <list name="teamNumber"><item name="IMC" value="2"/>
 <item name="Militia" value="3"/>
 <item name="Both" value="4"/>
@@ -27,228 +33,291 @@
  ENTITIES IN ALPHABETICAL ORDER
 =============================================================================
 -->
+<!--catornot, snake-biscuits, NachosChipeados-->
 <point name="info_frontline" color="1 0 1" box="-8 -8 -8 8 8 8">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
-<string key="group" name="group">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
+<string key="group" name="Group" keyname="group">Used to indicate which frontlines are linked together</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<boolean key="spectrepoint" name="spectrepoint">New in Titanfall; TODO: identify</boolean>
+<boolean key="spectrepoint" name="spectrepoint" keyname="spectrepoint">Used to indicate whether only Spectres should use this frontline entity. These should be used in combination with regular frontlines</boolean>
 <targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<boolean key="teamnum" name="teamnum">New in Titanfall; TODO: identify</boolean>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" value="">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<!--catornot, snake-biscuits-->
+<!--catornot, snake-biscuits, NachosChipeados-->
 <point name="info_spawnpoint_droppod" color=".3 .3 1" box="TODO" model="TODO: models/dev/mp_droppod_spawn.mdl">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="Amped Hardpoint" keyname="gamemode_cp">Start here in Amped Hardpoint</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
 <boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
 <boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="Skirmish" keyname="gamemode_tdm">Start here in Skirmish (Team DeathMatch)</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
-<boolean key="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean>
-<boolean key="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean>
-<boolean key="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean>
-<boolean key="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean>
-<boolean key="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean>
-<boolean key="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean>
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
 <boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
-<boolean key="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean>
-<boolean key="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean>
-<boolean key="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean>
-<boolean key="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean>
-<boolean key="gamemode_inf" name="Infection" value="">Start here in Infection</boolean>
-<boolean key="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean>
-<boolean key="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean>
 <boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
-<boolean key="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean>
-<boolean key="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean>
-<boolean key="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<!--catornot, snake-biscuits-->
+<!--catornot, snake-biscuits, NachosChipeados-->
 <point name="info_spawnpoint_droppod_start" color=".3 .3 1" box="TODO" model="TODO: models/dev/mp_droppod_spawn_start.mdl">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="Amped Hardpoint" keyname="gamemode_cp">Start here in Amped Hardpoint</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
 <boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="Skirmish" keyname="gamemode_tdm">Start here in Skirmish (Team DeathMatch)</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 <teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
-<boolean key="gamemode_aitdm" name="Attrition" value="">Start here in Attrition</boolean>
-<boolean key="gamemode_at" name="Bounty Hunt" value="">Start here in Bounty Hunt</boolean>
-<boolean key="gamemode_chamber" name="One in the Chamber" value="">Start here in One in the Chamber</boolean>
-<boolean key="gamemode_coliseum" name="Coliseum" value="">Start here in Coliseum</boolean>
-<boolean key="gamemode_ctf_comp" name="Capture the Flag (Competitive)" value="">Start here in Competitive CtF</boolean>
-<boolean key="gamemode_fastball" name="Fastball" value="">Start here in Fastball</boolean>
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
 <boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
-<boolean key="gamemode_fra" name="Free Agents" value="">Start here in Free Agents</boolean>
-<boolean key="gamemode_gg" name="Gun Game" value="">Start here in Gun Game</boolean>
-<boolean key="gamemode_hidden" name="The Hidden" value="">Start here in The Hidden</boolean>
-<boolean key="gamemode_hs" name="Hide and Seek" value="">Start here in Hide and Seek</boolean>
-<boolean key="gamemode_inf" name="Infection" value="">Start here in Infection</boolean>
-<boolean key="gamemode_kr" name="Amped Killrace" value="">Start here in Amped Killrace</boolean>
-<boolean key="gamemode_lf" name="Live Fire" value="">Start here in Live Fire</boolean>
 <boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
-<boolean key="gamemode_ps" name="Pilots vs Pilots" value="">Start here in Pilots vs Pilots</boolean>
-<boolean key="gamemode_sns" name="Sticks and Stones" value="">Start here in Sticks and Stones</boolean>
-<boolean key="gamemode_solo" name="Singleplayer (Campaign)" value="">Start here in Singleplayer</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<point name="info_spawnpoint_dropship" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--snake-biscuits, NachosChipeados-->
+<point name="info_spawnpoint_dropship" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/dev/mp_dropship_spawn_start.obj">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" value="">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" value="">Start here in Last Titan Standing</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" value="">Start here in Pilot Hunter</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<point name="info_spawnpoint_dropship_start" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_spawnpoint_dropship_start" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/dev/mp_dropship_spawn_start.obj">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
 <boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <boolean key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</boolean>
 <boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<point name="info_spawnpoint_human" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_spawnpoint_human" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <string key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</string>
 <string key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</string>
-<string key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</string>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <string key="spawn_outdoors" name="spawn_outdoors">New in Titanfall; TODO: identify</string>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<point name="info_spawnpoint_human_start" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_spawnpoint_human_start" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
 <boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <boolean key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</boolean>
 <boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<point name="info_spawnpoint_marvin" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--NachosChipeados-->
+<point name="info_spawnpoint_marvin" color=".3 .3 1" box="-16 -16 0 16 16 72" model="models/editor/playerstart.obj">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <string key="TeamNum" name="TeamNum">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
-<string key="bodytype" name="bodytype">New in Titanfall; TODO: identify</string>
-<string key="headtype" name="headtype">New in Titanfall; TODO: identify</string>
+<marvinBody key="bodytype" name="Body Type" keyname="bodytype">Body type to use</marvinBody>
+<marvinHead key="headtype" name="Head Type" keyname="headtype">Head type to use</marvinHead>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" value="">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" value="">Start here in Capture the Flag</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" value="">Start here in Last Titan Standing</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" value="">Start here in Pilot Hunter</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
+<teamNumber key="teamnum" name="Team Number" value="">Team(s) allowed to spawn here</teamNumber>
 </point>
 
-<point name="info_spawnpoint_titan" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_spawnpoint_titan" color=".3 .3 1" box="-70 -48 0 70 48 224" model="models/dev/mp_titan_spawn_start.obj">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" value="">Start here in Last Titan Standing</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 
-<point name="info_spawnpoint_titan_start" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_spawnpoint_titan_start" color=".3 .3 1" box="-70 -48 0 70 48 224" model="models/dev/mp_titan_spawn_start.obj">
 ----- KEYS -----
 <string key="StartDisabled" name="StartDisabled">New in Titanfall; TODO: identify</string>
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <boolean key="gamemode_atdm" name="gamemode_atdm">New in Titanfall; TODO: identify</boolean>
 <boolean key="gamemode_bb" name="gamemode_bb">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_cp" name="gamemode_cp">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_ctf" name="gamemode_ctf">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_cp" name="Hardpoint Domination" keyname="gamemode_cp">Start here in Hardpoint Domination</boolean>
+<boolean key="gamemode_ctf" name="Capture the Flag" keyname="gamemode_ctf">Start here in Capture the Flag</boolean>
 <boolean key="gamemode_ctt" name="gamemode_ctt">New in Titanfall; TODO: identify</boolean>
 <boolean key="gamemode_exfil" name="gamemode_exfil">New in Titanfall; TODO: identify</boolean>
-<boolean key="gamemode_lts" name="gamemode_lts">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_lts" name="Last Titan Standing" keyname="gamemode_lts">Start here in Last Titan Standing</boolean>
 <string key="gamemode_survival" name="gamemode_survival">New in Titanfall; TODO: identify</string>
-<boolean key="gamemode_tdm" name="gamemode_tdm">New in Titanfall; TODO: identify</boolean>
+<boolean key="gamemode_tdm" name="Pilot Hunter" keyname="gamemode_tdm">Start here in Pilot Hunter</boolean>
 <string key="gamemode_te" name="gamemode_te">New in Titanfall; TODO: identify</string>
 <string key="refuel" name="refuel">New in Titanfall; TODO: identify</string>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<string key="teamnum" name="teamnum">New in Titanfall; TODO: identify</string>
+<teamNumber key="teamnum" name="Team Number" keyname="teamnum">Team(s) allowed to spawn here</teamNumber>
 ----- NOTES -----
 Introduced by Titanfall
+<boolean key="gamemode_at" name="Attrition" value="">Start here in Attrition</boolean>
+<boolean key="gamemode_ctfp" name="Capture the Flag Pro" value="">Start here in Capture the Flag Pro</boolean>
+<boolean key="gamemode_ffa" name="Free For All" value="">Start here in Free For All</boolean>
+<boolean key="gamemode_mfd" name="Marked for Death" value="">Start here in Marked for Death</boolean>
+<boolean key="gamemode_mfdp" name="Marked for Death Pro" value="">Start here in Marked for Death Pro</boolean>
+<boolean key="gamemode_ps" name="Pilot Skirmish" value="">Start here in Pilot Skirmish</boolean>
+<boolean key="gamemode_scv" name="Scavenger" value="">Start here in Scavenger</boolean>
+<boolean key="gamemode_wlts" name="Wingman Last Titan Standing" value="">Start here in Wingman Last Titan Standing</boolean>
 </point>
 </classes>

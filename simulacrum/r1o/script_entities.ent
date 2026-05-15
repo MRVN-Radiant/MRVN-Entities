@@ -10,6 +10,10 @@
     Test if Titanfall can handle missing entity keys (some scripts might complain)
 -->
 <classes>
+<list name="hardpointGroup"><item name="Point A" value="A"/>
+<item name="Point B" value="B"/>
+<item name="Point C" value="C"/>
+</list>
 <!--
 =============================================================================
  OPTION KEY TYPES
@@ -45,20 +49,22 @@ Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll
 Introduced by Titanfall
 </point>
 
-<point name="info_hardpoint" color="1 0 1" box="-8 -8 -8 8 8 8">
+<!--catornot, snake-biscuits, NachosChipeados-->
+<point name="info_hardpoint" color=".9 .2, .0" box="-64 -64 0 64 64 72" model="models/robots/mobile_hardpoint/mobile_hardpoint.obj">
 ----- KEYS -----
 <angles key="angles" name="Pitch Yaw Roll (Y Z X)">This entity's orientation in the world.
 Pitch is rotation around the Y axis, Yaw is the rotation around the Z axis, Roll is the rotation around the X axis.</angles>
 <targetname key="controlTarget" name="controlTarget">New in Titanfall; TODO: identify</targetname>
-<string key="hardpointGroup" name="hardpointGroup">New in Titanfall; TODO: identify</string>
-<string key="hardpointName" name="hardpointName">New in Titanfall; TODO: identify</string>
-<targetname key="nearTarget" name="nearTarget">New in Titanfall; TODO: identify</targetname>
+<hardpointGroup key="hardpointGroup" name="Hardpoint Group" keyname="hardpointGroup">Which Hardpoint is this on the HUD?</hardpointGroup>
+<string key="hardpointName" name="Hardpoint Name" keyname="hardpointName">Internal name for this hardpoint</string>
+<target key="nearTarget" name="Near Target" keyname="nearTarget">Targetname of multiple assault_assaultpoint entities</target>
 <real key="scale" name="scale">New in Titanfall; TODO: identify</real>
-<targetname key="target" name="target">New in Titanfall; TODO: identify</targetname>
+<target key="target" name="Target" keyname="target">Targetname of multiple assault_assaultpoint entities</target>
 <targetname key="targetname" name="Name">The name that other entities refer to this entity by.</targetname>
-<targetname key="triggerTarget" name="triggerTarget">New in Titanfall; TODO: identify</targetname>
+<target key="triggerTarget" name="Trigger Name" keyname="triggerTarget">Targetname of this hardpoint's trigger</target>
 ----- NOTES -----
 Introduced by Titanfall
+<target key="turretTarget" name="Turret Target" value="">Targetname of a npc_turret_mega linked to this hardpoint</target>
 </point>
 
 <point name="info_hint" color="1 0 1" box="-8 -8 -8 8 8 8">
