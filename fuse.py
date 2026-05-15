@@ -6,23 +6,26 @@ import os
 from lxml import etree as ElementTree
 
 
-ent_filename = {"ENTITIES.xml":        "entities.ent",
-                "ENTITIES_env.xml":    "environment_entities.ent",
-                "ENTITIES_fx.xml":     "effects_entities.ent",
-                "ENTITIES_script.xml": "script_entities.ent",
-                "ENTITIES_spawn.xml":  "spawn_entities.ent",
-                "ENTITIES_snd.xml":    "sound_entities.ent",
-                "radiant.xml":         "radiant.ent"}
+ent_filename = {
+    "ENTITIES.xml":        "entities.ent",
+    "ENTITIES_env.xml":    "environment_entities.ent",
+    "ENTITIES_fx.xml":     "effects_entities.ent",
+    "ENTITIES_script.xml": "script_entities.ent",
+    "ENTITIES_spawn.xml":  "spawn_entities.ent",
+    "ENTITIES_snd.xml":    "sound_entities.ent",
+    "radiant.xml":         "radiant.ent"}
 
-key_types = {"string": str, "array": str, "integer": int, "boolean": bool, "real": float,
-             "angle": float, "direction": str, "real3": str, "angles": str, "color": str,  # float x3
-             "target": str, "targetname": str,  # identifiers
-             "sound": str, "texture": str, "model": str, "skin": str}  # paths
+key_types = {
+    "string": str, "array": str, "integer": int, "boolean": bool, "real": float,
+    "angle": float, "direction": str, "real3": str, "angles": str, "color": str,  # float x3
+    "target": str, "targetname": str,  # identifiers
+    "sound": str, "texture": str, "model": str, "skin": str}  # paths
 
-key_type_defaults = {"string": "", "array": "", "integer": "0", "boolean": "0", "real": "1",
-                     "angle": "0", "direction": "0 1 0", "real3": "0 0 0", "angles": "0 0 0", "color": "1 0 1",
-                     "target": "", "targetname": "",
-                     "sound": "", "texture": "", "model": "", "skin": ""}
+key_type_defaults = {
+    "string": "", "array": "", "integer": "0", "boolean": "0", "real": "1",
+    "angle": "0", "direction": "0 1 0", "real3": "0 0 0", "angles": "0 0 0", "color": "1 0 1",
+    "target": "", "targetname": "",
+    "sound": "", "texture": "", "model": "", "skin": ""}
 # NOTE: tests.test_json will use regex to ensure values conform to key_type (doesn't yet)
 
 # TODO: choiceTypes should default to first list item
