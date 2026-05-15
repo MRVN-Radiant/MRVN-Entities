@@ -9,13 +9,22 @@ import pytest
 
 # ent_schema = xmlschema.XMLSchema("tests/schema/entity_definitions.xsd")
 
-games = tuple(filter(os.path.isdir, os.listdir("mrvn")))
+games = [
+    game
+    for game in os.listdir("mrvn/")
+    if os.path.isdir(os.path.join("mrvn", game))]
 
-mrvn_xml = [os.path.join("mrvn", g, x) for g in games
-            for x in fnmatch.filter(os.listdir(f"mrvn/{g}"), "*.xml")]
+mrvn_xml = [
+    os.path.join("mrvn", game, filename)
+    for game in games
+    for filename in fnmatch.filter(
+        os.listdir(f"mrvn/{game}"), "*.xml")]
 
-simulacrum_ent = [os.path.join("simulacrum", g, e) for g in games
-                  for e in fnmatch.filter(os.listdir(f"simulacrum/{g}"), "*.ent")]
+simulacrum_ent = [
+    os.path.join("simulacrum", game, filename)
+    for game in games
+    for filename in fnmatch.filter(
+        os.listdir(f"simulacrum/{game}"), "*.ent")]
 
 
 # @pytest.mark.parametrize("xml_filename", (*mrvn_xml, *simulacrum_ent))
@@ -24,8 +33,12 @@ simulacrum_ent = [os.path.join("simulacrum", g, e) for g in games
 
 
 blocks = json.load(open("blocks.json"))
-exclude = {g: {b: set() for b in blocks[g]} for g in blocks}  # new / unused entities
-exclude["r2"]["ENTITIES_script"].update({"mp_weapon_rspn101_og", "mp_weapon_wingman_n", "mp_weapon_grenade_sonar"})
+exclude = {
+    game: {block: set() for block in blocks[game]}
+    for game in blocks}
+# exclude new & unused entities
+exclude["r2"]["ENTITIES_script"].update({
+    "mp_weapon_rspn101_og", "mp_weapon_wingman_n", "mp_weapon_grenade_sonar"})
 
 
 @pytest.mark.parametrize("game,xml_block", [(g, b) for g in blocks for b in blocks[g] if b != "radiant"])
