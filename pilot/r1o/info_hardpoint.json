@@ -9,25 +9,25 @@
     "Keys": [
         {
             "keyname": "triggerTarget",
-            "type": "string",
+            "type": "target",
             "name": "Trigger Name",
             "description": "Targetname of this hardpoint's trigger"
         },
         {
             "keyname": "target",
-            "type": "string",
+            "type": "target",
             "name": "Target",
             "description": "Targetname of multiple assault_assaultpoint entities"
         },
         {
             "keyname": "nearTarget",
-            "type": "string",
+            "type": "target",
             "name": "Near Target",
             "description": "Targetname of multiple assault_assaultpoint entities"
         },
         {
             "keyname": "turretTarget",
-            "type": "string",
+            "type": "target",
             "name": "Turret Target",
             "description": "Targetname of a npc_turret_mega linked to this hardpoint"
         },
@@ -42,18 +42,12 @@
             "type": "string",
             "name": "Hardpoint Name",
             "description": "Internal name for this hardpoint"
-        },
-        {
-            "keyname": "scale",
-            "type": "real",
-            "name": "Scale",
-            "description": "Team(s) that own this flag"
         }
     ],
     "Notes": [
         "Model can be anything, but you have to pick one!",
-		"There must be at least 3 entities on the map",
-		"target and nearTarget must target assault_assaultpoint entities",
-		"nearTarget must target at least 4 entities by using a wildcard"
+        "There must be at least 3 entities on the map",
+        "target and nearTarget must target assault_assaultpoint entities",
+        "nearTarget must target at least 4 entities by using a wildcard"
     ]
 }

@@ -18,12 +18,6 @@
             "type": "hardpointGroup",
             "name": "Hardpoint Group",
             "description": "Which Hardpoint is this on the HUD?"
-        },
-        {
-            "keyname": "scale",
-            "type": "real",
-            "name": "Scale",
-            "description": "Team(s) that own this flag"
         }
     ],
     "Notes": [
