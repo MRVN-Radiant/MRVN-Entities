@@ -1,0 +1,17 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "prop_control_panel",
+    "Description": "Interactable control panel",
+    "Keys": [
+        {
+            "keyname": "target",
+            "type": "target",
+            "name": "Target",
+            "description": "Targetname of an npc_turrret_mega linked to this panel"
+        }
+    ],
+    "Notes": [
+        "Also shares the same keys as prop_dynamic"
+    ]
+}

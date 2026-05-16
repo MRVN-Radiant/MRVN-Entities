@@ -1,0 +1,21 @@
+{
+    "Name": "traverseType",
+    "Options": {
+        "Tiny Gaps Crossing": "0",
+        "Small Objects Crossing": "1",
+        "Medium Gap Crossing": "3",
+        "Huge Gap Crossing": "7",
+        "Crates Traversal": "2",
+        "Short Fall Down Only": "4",
+        "Medium Fall Down Only": "5",
+        "Window Jump Down": "6",
+        "Short Wall Traversal": "8",
+        "Tall Wall Traversal": "9",
+        "Building Traversal": "10",
+        "Medium Jumps Across Same Level": "11",
+        "Medium Traversal Into Adjacent Levels": "12",
+        "Large Traversal Into Adjacent Levels": "13",
+        "Short Window Traversal": "14",
+        "Long Window Traversal": "15"
+    }
+}
