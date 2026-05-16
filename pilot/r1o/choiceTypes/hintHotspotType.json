@@ -1,5 +1,5 @@
 {
-    "Name": "hintChatterType",
+    "Name": "hintHotspotType",
     "Options": {
         "Balcony": "balcony",
         "Corner": "corner",
