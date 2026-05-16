@@ -6,7 +6,7 @@
     "Keys": [
         {
             "keyname": "lightingorigin",
-            "type": "string",
+            "type": "target",
             "name": "Lightning Origin",
             "description": "(Optional) Targetname of an entity to use to override the lightling origin"
         }
