@@ -12,7 +12,7 @@
         },
         {
             "keyname": "nodeFOV",
-            "type": "float",
+            "type": "integer",
             "name": "Node FOV",
             "description": "Imagine this node requires that an NPC be in the node's field of view in order to use this hint"
         },
