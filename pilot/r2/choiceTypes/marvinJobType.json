@@ -11,7 +11,7 @@
         "Repair Above": "repair_above",
         "Repair Under": "repair_under",
         "Data Cards": "datacards",
-        "Drone Weld": "drone_welding",
+        "Drone Welding": "drone_welding",
         "Drone Inspect": "drone_inspect"
     }
 }
