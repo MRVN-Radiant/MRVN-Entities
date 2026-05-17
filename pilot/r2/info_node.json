@@ -1,0 +1,9 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "info_node",
+    "Description": "https://developer.valvesoftware.com/wiki/Info_node",
+    "Notes": [
+        "Spectre info_nodes use the unknown spawnflag 1048576"
+    ]
+}

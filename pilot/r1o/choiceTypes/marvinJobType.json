@@ -1,0 +1,12 @@
+{
+    "Name": "marvinJobType",
+    "Options": {
+        "Fight Fire": "fightFire",
+        "Welding": "welding",
+        "Wash Window": "window",
+        "Pick Up Barrel": "barrel",
+        "Put Down Barrel": "putdown",
+        "Use Weapon Rack": "weapon_rack",
+        "Use Weapon": "weapon"
+    }
+}

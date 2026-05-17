@@ -1,0 +1,30 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "script_marvin_job",
+    "Description": "Plays special animations on Marvins",
+    "Keys": [
+        {
+            "keyname": "job",
+            "type": "marvinJobType",
+            "name": "Job",
+            "description": "Job type to use"
+        },
+        {
+            "keyname": "tempJob",
+            "type": "boolean",
+            "name": "Temp Job",
+            "description": "Should this animation only play one time before moving on?"
+        },
+        {
+            "keyname": "hover",
+            "type": "boolean",
+            "name": "Hover",
+            "description": "Drop this entity to the ground on map load"
+        }
+    ],
+    "Notes": [
+        "Probably shares the same keys as prop_dynamic? Its found right next to prop_control_panel on server.dll, which does share them",
+		"Hover should only be turned on for Drone jobs"
+    ]
+}

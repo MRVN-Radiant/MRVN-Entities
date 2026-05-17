@@ -1,0 +1,53 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "info_node_cover_crouch",
+    "Description": "Tells an NPC that there's cover here",
+    "Keys": [
+        {
+            "keyname": "hinttype",
+            "type": "hintType",
+            "name": "Hint Type",
+            "description": ""
+        },
+        {
+            "keyname": "nodeFOV",
+            "type": "integer",
+            "name": "Node FOV",
+            "description": "Imagine this node requires that an NPC be in the node's field of view in order to use this hint"
+        },
+        {
+            "keyname": "StartHintDisabled",
+            "type": "boolean",
+            "name": "Start Hint Disabled",
+            "description": "Spawn the hint disabled"
+        },
+        {
+            "keyname": "TargetNode",
+            "type": "integer",
+            "name": "Target Node",
+            "description": "The node ID of an associated target node, if any"
+        },
+        {
+            "keyname": "IgnoreFacing",
+            "type": "boolean",
+            "name": "Ignore Facing",
+            "description": "Don't pay attention to the facing of the node. May not apply to a given hint type"
+        },
+        {
+            "keyname": "MinimumState",
+            "type": "integer",
+            "name": "Minimum State",
+            "description": "Require an NPC have a minimum state to use the hint. Seemingly always 1 in Titanfall"
+        },
+        {
+            "keyname": "MaximumState",
+            "type": "integer",
+            "name": "Maximum State",
+            "description": "Require an NPC have a maximum state to use the hint. Seemingly always 3 in Titanfall"
+        }
+    ],
+    "Notes": [
+		"nodeFOV should be in between 0 - 360"
+    ]
+}

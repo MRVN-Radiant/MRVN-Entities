@@ -1,0 +1,22 @@
+{
+    "Name": "pilotWeaponType",
+    "Options": {
+        "RE-45 Autopistol": "mp_weapon_autopistol",
+        "Hammond P2011": "mp_weapon_semipistol",
+        "B3 Wingman": "mp_weapon_wingman",
+        "Smart Pistol MK5": "mp_weapon_smart_pistol",
+        "R-101C Carbine": "mp_weapon_rspn101",
+        "G2A4 Rifle": "mp_weapon_g2",
+        "Hemlok BF-R": "mp_weapon_hemlok",
+        "R-97 Compact SMG": "mp_weapon_r97",
+        "C.A.R. SMG": "mp_weapon_car",
+        "Spitfire LMG": "mp_weapon_lmg",
+        "EVA-8 Shotgun": "mp_weapon_shotgun",
+        "Longbow-DMR Sniper": "mp_weapon_dmr",
+        "Kraber-AP Sniper": "mp_weapon_sniper",
+        "Archer Heavy Rocket": "mp_weapon_rocket_launcher",
+        "Sidewinder": "mp_weapon_smr",
+        "Mag Launcher": "mp_weapon_mgl",
+        "Charge Rifle": "mp_weapon_defender"
+    }
+}

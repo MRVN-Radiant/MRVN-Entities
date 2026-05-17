@@ -1,0 +1,17 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "prop_weapon_rack",
+    "Description": "Used by a marvin job type",
+    "Keys": [
+        {
+            "keyname": "racked_weapon",
+            "type": "pilotWeaponType",
+            "name": "Racked Weapon",
+            "description": "Weapon to use"
+        }
+    ],
+    "Notes": [
+        "Probably shares the same keys as prop_dynamic? Its found right next to prop_control_panel on server.dll, which does share them"
+    ]
+}

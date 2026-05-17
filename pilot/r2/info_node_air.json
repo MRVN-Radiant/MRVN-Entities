@@ -1,0 +1,6 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "info_node_air",
+    "Description": "https://developer.valvesoftware.com/wiki/Info_node_air"
+}

@@ -1,0 +1,10 @@
+{
+    "Name": "hintHotspotType",
+    "Options": {
+        "Balcony": "balcony",
+        "Corner": "corner",
+        "Door": "door",
+        "Window (First Floor)": "window",
+        "Window (Second Floor)": "window2"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "traverse",
+    "Description": "Allows special movement actions for NPCs when they get close",
+    "Keys": [
+        {
+            "keyname": "traversetype",
+            "type": "traverseType",
+            "name": "Traverse Type",
+            "description": "Which traverse animation type to use?"
+        },
+        {
+            "keyname": "usableBy",
+            "type": "boolean",
+            "name": "Usable By",
+            "description": "Unknow. Seemingly always 0"
+        }
+    ],
+    "Notes": [
+        "Not all traverse types are supported by all NPC types, since they depend on special animations they may not have",
+		"TODO: somehow find a way to display which types are usable by an NPC class?"
+    ]
+}
