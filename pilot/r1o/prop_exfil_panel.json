@@ -1,0 +1,17 @@
+{
+    "Contributors": ["NachosChipeados"],
+    "Block": "ENTITIES_script",
+    "Entity": "prop_exfil_panel",
+    "Description": "Interactable control panel used by the exfil gamemode",
+    "Keys": [
+        {
+            "keyname": "target",
+            "type": "target",
+            "name": "Target",
+            "description": "Targetname of this panel's target"
+        }
+    ],
+    "Notes": [
+        "Also shares the same keys as prop_dynamic"
+    ]
+}

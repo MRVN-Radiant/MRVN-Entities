@@ -1,0 +1,17 @@
+{
+    "Name": "marvinJobType",
+    "Options": {
+        "Fight Fire": "fightFire",
+        "Welding": "welding",
+        "Welding Under": "welding_under",
+        "Wash Window": "window",
+        "Pick Up Barrel": "barrel_pickup",
+        "Put Down Barrel": "barrel_putdown",
+        "Repair Over Edge": "repair_over_edge",
+        "Repair Above": "repair_above",
+        "Repair Under": "repair_under",
+        "Data Cards": "datacards",
+        "Drone Weld": "drone_welding",
+        "Drone Inspect": "drone_inspect"
+    }
+}
